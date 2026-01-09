@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A Complaint to the Nightingale</title>
+            <author>Mr. Henrie Vaux</author>
+            <editor>Jessica Edmondes</editor>
+         </titleStmt>
+         <publicationStmt>
+            <p>Unpublished transcription for scholarly reference.</p>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Folger Shakespeare Library</repository>
+                  <idno>STC 22957 (bd with), fol. 69</idno>
+               </msIdentifier>
+               <msContents>
+                  <msItem>
+                     <title>A Complaint to the Nightingale, taken out of St. Bonaventure</title>
+                     <author>Henrie Vaux</author>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>Paper</support>
+                        <extent>fol. 69</extent>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   
+   <text>
+      <body>
+         <div type="poem">
+            <head>A Complaint to the Nightingale</head>
+            
+            <lg type="stanza" n="1">
+               <l>Thou worthy bird, thou gentle Nightingale,</l>
+               <l>Leave of a while thy wonted songes, I pray;</l>
+               <l>And lend thine care to this my doleful tale,</l>
+               <l>And make report of that which I shal say:</l>
+               <l>Since this my barren Verse is far to base</l>
+               <l>Before my Sovereign Lord to pleade my case.</l>
+            </lg>
+            
+            <lg type="stanza" n="2">
+               <l>For wel I know thy swete melodious throate</l>
+               <l>Wil never cease with warbling tunes ful hie</l>
+               <l>To praise our God with many a pleasant note</l>
+               <l>when senelesse slepe shal close my fainting eie:</l>
+               <l>And wel I know thou maist ascend by right,</l>
+               <l>When I pore soule dare scarce direct my sight.</l>
+            </lg>
+            
+            <lg type="stanza" n="3">
+               <l>Goe, tel my Love I languish for his love,</l>
+               <l>Since he in <placeName>heaven</placeName>, and I at brinke of <placeName>hel</placeName>,</l>
+               <l>Since he in height of roial throne above,</l>
+               <l>And I in depth of wreched vale do dwell;</l>
+               <l>Since he in peace, and I in strife and paine;</l>
+               <l>Since he in blisse, and I in woe remaine.</l>
+            </lg>
+            
+            <lg type="stanza" n="4">
+               <l>Since him I lacke, without whose sight most dere</l>
+               <l>My soule each day for want of fode doth die;</l>
+               <l>Since him I lacke, the wel of blisse most clere,</l>
+               <l>My tired ghost is werie, weake, and drie;</l>
+               <l>Since him I lacke, my sole an sov’ran weale.</l>
+               <l>The onely want wherby all joyes do faile.</l>
+            </lg>
+            
+            <lg type="stanza" n="5">
+               <l>Goe say I waile that I ne liv’d that day.</l>
+               <l>My blessed Lord beneath in earth to see,</l>
+               <l>In <placeName>Bethlem</placeName> borne, and porely coucht in hay,</l>
+               <l>With Shepherdes, and with roial Sages three;</l>
+               <l>Or in his Circumcision sore to blede,</l>
+               <l>When <name type="person">Marie</name> wept to see that woful dede.</l>
+            </lg>
+            
+            <lg type="stanza" n="6">
+               <l>Ne yet with <name type="person">Simeon</name> old I might embrace</l>
+               <l>The light, and health, and glorie of man-kind;</l>
+               <l>Ne yet to <placeName>AEgypt</placeName>ward with spedie pase</l>
+               <l>I plide my fete, my <name type="person">Saviour</name> there to find;</l>
+               <l>Ne yet in midst of learned Doctours found</l>
+               <l>My hap was soch to heare his sacred sound.</l>
+            </lg>
+            
+            <lg type="stanza" n="7">
+               <l>Wold God in <placeName>Nazareth</placeName> I might have dwelt,</l>
+               <l>In growing age to see my Love most dere;</l>
+               <l>At <placeName>Jordanes</placeName> bancke great joy I might have felt,</l>
+               <l>With <name type="person">John</name> to see the blessed Lambe appere;</l>
+               <l>The Father's voice to heare from heaven above,</l>
+               <l>The holie Ghost to see in fourme of Dove.</l>
+            </lg>
+            
+            <lg type="stanza" n="8">
+               <l>What comfort wold have bene to heare him teache</l>
+               <l>With wordes most swete the simple folke each day?</l>
+               <l>And toyling ev’ry wheare about to preache,</l>
+               <l>And humbled oft on knees by night to pray?</l>
+               <l>To yeeld relief for ev’ry sort of paine,</l>
+               <l>And with his voice to raise the dead againe?</l>
+            </lg>
+            
+            <lg type="stanza" n="9">
+               <l>With <name type="person">Magdalen</name> perhaps I might have wette</l>
+               <l>His fete, and so have washt my soule from blame;</l>
+               <l>Or with the rest my Lord I hould have mette</l>
+               <l>At <placeName>Sion</placeName> gates triumphing when he came;</l>
+               <l>With bowes of palme I should have strew’d the strete,</l>
+               <l>Praising my <name type="person">Saviour</name> with Osanna swete.</l>
+            </lg>
+            
+            <lg type="stanza" n="10">
+               <l>Nut o swete feast, o pretious banqwet dere!</l>
+               <l>Thy secret joyes can not be wel exprest;</l>
+               <l>Thy mysteries, which holie Angels feare,</l>
+               <l>With silence to adore I thinke it best;</l>
+               <l>Save that I nedes must muse at his good hap,</l>
+               <l>That might have leave to rest in <name type="person">Jesus</name> lap.</l>
+            </lg>
+            
+            <lg type="stanza" n="11">
+               <l>Yet more I mourne that I ne felt my part</l>
+               <l>Of al his paines endured for my sake;</l>
+               <l>When ful of deadly drede and inward smart</l>
+               <l>His soule was irke the cuppe of death to take;</l>
+               <l>And whils’t he praid prostrate upon his face,</l>
+               <l>The bloudie droppes ranne trickeling down a pace.</l>
+            </lg>
+            
+            <lg type="stanza" n="12">
+               <l>Of al his dere Disciples sone forsaken</l>
+               <l>With battes, with billes, with glaives, and many a light,</l>
+               <l>Helplesse alone my libertie was taken,</l>
+               <l>Fast bound, and brought in furious wise by night</l>
+               <l>To <name type="person">Annas</name> house, where for his answere meke</l>
+               <l>A boistrous blowe he bare upon his cheke.</l>
+            </lg>
+            
+            <lg type="stanza" n="13">
+               <l>Thence drawne and driven to <name type="person">Caiphas</name> hall anone,</l>
+               <l>Where slaundred foule with many a shamelesse lie</l>
+               <l>Through witnesse false, where truth appered none,</l>
+               <l>Guildles, alas, they judge my Life to die;</l>
+               <l>Blindfold, bespitte, and bounst with spitely blowes</l>
+               <l>The restlesse night he spent among his foes.</l>
+            </lg>
+            
+         </div>
+         <div type="poem">
+            <head>In hope patience</head>
+            
+            <lg type="stanza" n="1">
+               <l>Disposed thinges may live,</l>
+               <l>Although they pine in paine;</l>
+               <l>And thinges oft trodden under fete</l>
+               <l>May once yet rise againe.</l>
+            </lg>
+            
+            <lg type="stanza" n="2">
+               <l>The stone which lies ful low,</l>
+               <l>May be at last ful hie;</l>
+               <l>And stand on toppe of stately Towre</l>
+               <l>In sight of ev’ry eie.</l>
+            </lg>
+            
+            <lg type="stanza" n="3">
+               <l>The rotes of rotten redes</l>
+               <l>In swelling seas are sene;</l>
+               <l>And when each tide hath tos’t his worst</l>
+               <l>They grow againe ful grene.</l>
+            </lg>
+            
+            <lg type="stanza" n="4">
+               <l>I see no sight on earth</l>
+               <l>But it to chaunge inclines;</l>
+               <l>And little clowdes do over-cast</l>
+               <l>The brightest Sunne that shines.</l>
+            </lg>
+            
+            <lg type="stanza" n="5">
+               <l>No flower is so fresh</l>
+               <l>But frost may it deface;</l>
+               <l>No man so sure in any seate,</l>
+               <l>But he may lose his place.</l>
+            </lg>
+            
+            <lg type="stanza" n="6">
+               <l>Wherefore I stand content,</l>
+               <l>Though mock against my mind,</l>
+               <l>To take in woorth this luckelesse lotte,</l>
+               <l>That is to me assign’d.</l>
+            </lg>
+            
+         </div>
+         
+      </body>
+   </text>
+</TEI>
