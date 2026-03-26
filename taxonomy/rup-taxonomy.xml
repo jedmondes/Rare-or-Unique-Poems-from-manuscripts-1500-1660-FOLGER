@@ -1,1 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
 
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Controlled Taxonomies for Early Modern Manuscript Poetry</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Unpublished working taxonomy file for TEI encoding.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Constructed from early modern manuscript category lists and Latin genre terminology</p>
+      </sourceDesc>
+    </fileDesc>
+
+    <encodingDesc>
+      <classDecl>
+        <!-- Taxonomies are separated by analytical level: genre/form, function/tone, topic/aboutness, occasion/context,
+          and rhetorical/formal features. -->
+
+        <!-- see terminology used in Richard Wills' Poematum liber (London, 1573) schematum (sigs Fiir-Fiiiv); translation at Hum library PN1040 WIL 1958 -->
+        <!-- Wills also refers to Julius Caesar Scaliger Poetics, the massive encyclopedia of classical poetics [Poetices libri spetem] (Lyon, 1561; published posthumously; reprinted 1586, 1594; revised 1607, 1617). Played an important role in the emergency of modern literary criticism; constitutes an enormous thesaurus of poetic forms and figures; a taxonomy of poetic forms and their origins) -->
+
+        <!-- vernacular poets writing in English adopted these devices from the Anglo-Latin poetry; this taxonomy help to trace the passage of these ubiquitous devises from Latin to vernacular poetry -->
+
+        <!-- this is a controlled vocabulary; and works like this: <catRef target="../taxonomy/rup-taxonomy.xml#your-category"/> -->
+        
+        <!--INSTRUCTIONS FOR USE (RUP Taxonomy) 
+          This taxonomy file (rup-taxonomy.xml) is stored in: /taxonomy/
+        Individual poem TEI files are stored in: /poems/
+        To reference a category from this taxonomy in a poem file, use <catRef> with a relative path: <catRef target="../taxonomy/rup-taxonomy.xml#CATEGORY_ID"/>
+        Replace CATEGORY_ID with the xml:id of the relevant <category> in this file.
+
+        Example:
+        <category xml:id="political">
+        <catDesc>Political content</catDesc>
+          </category>
+        In poem file:
+        <catRef target="../taxonomy/rup-taxonomy.xml#political"/>
+
+          Notes:
+          - The path must match the folder structure exactly.
+          - The xml:id values must be unique and consistent.
+          - This taxonomy is shared across all poem files (do not duplicate it).
+          - Update all catRef targets if the file is moved or renamed.-->
+
+        <taxonomy xml:id="genre">
+          <desc>Primary literary form or conventional poetic kind.</desc>
+          <category xml:id="elegy">
+            <catDesc>Elegy</catDesc>
+          </category>
+          <category xml:id="epigram">
+            <catDesc>Epigram</catDesc>
+          </category>
+          <category xml:id="epitaph">
+            <catDesc>Epitaph</catDesc>
+          </category>
+          <category xml:id="verse_epistle">
+            <catDesc>Verse epistle</catDesc>
+          </category>
+          <category xml:id="satire">
+            <catDesc>Satire</catDesc>
+          </category>
+          <category xml:id="encomiastic_poetry">
+            <catDesc>Encomiastic poetry</catDesc>
+            <!-- praise of a person or thing -->
+          </category>
+          <category xml:id="religious_poetry">
+            <catDesc>Religious poetry</catDesc>
+          </category>
+          <category xml:id="political_poetry">
+            <catDesc>Political poetry</catDesc>
+          </category>
+          <category xml:id="patronage_poetry">
+            <catDesc>Patronage poem</catDesc>
+          </category>
+          <category xml:id="journey_poem">
+            <catDesc>Journey poem</catDesc>
+          </category>
+          <category xml:id="travel_poem">
+            <catDesc>Travel poem</catDesc>
+          </category>
+          <category xml:id="sea_voyage_poem">
+            <catDesc>Sea-voyage poem</catDesc>
+          </category>
+          <category xml:id="pastoral">
+            <catDesc>Pastoral poem</catDesc>
+          </category>
+          <category xml:id="narrative_poem">
+            <catDesc>Narrative poem</catDesc>
+          </category>
+          <category xml:id="song">
+            <catDesc>Song</catDesc>
+          </category>
+          <category xml:id="ballad">
+            <catDesc>Ballad</catDesc>
+          </category>
+          <category xml:id="joke_poem">
+            <catDesc>Joke poem</catDesc>
+          </category>
+          <category xml:id="riddle_poem">
+            <catDesc>Riddle poem</catDesc>
+          </category>
+          <category xml:id="macaronic_verse">
+            <catDesc>Macaronic verse</catDesc>
+          </category>
+          <category xml:id="dream_poem">
+            <catDesc>Dream poem</catDesc>
+          </category>
+          <category xml:id="translation">
+            <catDesc>Translation</catDesc>
+          </category>
+          <category xml:id="adaptation">
+            <catDesc>Adaptation</catDesc>
+          </category>
+          <category xml:id="imitation">
+            <catDesc>Imitation</catDesc>
+          </category>
+          <category xml:id="competitive_poetry">
+            <catDesc>Competitive verse</catDesc>
+          </category>
+          <category xml:id="inscriptional_verse">
+            <catDesc>Inscriptional verse</catDesc>
+          </category>
+          <category xml:id="ring_posy">
+            <catDesc>Ring posy</catDesc>
+          </category>
+          <category xml:id="macaronic">
+            <catDesc>Macaronic verse</catDesc>
+            <!-- Latin and English or other language mingled  -->
+          </category>
+        </taxonomy>
+
+        <taxonomy xml:id="function">
+          <desc>Rhetorical force, tone, or what the poem is doing.</desc>
+          <category xml:id="praise">
+            <catDesc>Praise</catDesc>
+          </category>
+          <category xml:id="lament">
+            <catDesc>Lament</catDesc>
+          </category>
+          <category xml:id="attack">
+            <catDesc>Attack</catDesc>
+          </category>
+          <category xml:id="satirical_attack">
+            <catDesc>Satirical attack</catDesc>
+          </category>
+          <category xml:id="comic">
+            <catDesc>Comic</catDesc>
+          </category>
+          <category xml:id="serious">
+            <catDesc>Serious</catDesc>
+          </category>
+          <category xml:id="exhortation">
+            <catDesc>Exhortation</catDesc>
+          </category>
+          <category xml:id="admonition">
+            <catDesc>Admonition</catDesc>
+          </category>
+          <category xml:id="rebuke">
+            <catDesc>Rebuke</catDesc>
+          </category>
+          <category xml:id="warning">
+            <catDesc>Warning</catDesc>
+          </category>
+          <category xml:id="petition">
+            <catDesc>Petition</catDesc>
+          </category>
+          <category xml:id="prayer">
+            <catDesc>Prayer</catDesc>
+          </category>
+          <category xml:id="thanks">
+            <catDesc>Thanks</catDesc>
+          </category>
+          <category xml:id="congratulation">
+            <catDesc>Congratulation</catDesc>
+          </category>
+          <category xml:id="consolation">
+            <catDesc>Consolation</catDesc>
+          </category>
+          <category xml:id="celebration">
+            <catDesc>Celebration</catDesc>
+          </category>
+          <category xml:id="complaint">
+            <catDesc>Complaint</catDesc>
+          </category>
+          <category xml:id="persuasion">
+            <catDesc>Persuasion</catDesc>
+          </category>
+          <category xml:id="polemic">
+            <catDesc>Polemical</catDesc>
+          </category>
+          <category xml:id="devotional">
+            <catDesc>Devotional</catDesc>
+          </category>
+          <category xml:id="didactic">
+            <catDesc>Didactic</catDesc>
+          </category>
+          <category xml:id="ironic">
+            <catDesc>Irony</catDesc>
+          </category>
+          <category xml:id="libellous">
+            <catDesc>Libellous</catDesc>
+          </category>
+          <category xml:id="blame">
+            <catDesc>Blame</catDesc>
+          </category>
+        </taxonomy>
+
+        <taxonomy xml:id="topic">
+          <desc>Subject matter or aboutness.</desc>
+
+          <category xml:id="death">
+            <catDesc>Death</catDesc>
+          </category>
+
+          <category xml:id="marriage">
+            <catDesc>Marriage</catDesc>
+          </category>
+
+          <category xml:id="birth">
+            <catDesc>Birth</catDesc>
+          </category>
+
+          <category xml:id="love">
+            <catDesc>Love</catDesc>
+          </category>
+
+          <category xml:id="sex">
+            <catDesc>Sex</catDesc>
+          </category>
+
+          <category xml:id="female_subjectivity">
+            <catDesc>Female subjectivity</catDesc>
+          </category>
+
+          <category xml:id="female_desire">
+            <catDesc>Female desire</catDesc>
+          </category>
+
+          <category xml:id="friendship">
+            <catDesc>Friendship</catDesc>
+          </category>
+
+          <category xml:id="monarchy">
+            <catDesc>Monarchy and kingship</catDesc>
+          </category>
+
+          <category xml:id="court">
+            <catDesc>Court and patronage</catDesc>
+          </category>
+
+          <category xml:id="religion">
+            <catDesc>Religion</catDesc>
+          </category>
+
+          <category xml:id="controversy">
+            <catDesc>Religious controversy</catDesc>
+          </category>
+
+          <category xml:id="anti_catholicism">
+            <catDesc>Anti-Catholicism</catDesc>
+          </category>
+
+          <category xml:id="protestantism">
+            <catDesc>Protestantism</catDesc>
+          </category>
+
+          <category xml:id="politics">
+            <catDesc>Politics</catDesc>
+          </category>
+
+          <category xml:id="war">
+            <catDesc>War and conflict</catDesc>
+          </category>
+
+          <category xml:id="travel">
+            <catDesc>Travel</catDesc>
+          </category>
+
+          <category xml:id="journey">
+            <catDesc>Journey</catDesc>
+          </category>
+
+          <category xml:id="sea_voyage">
+            <catDesc>Sea voyage</catDesc>
+          </category>
+
+          <category xml:id="departure">
+            <catDesc>Departure</catDesc>
+          </category>
+
+          <category xml:id="return">
+            <catDesc>Return</catDesc>
+          </category>
+
+          <category xml:id="academic_life">
+            <catDesc>Academic life</catDesc>
+          </category>
+
+          <category xml:id="university">
+            <catDesc>University</catDesc>
+          </category>
+
+          <category xml:id="inns_of_court">
+            <catDesc>Inns of Court</catDesc>
+          </category>
+
+          <category xml:id="school">
+            <catDesc>School</catDesc>
+          </category>
+
+          <category xml:id="ambassadorial_household">
+            <catDesc>Ambassadorial household</catDesc>
+          </category>
+
+          <category xml:id="tavern">
+            <catDesc>Tavern</catDesc>
+          </category>
+
+          <category xml:id="inn">
+            <catDesc>Inn</catDesc>
+          </category>
+
+          <category xml:id="ship">
+            <catDesc>Ship</catDesc>
+          </category>
+
+          <category xml:id="playhouse">
+            <catDesc>Playhouse</catDesc>
+          </category>
+
+          <category xml:id="royal_visit">
+            <catDesc>Royal visit</catDesc>
+          </category>
+
+          <category xml:id="royal_entry">
+            <catDesc>Royal entry</catDesc>
+          </category>
+
+          <category xml:id="accession_day">
+            <catDesc>Accession day</catDesc>
+          </category>
+
+          <category xml:id="joust">
+            <catDesc>Joust</catDesc>
+          </category>
+
+          <category xml:id="gift_giving">
+            <catDesc>Gift-giving</catDesc>
+          </category>
+
+          <category xml:id="learning">
+            <catDesc>Learning and scholarship</catDesc>
+          </category>
+          <category xml:id="class">
+            <catDesc>Class and social hierarchy</catDesc>
+          </category>
+          <category xml:id="ethnicity">
+            <catDesc>Ethnicity and national identity</catDesc>
+          </category>
+          <category xml:id="urban_life">
+            <catDesc>Urban life</catDesc>
+          </category>
+          <category xml:id="rural_life">
+            <catDesc>Rural life</catDesc>
+          </category>
+          <category xml:id="disease">
+            <catDesc>Disease</catDesc>
+          </category>
+          <category xml:id="sexual_misconduct">
+            <catDesc>Sexual misconduct</catDesc>
+          </category>
+          <category xml:id="patronage">
+            <catDesc>Patronage</catDesc>
+          </category>
+          <category xml:id="praise_of_woman">
+            <catDesc>Praise of a woman</catDesc>
+          </category>
+          <category xml:id="libel_target">
+            <catDesc>Identifiable target of libel</catDesc>
+          </category>
+        </taxonomy>
+
+        <taxonomy xml:id="form_features">
+          <desc>Formal or rhetorical features that are not stable genres.</desc>
+          <category xml:id="acrostic">
+            <catDesc>Acrostic</catDesc>
+            <!-- in acrostic verses, the first letter of each line forms a name or message; e.g. in Luctus posthumus (1612) on the death of Prince Henry, the initial letters of each line spell out PRINCEPS, while the last letters form Henricus -->
+          </category>
+          <category xml:id="anagram">
+            <catDesc>Anagram</catDesc>
+          </category>
+          <category xml:id="latticed">
+            <catDesc>Latticed</catDesc>
+            <!-- Latticed or Tesselated verses where the words of the poem can be read downwards, as well as across -->
+          </category>
+          <category xml:id="figure_poem">
+            <catDesc>Figure poem</catDesc>
+            <!-- figure poems in the shape of an altar, an egg, a pair of wings; according to Binns (p. 51)  Richard Wills was only the second English poet ... to compose figure poems. Found in University memorial collections of verse e.g. one on death of Sir Philip Sydney. Not found much in ms? -->
+          </category>
+          <category xml:id="enigma">
+            <catDesc>Enigma / riddle</catDesc>
+          </category>
+          <category xml:id="versus_rapportati">
+            <catDesc>Versus rapportati</catDesc>
+            <!-- similarly constructed clauses are broken up and dovetailed together in a new rod order; also called carmen correlativum -->
+          </category>
+          <category xml:id="echo_verses">
+            <catDesc>Echo verses</catDesc>
+          </category>
+          <category xml:id="answer_poem">
+            <catDesc>Answer poem</catDesc>
+          </category>
+          <category xml:id="double_reading">
+            <catDesc>Double reading</catDesc>
+            <!-- Carmen reciprocum, a poem with directly opposite meanings when read backwards and forwards -->
+          </category>
+          <category xml:id="palinode">
+            <catDesc>Palinode / recantation</catDesc>
+          </category>
+          <category xml:id="prosopopoeia">
+            <catDesc>Prosopopoeia</catDesc>
+          </category>
+          <category xml:id="apostrophe">
+            <catDesc>Apostrophe</catDesc>
+          </category>
+          <category xml:id="amoebaean">
+            <catDesc>Amoebaean / responsive verse</catDesc>
+          </category>
+          <category xml:id="fescennine">
+            <catDesc>Fescennine / obscene jocularity</catDesc>
+          </category>
+        </taxonomy>
+
+        <taxonomy xml:id="social_relation">
+          <desc>Social directionality or target relation, especially useful for satire and
+            libel.</desc>
+          <category xml:id="horizontal_satire">
+            <catDesc>Horizontal satire</catDesc>
+          </category>
+          <category xml:id="vertical_satire">
+            <catDesc>Vertical satire</catDesc>
+          </category>
+          <category xml:id="punching_up">
+            <catDesc>Punching up: Target is a social superior</catDesc>
+          </category>
+          <category xml:id="punching_down">
+            <catDesc>Punching down: Target is a social inferior</catDesc>
+          </category>
+          <category xml:id="collective_target">
+            <catDesc>Collective target</catDesc>
+          </category>
+          <category xml:id="praise_via_contrast">
+            <catDesc>Praise via contrast with others</catDesc>
+          </category>
+
+        </taxonomy>
+
+        <taxonomy xml:id="latin_source_genres">
+          <desc>Latin genre terms</desc>
+
+          <category xml:id="epicedium">
+            <catDesc>Funeral poem (epicedium)</catDesc>
+          </category>
+          <category xml:id="amores">
+            <catDesc>Love poems/elegies</catDesc>
+          </category>
+          <category xml:id="epitaphium">
+            <catDesc>Epitaph (epitaphium)</catDesc>
+          </category>
+          <category xml:id="epithalamium">
+            <catDesc>Marriage poem (epithalamium)</catDesc>
+            <!-- wedding songs in varous metres -->
+          </category>
+          <category xml:id="genethliakon">
+
+            <catDesc>Birth poem (genethliakon)</catDesc>
+          </category>
+          <category xml:id="panegyric">
+            <catDesc>Panegyric</catDesc>
+            <!-- an encomiastic poem ususlly addressed to the assembled multitude -->
+          </category>
+          <category xml:id="paedeuterion">
+            <catDesc>Thanks to teacher (paedeuterion)</catDesc>
+            <!-- in which thanks are expressed to the teacher for the instruction given -->
+          </category>
+          <category xml:id="eucharisticon">
+            <catDesc>Thanksgiving poem (eucharisticon)</catDesc>
+            <!-- a poem which contains expressions of thanks (actiones gratiarum); closely akin gto the Latin 'Gratulatio' -->
+          </category>
+
+          <category xml:id="encomion">
+            <catDesc>Praise poem (encomion)</catDesc>
+            <!-- Encomiasticon, Encomion, Epaeneticon, genres which rehearse praise -->
+          </category>
+
+          <category xml:id="Symbuleuticon">
+            <catDesc>Debate poem</catDesc>
+            <!--  a deliberative poem which debates issues (e.g. Should war be declared?) -->
+          </category>
+
+          <category xml:id="apobaterion">
+            <catDesc>Departure poem (apobaterion)</catDesc>
+            <!-- uttered by departing travellers -->
+          </category>
+          <category xml:id="epibaterion">
+            <catDesc>Return poem (epibaterion)</catDesc>
+            <!-- a traveller's return to his native land after a long absense is celebrated -->
+          </category>
+          <category xml:id="symbuleuticon">
+            <catDesc>Deliberative poem (symbuleuticon)</catDesc>
+          </category>
+          <category xml:id="protreptic">
+            <catDesc>Exhortatory poem (protreptic)</catDesc>
+            <!-- protreptic, or exhortation to seek virtue and wisdom -->
+          </category>
+
+          <category xml:id="proseucticon">
+            <catDesc>Petitionary prayer poem (proseucticon)</catDesc>
+            <!-- Proseucticon, containing a petition for something to be done; similar to the Eucticon, a poem expressing a prayer of wish -->
+          </category>
+          <category xml:id="eucticon">
+            <catDesc>Poem expresing a prayer or wish (eucticon)</catDesc>
+          </category>
+
+          <category xml:id="apeucticon">
+            <catDesc>Negative petition poem (apeucticon)</catDesc>
+            <!-- asking that something should not be done -->
+          </category>
+
+          <category xml:id="soteria">
+            <catDesc>Deliverance poem (soteria)</catDesc>
+            <!-- a poem celebrating the safe return of a leader or army, or restoration to health of a friend or relative e.g. the Oxford anthology on the recovery from illness of King Charles I  -->
+          </category>
+
+          <category xml:id="eroticon">
+            <catDesc>Love poem (eroticon)</catDesc>
+            <!-- a poem declaring one's love -->
+          </category>
+          <category xml:id="propempticon">
+            <catDesc>Farewell poem for a traveller (propempticon)</catDesc>
+          </category>
+          <category xml:id="apopempticon">
+            <catDesc>Pilgrimage poem (apopempticon)</catDesc>
+          </category>
+          <category xml:id="hodoeporicon">
+            <catDesc>Journey poem (hodoeporicon)</catDesc>
+          </category>
+          <category xml:id="amoebaean_verse">
+            <catDesc>Responsive / amoebaean verse</catDesc>
+          </category>
+          <category xml:id="cinaedic_verse">
+            <catDesc>Obscene or licentious verse (cinaedic / fescennine)</catDesc>
+          </category>
+          <category xml:id="dirae">
+            <catDesc>Curse poem (dirae)</catDesc>
+          </category>
+          <category xml:id="mimus">
+            <catDesc>Comic dramatic piece (mimus)</catDesc>
+          </category>
+          <category xml:id="palinode_latin">
+            <catDesc>Recantation poem (palinode)</catDesc>
+          </category>
+          <category xml:id="dithyramb">
+            <catDesc>Bacchic hymn (dithyramb)</catDesc>
+          </category>
+          <category xml:id="triumph_poem">
+            <catDesc>Victory poem (triumph poem / thriambeuticon)</catDesc>
+          </category>
+          <category xml:id="prosphonetikon">
+            <catDesc>Welcome poem (prosphonetikon)</catDesc>
+          </category>
+          <category xml:id="prosopopoeia_latin">
+            <catDesc>Persona speech (prosopopoeia)</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+  </teiHeader>
+
+  <text>
+    <body>
+      <p>Working file for controlled tagging of early modern manuscript poems.</p>
+    </body>
+  </text>
+</TEI>
