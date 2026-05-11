@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="first_line">Tis not yet May, nor yet are April showers</title>
+            <respStmt>
+               <resp>attributed author</resp>
+               <name ref="../persons/persons.xml#P0001">Ri: Cole</name>
+            </respStmt>
+            <respStmt>
+               <resp>TEI encoding</resp>
+               <name>Jessica Edmondes</name>
+            </respStmt>
+            <respStmt xml:id="aiSummary">
+               <resp>Summary generated with AI assistance</resp>
+               <name>ChatGPT (OpenAI, GPT-5.3)</name>
+            </respStmt>
+         </titleStmt>
+
+
+         <publicationStmt>
+            <publisher>Rare or Unique Poems from manuscripts, 1500–1660 (RUP)</publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">This allows you to
+                  use our transcriptions without additional permission provided that you cite the
+                  RUP Project as the source and that you license anything you create using the
+                  transcriptions under the same or equivalent license.</licence>
+            </availability>
+            <date when="2026">2026</date>
+         </publicationStmt>
+
+         <sourceDesc>
+            <msDesc xml:id="folger_va103_1">
+               <msIdentifier>
+                  <repository>Folger Shakespeare Library</repository>
+                  <idno type="shelfmark">V.a.103.1</idno>
+                  <altIdentifier type="resource">
+                     <idno type="URI">https://catalog.folger.edu/record/224059</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem>
+                     <locus from="2v" to="3r">2v-3r</locus>
+                     <incipit>Tis not yet May, nor yet are April showers <ref
+                           target="https://firstlines.folger.edu/detail.php?id=33930">Folger First
+                           Line Index</ref></incipit>
+                  </msItem>
+               </msContents>
+            </msDesc>
+
+            <listWit>
+               <witness xml:id="wit_bod_eng_poet_e_14">Bodleian Libraries, Eng. poet. e. 14 <locus
+                     from="100r" to="100r">100 rev</locus><ref
+                     target="https://firstlines.folger.edu/detail.php?id=83796">Folger First Line
+                     Index</ref>
+               </witness>
+            </listWit>
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="eng">English</language>
+         </langUsage>
+         <textClass>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#genre" target="#elegy"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#function" target="#lament"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#function" target="#praise"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#topic" target="#death"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#topic" target="#monarchy"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#compiler_identified_genre"
+               target="#laudatory_epitaphs"/>
+         </textClass>
+
+         <abstract resp="#aiSummary">
+            <p>This elegy on the death of Queen Anne describes how the season appears to have turned
+               to spring too early, with flowers blooming as if it were May rather than March. It
+               then makes clear that it is still March, and accounts for the premature season
+               through a conceit in which the earth takes the mourners’ tears for the showers that
+               bring about spring. This is followed by a contrasting idea, in which the earth,
+               described “masking in green,” appears to reject or counter human mourning in black.
+               The poem then rejects these explanations and redefines Anne, the “flower of queens”,
+               as the “queen of flowers,” so that the birds are imagined as singing to her. In the
+               final lines, this is qualified: if the birds understood human grief, they would say
+               that her “too soon” death has made a “too soon” spring; continued cries and tears,
+               again figured as showers, are expected to mar their song and drown the flowers.</p>
+         </abstract>
+
+         <creation>
+            <date notBefore="1619-03-02">after 2 March 1619</date>
+         </creation>
+      </profileDesc>
+
+      <encodingDesc>
+         <projectDesc>
+            <p>This e-text is part of the Works section of the Rare or Unique Poems from
+               manuscripts, 1500–1660 (RUP) Database</p>
+            <p>Encoding conventions: TEI P5; semi-diplomatic transcription etc.</p>
+            <p><address>
+                  <addrLine>
+                     <ref target="https://rup.hypotheses.org/">RUP website</ref>
+                  </addrLine>
+               </address></p>
+         </projectDesc>
+
+         <editorialDecl>
+            <p>Transcriptions are semi-diplomatic and based on a single manuscript witness. Original
+               punctuation is retained. Letterforms are modernized for u/v and i/j, and majuscule
+               "F" is used in place of "ff". Abbreviations and brevigraphs are expanded, with
+               supplied letters italicized, except for the ampersand. Regularization is applied
+               where it clarifies meaning, using &lt;choice&gt;, &lt;orig&gt;, and &lt;reg&gt;.
+               However, we do not attempt to exactly mirror the layout of the page, nor are we able
+               to reproduce every brevigraph (symbols, strokes, or modified letter forms), mark of
+               punctuation, or symbol accurately.</p>
+
+            <p>Poem summary generated with the assistance of ChatGPT and reviewed by the
+               encoder.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+
+   <text>
+      <body>
+
+         <pb n="2v"/>
+
+         <div type="poem" xml:id="rup_000002">
+            <head>
+               <lb/><app>
+                  <lem>On <persName ref="../persons/persons.xml#P0002">the same</persName> who died
+                     March <subst>
+                        <del>1</del>
+                        <add cert="medium" place="inline">2</add>
+                     </subst></lem>
+                  <rdg wit="#wit_bod_eng_poet_e_14">In Eandem</rdg>
+               </app>
+            </head>
+
+            <fw type="attribution" place="margin"><app>
+                  <lem><persName ref="../persons/persons.xml#P0001">Ri: Cole</persName>
+                  </lem>
+                  <rdg wit="#wit_bod_eng_poet_e_14">
+                     <persName ref="../persons/persons.xml#P0001">Idem</persName>
+                  </rdg>
+               </app></fw>
+
+
+            <lg type="couplets">
+               <l n="1">Tis not yet may, nor yet are Aprill showrs,</l>
+               <l n="2">And wee admire the Springs so early prime;</l>
+               <l n="3">And cause wee see in feilds the smiling flowers,</l>
+               <l n="4">Write Month of May, two months befor the time:</l>
+               <l n="5" rend="indent">But windy March still rounds it in our eares</l>
+               <l n="6" rend="indent">That earth is <choice>
+                     <orig>suer</orig>
+                     <reg>sure</reg>
+                  </choice> mistaken in our teares</l>
+
+               <l n="7">Yea rather proude of our illustrious <persName
+                     ref="../persons/persons.xml#P0002">Queene</persName></l>
+               <l n="8">(Whom wee alas no longer time can keepe)</l>
+               <l n="9">And cause wee morne in blacke <choice>
+                     <orig>wee</orig>
+                     <corr>will</corr>
+                  </choice> maske in greene,</l>
+               <l n="10">And smile the while shee sees us <subst>
+                     <del><unclear reason="overwritten"/></del>
+                     <add>throobb</add>
+                  </subst> and weepe.</l>
+               <l n="11" rend="indent">Or if not soe no<subst>
+                     <del>t</del>
+                     <add>r</add>
+                  </subst> teares are tooke for showers</l>
+               <l n="12" rend="indent">The Flower of Queens is then the Queene of Flowers.</l>
+               <pb n="3r"/>
+               <l n="13">Faire Queene of Flowers to thee <add place="above">the</add> birds do
+                  sing;</l>
+               <l n="14">But did they know <del rend="strikethrough">their</del> our greifs would
+                  weeping say</l>
+               <l n="15">Thy too soone ashes <app>
+                     <lem>makes</lem>
+                     <rdg wit="#wit_bod_eng_poet_e_14">make</rdg>
+                  </app> too soone a Spring,</l>
+               <l n="16">Befor the month of Aprill and of May:</l>
+               <l n="17" rend="indent">For e<del rend="strikethrough">a</del>r'e may <app>
+                     <lem>comes</lem>
+                     <rdg wit="#wit_bod_eng_poet_e_14">come</rdg>
+                  </app>, our Cries, Teares Aprill showers</l>
+               <l n="18" rend="indent">Will marr their tunes, and drowne the smiling flowers.</l>
+            </lg>
+         </div>
+      </body>
+
+      <back>
+         <div type="historical" xml:lang="en">
+            <head>Historical context and dating</head>
+            <p>Anne of Denmark, queen consort of James I, died unexpectedly on 2 March 1619 at
+               Hampton Court after a period of ill health. Her death prompted a wave of elegiac
+               writing that, while less intense than that following the death of her son, Prince
+               Henry, nonetheless reflects broader national anxieties and the developing conventions
+               of mourning royal figures in the early Stuart period.(<ref
+                  target="#doelman_royal_deaths">Doelman 2016</ref>)</p>
+         </div>
+
+         <div type="notes" xml:lang="en">
+            <head> Notes </head>
+            <p> See also <ref target="rup_000001"> another elegy on Anne of Denmark</ref>,
+               attributed to the same author. </p>
+         </div>
+
+         <listBibl>
+            <head>Works cited</head>
+            <bibl xml:id="doelman_royal_deaths">
+               <author>Doelman, James</author>. <title>The Daring Muse of the Early Stuart Funeral
+                  Elegy</title>. <publisher>Manchester University Press</publisher>, <date
+                  when="2016">2016</date>. </bibl>
+         </listBibl>
+
+      </back>
+   </text>
+</TEI>

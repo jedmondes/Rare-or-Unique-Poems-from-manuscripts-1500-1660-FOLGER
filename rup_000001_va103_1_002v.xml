@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="first_line">Great Apollo god divine</title>
+            <respStmt>
+               <resp>attributed author</resp>
+               <name ref="../persons/persons.xml#P0001">Richard Cole</name>
+            </respStmt>
+            <respStmt>
+               <resp>TEI encoding</resp>
+               <name>Jessica Edmondes</name>
+            </respStmt>
+            <respStmt xml:id="aiSummary">
+               <resp>Summary generated with AI assistance</resp>
+               <name>ChatGPT (OpenAI, GPT-5.3)</name>
+            </respStmt>
+         </titleStmt>
+
+
+         <publicationStmt>
+            <publisher>Rare or Unique Poems from manuscripts, 1500–1660 (RUP)</publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">This allows you to
+                  use our transcriptions without additional permission provided that you cite the
+                  RUP Project as the source and that you license anything you create using the
+                  transcriptions under the same or equivalent license.</licence>
+            </availability>
+            <date when="2026">2026</date>
+         </publicationStmt>
+
+         <sourceDesc>
+            <msDesc xml:id="folger_va103_1">
+               <msIdentifier>
+                  <repository>Folger Shakespeare Library</repository>
+                  <idno type="shelfmark">V.a.103.1</idno>
+                  <altIdentifier type="resource">
+                     <idno type="URI">https://catalog.folger.edu/record/224059</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem>
+                     <locus from="2v" to="2v">2v</locus>
+                     <incipit>Great Apollo god divine <ref
+                           target="https://firstlines.folger.edu/detail.php?id=33931">Folger First
+                           Line Index</ref></incipit>
+                  </msItem>
+               </msContents>
+            </msDesc>
+
+            <listWit>
+               <witness xml:id="wit_bod_eng_poet_e_14">Bodleian Libraries, Eng. poet. e. 14 <locus
+                     from="100r" to="100r">100 rev</locus>
+                  <ref target="https://firstlines.folger.edu/detail.php?id=67867">Folger First Line
+                     Index</ref>
+               </witness>
+            </listWit>
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="eng">English</language>
+         </langUsage>
+         <textClass>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#genre" target="#elegy"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#function" target="#lament"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#function" target="#praise"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#topic" target="#death"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#topic" target="#monarchy"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#poetic_context" target="#funeral"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#compiler_identified_genre"
+               target="#laudatory_epitaphs"/>
+         </textClass>
+
+         <abstract resp="#aiSummary">
+            <p>This short elegy on the death of Queen Anne is framed as an appeal to Apollo (god of
+               poetry). The speaker asks Apollo for inspiration to write even a single verse worthy
+               of the queen’s death. He then elevates her importance by suggesting that if the
+               Graces and the Muses themselves were dead and buried, they could be reborn
+               “phoenix-like” from her ashes.</p>
+         </abstract>
+
+         <creation>
+            <date notBefore="1619-03-02">after 2 March 1619</date>
+         </creation>
+      </profileDesc>
+
+      <encodingDesc>
+         <projectDesc>
+            <p>This e-text is part of the Works section of the Rare or Unique Poems from
+               manuscripts, 1500–1660 (RUP) Database</p>
+            <p>Encoding conventions: TEI P5; semi-diplomatic transcription etc.</p>
+            <p><address>
+                  <addrLine>
+                     <ref target="https://rup.hypotheses.org/">RUP website</ref>
+                  </addrLine>
+               </address></p>
+         </projectDesc>
+
+         <editorialDecl>
+            <p>Transcriptions are semi-diplomatic and based on a single manuscript witness. Original
+               punctuation is retained. Letterforms are modernized for u/v and i/j, and majuscule
+               "F" is used in place of "ff". Abbreviations and brevigraphs are expanded, with
+               supplied letters italicized, except for the ampersand. Regularization is applied
+               where it clarifies meaning, using &lt;choice&gt;, &lt;orig&gt;, and &lt;reg&gt;.
+               However, we do not attempt to exactly mirror the layout of the page, nor are we able
+               to reproduce every brevigraph (symbols, strokes, or modified letter forms), mark of
+               punctuation, or symbol accurately.</p>
+
+            <p>Poem summary generated with the assistance of ChatGPT and reviewed by the
+               encoder.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+
+   <text>
+      <body>
+
+         <pb n="2v"/>
+
+         <div type="poem" xml:id="rup_000001">
+
+            <head>
+               <app>
+                  <lem>On the death of <persName ref="../persons/persons.xml#P0002">Queene
+                        Anne</persName></lem>
+                  <rdg wit="#wit_bod_eng_poet_e_14">On the death of <persName
+                        ref="../persons/persons.xml#P0002">Queene Anne</persName> Mar: 1. 1618</rdg>
+               </app>
+               <lb/>
+            </head>
+
+
+            <fw type="attribution" place="margin"><app>
+                  <lem><persName ref="../persons/persons.xml#P0001">Richard Cole</persName> of
+                        <orgName>Kinges Coll in Cambridge</orgName></lem>
+                  <rdg wit="#wit_bod_eng_poet_e_14">
+                     <persName ref="../persons/persons.xml#P0001">R. Cole</persName>: of
+                        <orgName>Kings Col: Cambr:</orgName>
+                  </rdg>
+               </app></fw>
+            <lg type="couplets">
+               <l n="1">Great Apollo, God devine</l>
+               <l n="2">Of Graces three, And Muses nine</l>
+               <l n="3">Gentle daine mee one poore verse</l>
+               <l n="4">To pinne upon this Sacred Herse;</l>
+               <l n="5">For if Graces three were dead</l>
+               <l n="6">And the Muses buried</l>
+               <l n="7">From these ashes might ascend</l>
+               <l n="8">Phoenix like, who might attend</l>
+               <l n="9" rend="indent">Thee Apollo God devine</l>
+               <l n="10" rend="indent">Graces three and Muses nine.</l>
+            </lg>
+         </div>
+      </body>
+
+      <back>
+         <div type="historical" xml:lang="en">
+            <head>Historical context and dating</head>
+            <p>Anne of Denmark, queen consort of James I, died unexpectedly on 2 March 1619 at
+               Hampton Court after a period of ill health. Her death prompted a wave of elegiac
+               writing that, while less intense than that following the death of her son, Prince
+               Henry, nonetheless reflects broader national anxieties and the developing conventions
+               of mourning royal figures in the early Stuart period.(<ref
+                  target="#doelman_royal_deaths">Doelman 2016</ref>)</p>
+         </div>
+
+         <div type="notes" xml:lang="en">
+            <head> Notes </head>
+            <p> See also <ref target="rup_000002"> another elegy on Anne of Denmark</ref>,
+               attributed to the same author.</p>
+         </div>
+
+         <listBibl>
+            <head>Works cited</head>
+            <bibl xml:id="doelman_royal_deaths">
+               <author>Doelman, James</author>. <title>The Daring Muse of the Early Stuart Funeral
+                  Elegy</title>. <publisher>Manchester University Press</publisher>, <date
+                  when="2016">2016</date>. </bibl>
+         </listBibl>
+
+      </back>
+   </text>
+</TEI>

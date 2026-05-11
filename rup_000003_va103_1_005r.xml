@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="first_line">Stay stranger know if good thou be</title>
+
+            <respStmt>
+               <resp>attributed author</resp>
+               <name ref="../persons/persons.xml#P0003">Sir Richarads Anderson</name>
+            </respStmt>
+
+            <respStmt>
+               <resp>TEI encoding</resp>
+               <name>Jessica Edmondes</name>
+            </respStmt>
+
+            <respStmt xml:id="aiSummary">
+               <resp>Summary generated with AI assistance</resp>
+               <name>ChatGPT (OpenAI, GPT-5.3)</name>
+            </respStmt>
+         </titleStmt>
+
+
+         <publicationStmt>
+            <publisher>Rare or Unique Poems from manuscripts, 1500–1660 (RUP)</publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">This allows you to
+                  use our transcriptions without additional permission provided that you cite the
+                  RUP Project as the source and that you license anything you create using the
+                  transcriptions under the same or equivalent license.</licence>
+            </availability>
+            <date when="2026">2026</date>
+         </publicationStmt>
+
+         <sourceDesc>
+            <msDesc xml:id="folger_va103_1">
+               <msIdentifier>
+                  <repository>Folger Shakespeare Library</repository>
+                  <idno type="shelfmark">V.a.103.1</idno>
+                  <altIdentifier type="resource">
+                     <idno type="URI">https://catalog.folger.edu/record/224059</idno>
+                  </altIdentifier>
+               </msIdentifier>
+
+               <msContents>
+                  <msItem>
+                     <locus from="5r" to="5r">5r</locus>
+                     <incipit>Stay stranger know if good thou be <ref
+                           target="https://firstlines.folger.edu/detail.php?id=32320">Folger First
+                           Line Index</ref></incipit>
+                  </msItem>
+               </msContents>
+
+            </msDesc>
+            <listWit>
+               <witness xml:id="wit_bod_eng_poet_e_14">Bodleian Libraries, Eng. poet. e. 14 <locus
+                     from="97r" to="97r">97 rev</locus>
+                  <ref target="https://firstlines.folger.edu/detail.php?id=80116">Folger First Line
+                     Index</ref>
+               </witness>
+            </listWit>
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="eng">English</language>
+         </langUsage>
+         <textClass>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#genre" target="#epitaph"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#function" target="#praise"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#topic" target="#death"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#form_features" target="#latin_tag"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#compiler_identified_genre"
+               target="#laudatory_epitaphs"/>
+         </textClass>
+
+         <abstract resp="#aiSummary">
+            <p>This epitaph commemorates the death of the speaker’s “sister,” the Lady Vayne, and
+               addresses a passing stranger. The poem argues that souls (not bodies) define
+               true kinship, and that goodness is what makes souls related. Because she was
+               virtuous, her soul has already received its reward in heaven, while the living are
+               still striving toward it. She now joins the heavenly choir, enjoying what others can
+               only hope for. The speaker ends by urging the reader that, if they are also good,
+               they should pray that their soul may join hers. The Latin line means something like
+               “May it be granted to me to live and die in this way.”</p>
+         </abstract>
+
+         <creation>
+            <date when="1618">late 1618 (burial, 19 Nov)</date>
+         </creation>
+      </profileDesc>
+
+      <encodingDesc>
+         <projectDesc>
+            <p>This e-text is part of the Works section of the Rare or Unique Poems from
+               manuscripts, 1500–1660 (RUP) Database</p>
+            <p>Encoding conventions: TEI P5; semi-diplomatic transcription etc.</p>
+            <p><address>
+                  <addrLine>
+                     <ref target="https://rup.hypotheses.org/">RUP website</ref>
+                  </addrLine>
+               </address></p>
+         </projectDesc>
+
+         <editorialDecl>
+            <p>Transcriptions are semi-diplomatic, based on on a single manuscript witness. Original
+               punctuation is retained. Letterforms are modernized for u/v and i/j, and majuscule
+               "F" is used in place of "ff". Abbreviations and brevigraphs are expanded, with
+               supplied letters italicized, except for the ampersand. Regularization is applied
+               where it clarifies meaning, using &lt;choice&gt;, &lt;orig&gt;, and &lt;reg&gt;.
+               However, we do not attempt to exactly mirror the layout of the page, nor are we able
+               to reproduce every brevigraph (symbols, strokes, or modified letter forms), mark of
+               punctuation, or symbol accurately.</p>
+
+            <p>Poem summary generated with the assistance of ChatGPT and reviewed by the
+               encoder.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+
+   <text>
+
+      <body>
+
+         <pb n="5r"/>
+
+         <div type="poem" xml:id="rup_000003">
+            <head>
+               <lb/><app>
+                  <lem><persName ref="../persons/persons.xml#P0003">Sir Richarads
+                        Anderson</persName> his Epitaph on the death <lb/>of his Sister the
+                        <persName ref="../persons/persons.xml#P0004">Lady Vayne</persName></lem>
+                  <rdg wit="#wit_bod_eng_poet_e_14">Sir R. Anderson's Epitaph upon his sister the L.
+                     Vayne</rdg>
+               </app>
+            </head>
+
+            <lg type="couplets">
+               <l n="1">Stay strainger know if good thou bee, <del type="strikethrough">he</del></l>
+               <l n="2">Heers <del type="strikethrough">one</del> buried one neere kinne to
+                  thee;</l>
+               <l n="3">Soules worthier then our bodies bin,</l>
+               <l n="4">And goodness ‘tis mak’s soules of kinne:</l>
+               <l n="5">Good soules have all one end and scope,</l>
+               <l n="6">And hers injoyes what ours but hope.</l>
+               <l n="7">Goodnes hath there its meerite found;</l>
+               <l n="8">So whylst wee fight, her soule is crowned:</l>
+               <l n="9">And singes forth Hymns in that blest quire</l>
+               <l n="10">To which all good soules doe aspire.</l>
+               <l n="11" rend="indent">Goe strainger now if good thou art,</l>
+               <l n="12" rend="indent">Pray thine wit<ex>h</ex> hers may beare a parte.</l>
+               <trailer type="motto"><foreign>Sic mihi contingat vivere sicq<ex>ue</ex>
+                     mori</foreign></trailer>
+            </lg>
+
+         </div>
+
+      </body>
+
+
+      <back>
+         <div type="historical" xml:lang="en">
+            <head>Historical context and dating</head>
+
+            <p>Elizabeth Spencer (christened 30 November 1589), commemorated in this epitaph as
+               “Lady Vayne” (or Fane), was the daughter of Robert Spencer, 1st Baron Spencer of
+               Wormleighton. She was the sister of <persName ref="../persons/persons.xml#P0006">Mary
+                  Spencer</persName>, who married Sir Richard Anderson, making Elizabeth his
+               sister-in-law, though the poem refers to her simply as his “sister.” She married
+                  <persName ref="../persons/persons.xml#P0005">George Fane</persName> on 3 September
+               1607, and the marriage produced no children. She died in 1618, aged 28, and was
+               buried on 19 November in St Nicholas’s Chapel, <orgName>Westminster Abbey</orgName>,
+               where a large alabaster and marble monument commemorates her (<ref type="URI"
+                  target="https://www.westminster-abbey.org/abbey-commemorations/commemorations/elizabeth-fane"
+               />).</p>
+         </div>
+
+
+      </back>
+   </text>
+</TEI>

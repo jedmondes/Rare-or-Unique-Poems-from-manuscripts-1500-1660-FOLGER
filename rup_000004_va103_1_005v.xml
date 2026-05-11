@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="first_line">Greece likneth man to an inverted tree</title>
+
+
+            <respStmt>
+               <resp>TEI encoding</resp>
+               <name>Jessica Edmondes</name>
+            </respStmt>
+
+            <respStmt xml:id="aiSummary">
+               <resp>Summary generated with AI assistance</resp>
+               <name>ChatGPT (OpenAI, GPT-5.3)</name>
+            </respStmt>
+         </titleStmt>
+
+
+         <publicationStmt>
+            <publisher>Rare or Unique Poems from manuscripts, 1500–1660 (RUP)</publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">This allows you to
+                  use our transcriptions without additional permission provided that you cite the
+                  RUP Project as the source and that you license anything you create using the
+                  transcriptions under the same or equivalent license.</licence>
+            </availability>
+            <date when="2026">2026</date>
+         </publicationStmt>
+
+         <sourceDesc>
+            <msDesc xml:id="folger_va103_1">
+               <msIdentifier>
+                  <repository>Folger Shakespeare Library</repository>
+                  <idno type="shelfmark">V.a.103.1</idno>
+                  <altIdentifier type="resource">
+                     <idno type="URI">https://catalog.folger.edu/record/224059</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem>
+                     <locus from="5v" to="5v">5v</locus>
+                     <incipit>Greece likneth man to an inverted tree <ref
+                           target="https://firstlines.folger.edu/detail.php?id=46364">Folger First
+                           Line Index</ref>
+                     </incipit>
+                  </msItem>
+               </msContents>
+            </msDesc>
+            <listWit>
+               <witness xml:id="wit_bod_eng_poet_e_14">Bodleian Libraries, Eng. poet. e. 14 <locus
+                     from="96r" to="96r">96 rev </locus><ref
+                     target="https://firstlines.folger.edu/detail.php?id=68019">Folger First Line
+                     Index</ref>
+               </witness>
+
+               <witness xml:id="wit_bl_add_30982">British Library, Add. 30982 <locus from="72v"
+                     to="72v">72 v </locus>
+                  <ref target="https://firstlines.folger.edu/detail.php?id=104021">Folger First Line
+                     Index</ref>
+               </witness>
+            </listWit>
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="eng">English</language>
+         </langUsage>
+         <textClass>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#genre" target="#epitaph"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#function" target="#praise"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#topic" target="#death"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#compiler_identified_genre"
+               target="#laudatory_epitaphs"/>
+         </textClass>
+
+         <abstract resp="#aiSummary">
+
+            <p>The poem starts with a philosophical idea: the Greeks supposedly describe a human as
+               an inverted tree: roots in the air (the soul), branches in the earth (the body). The
+               speaker immediately challenges that idea, saying it doesn’t quite fit, because normal
+               trees bear fruit in autumn, at the natural end of their cycle. But this “tree” (the
+               dead person) produces its “fruit” in spring—too early. That’s the key emotional
+               point: a life cut short before its proper season. The “golden fruit” represents the
+               person’s virtue or worth, and Proserpine (queen of the underworld) sees it and takes
+               it. The comparison to the Hesperian apples (mythical golden apples) just reinforces
+               how exceptional this “fruit” is. Out of a kind of jealous desire, she takes both the
+               fruit and the tree—meaning the person’s promise and their life together—so nothing is
+               left behind to fade. The ending softens that loss: although the tree is gone from
+               this world, it “springs afresh in the Elysian field”—the classical afterlife for the
+               virtuous.</p>
+         </abstract>
+
+         <creation>
+            <date notBefore="1621-05-10">after 10 May 1621</date>
+         </creation>
+      </profileDesc>
+
+      <encodingDesc>
+         <projectDesc>
+            <p>This e-text is part of the Works section of the Rare or Unique Poems from
+               manuscripts, 1500–1660 (RUP) Database</p>
+            <p>Encoding conventions: TEI P5; semi-diplomatic transcription etc.</p>
+            <p><address>
+                  <addrLine>
+                     <ref target="https://rup.hypotheses.org/">RUP website</ref>
+                  </addrLine>
+               </address></p>
+         </projectDesc>
+
+         <editorialDecl>
+            <p>Transcriptions are semi-diplomatic, based on on a single manuscript witness. Original
+               punctuation is retained. Letterforms are modernized for u/v and i/j, and majuscule
+               "F" is used in place of "ff". Abbreviations and brevigraphs are expanded, with
+               supplied letters italicized, except for the ampersand. Regularization is applied
+               where it clarifies meaning, using &lt;choice&gt;, &lt;orig&gt;, and &lt;reg&gt;.
+               However, we do not attempt to exactly mirror the layout of the page, nor are we able
+               to reproduce every brevigraph (symbols, strokes, or modified letter forms), mark of
+               punctuation, or symbol accurately.</p>
+
+            <p>Poem summary generated with the assistance of ChatGPT and reviewed by the
+               encoder.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+
+   <text>
+      <body>
+
+         <pb n="5v"/>
+
+         <div type="poem" xml:id="rup_000004">
+            <head><lb/><app>
+                  <lem>On the death of <persName ref="../persons/persons.xml#P0007">Mr
+                        Blagrave</persName>. May 10. 1621</lem>
+                  <rdg wit="#wit_bod_eng_poet_e_14">On Mr W<ex>illia</ex>m Blagrave fellow of
+                        <orgName>St Johns</orgName>
+                     <placeName>Oxone</placeName></rdg>
+                  <rdg wit="#wit_bl_add_30982">on the death of a Gentleman</rdg>
+               </app></head>
+
+
+            <lg type="couplets">
+               <l n="1">Greece likneth man to an inverted tree;</l>
+               <l n="2">Whose boughs the roots, whose roots the boughs should bee.</l>
+               <l n="3">Greece <choice>
+                     <orig>dot’s</orig>
+                     <reg>dotes</reg>
+                  </choice> in this, for trees their fruite <app>
+                     <lem>do</lem>
+                     <rdg wit="#wit_bl_add_30982">doth</rdg>
+                  </app> bring</l>
+               <l n="4">In Autumne, here’s a tree brings his in spring;</l>
+               <l n="5">A golden fruit, w<ex>hi</ex>ch when Procerpine spies,</l>
+               <l n="6">The Hesperian appl’s match not in her eies:</l>
+               <l n="7">Thus jealous of <app>
+                     <lem>fruit</lem>
+                     <rdg wit=" #wit_bod_eng_poet_e_14 #wit_bl_add_30982">the fruit</rdg>
+                  </app>, even both together</l>
+               <l n="8"><app>
+                     <lem>Takes</lem>
+                     <rdg wit="#wit_bl_add_30982">take</rdg>
+                  </app> fruite and tree, least <app>
+                     <lem>fruite they both do</lem>
+                     <rdg wit="#wit_bod_eng_poet_e_14 #wit_bl_add_30982"> pluckt it chance to</rdg>
+                  </app> wither</l>
+               <l n="9" rend="indent">And now the tree <app>
+                     <lem>which</lem>
+                     <rdg wit="#wit_bl_add_30982">doth spring when</rdg>
+                  </app> once this fruite did yeild</l>
+               <l n="10" rend="indent">Doth spring a fresh in the Elyzian feild.</l>
+            </lg>
+
+         </div>
+
+      </body>
+      <back>
+         <div type="historical" xml:lang="en">
+            <head>Historical context and dating</head>
+            <p>William Blagrave matriculated from Magdalen Hall, Oxford on 12 December 1600 at the
+               age of fourteen, described as <hi rend="italic">plebeii filius</hi> of Berkshire. He
+               was admitted to St John’s College, Oxford as a Founder’s Kin Fellow in 1604, and was
+               present in the college in 1610 to swear the oath of allegiance. He served as Dean of
+               Law in 1613–14, and was ordained in the Church of England, being made deacon on 25
+               February 1616 and priest on 12 March 1620. He acted as bursar during the first part
+               of 1620–21. Records also indicate that he was sued for debt in the Chancellor’s Court
+               on at least four occasions between 1615 and 1621; and his death was announced in the
+               course of legal proceedings in 1621 (<ref target="#hegarty_biographical_register"
+                  >Hegarty 2011</ref>).</p>
+         </div>
+
+
+
+         <listBibl>
+            <head>Works cited</head>
+            <bibl xml:id="hegarty_biographical_register">
+               <author>Hegarty, Andrew</author>. <title>A biographical register of St. John's
+                  College, Oxford 1555-1660</title>. <series>Oxford Historical Society, New
+                  Series</series>, <biblScope unit="volume">43</biblScope>. <publisher>Boydell
+                  Press</publisher>, <date when="2011">2011</date>. </bibl>
+         </listBibl>
+      </back>
+   </text>
+</TEI>
