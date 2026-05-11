@@ -1,10 +1,10 @@
-# Early Modern Poetry TEI Project
+# Rare or Unique Poems from Manuscripts, 1500–1660 (RUP)
 
-Experimental TEI encoding project for early modern manuscript poetry.
+This repository contains experimental TEI encoding materials developed for the Folger Shakespeare Library fellowship project associated with the broader *Rare or Unique Poems from Manuscripts, 1500–1660* project.
 
 ## Contents
 
-- Sample encoded poems
+- Sample encoded poem files
 - Personography
 - Draft taxonomy
 - Encoding guidelines
@@ -13,10 +13,14 @@ Experimental TEI encoding project for early modern manuscript poetry.
 
 - TEI P5
 - Oxygen XML Editor
-- TEI All schema (currently no custom ODD)
+- TEI All schema (currently no custom ODD/schema customization)
 
-## Status
+## Project Status
 
-Project structure and taxonomy are still under development.
+Project structure, taxonomy design, and encoding practices are still under development.
 
-For further details, see https://rup.hypotheses.org/ or contact jedmondes@hotmail.com
+## Further Information
+
+https://rup.hypotheses.org/
+
+Contact: jedmondes@hotmail.com
