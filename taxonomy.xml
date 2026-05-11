@@ -1,0 +1,1438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Controlled Taxonomies for Early Modern Manuscript Poetry</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Unpublished working taxonomy file for TEI encoding.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Constructed from early modern manuscript category lists and Latin genre terminology</p>
+      </sourceDesc>
+    </fileDesc>
+
+    <encodingDesc>
+      <classDecl>
+        <!-- Taxonomies are separated by analytical level: genre, function, topic, poetic_context, 
+          form_features, occupations_roles, social_relation, latin_source_genres, compiler_identified_genre -->
+
+        <!-- For the Latin_source_genres; see terminology used in Richard Wills' Poematum liber (London, 1573) schematum (sigs Fiir-Fiiiv); translation at Hum library PN1040 WIL 1958 -->
+        <!-- Wills also refers to Julius Caesar Scaliger Poetics, the massive encyclopedia of classical poetics [Poetices libri spetem] (Lyon, 1561; published posthumously; reprinted 1586, 1594; revised 1607, 1617). Played an important role in the emergency of modern literary criticism; constitutes an enormous thesaurus of poetic forms and figures; a taxonomy of poetic forms and their origins) -->
+
+        <!-- vernacular poets writing in English adopted these devices from the Anglo-Latin poetry; this taxonomy help to trace the passage of these ubiquitous devises from Latin to vernacular poetry -->
+
+        <!-- this is a controlled vocabulary; and works like this: <catRef target="../taxonomy/rup-taxonomy.xml#your-category"/> -->
+
+        <!--INSTRUCTIONS FOR USE (RUP Taxonomy) 
+          This taxonomy file (rup-taxonomy.xml) is stored in: /taxonomy/
+        Individual poem TEI files are stored in: /poems/
+        To reference a category from this taxonomy in a poem file, use <catRef> with a relative path: 
+        <catRef target="../taxonomy/rup-taxonomy.xml#CATEGORY_ID"/>
+        Replace CATEGORY_ID with the xml:id of the relevant <category> in this file.
+
+        Example:
+        <catRef scheme="../taxonomy/rup-taxonomy.xml#genre" target="#epitaph"/>
+-->
+
+        <taxonomy xml:id="genre">
+          <desc>Primary literary form or conventional poetic kind.</desc>
+          <!-- in printed collections, genre is often inicated: there are those in which the book addresses the reader (apostrophes, carmina encomiastica, prosopopoeiae, etc) -->
+          <category xml:id="ballad">
+            <catDesc>Ballad</catDesc>
+          </category>
+          <category xml:id="blazon">
+            <catDesc>Blazon (itemised praise of a woman’s body or beauty)</catDesc>
+          </category>
+          <category xml:id="contra_blazon">
+            <catDesc>Contra-blazon (ironic or negative inversion of the blazon)</catDesc>
+          </category>
+          <category xml:id="dream_poem">
+            <catDesc>Dream poem</catDesc>
+          </category>
+          <category xml:id="elegy">
+            <catDesc>Elegy</catDesc>
+          </category>
+          <category xml:id="enigma">
+            <catDesc>Enigma, riddle</catDesc>
+          </category>
+          <category xml:id="epigram">
+            <catDesc>Epigram</catDesc>
+          </category>
+          <category xml:id="epitaph">
+            <catDesc>Epitaph</catDesc>
+            <!-- Binns on Funerary verse; Richard Wills Poematum liber (1573) includes examples of various genres of funeral verse
+      - the Epicedium, Elegia, Monodia, Naenia, Epitaphium and Threnus - in Latin writings especially in the outpouring 
+      of verses in the university anthologies, when any prominent person dies, "often show knowled of these generic distinctions"
+      eg. those on death of Eliz I and Price Henry include examples (name in their titles) of these 
+      "generically-named funeral verses"-->
+          </category>
+          <category xml:id="libel">
+            <catDesc>Libel</catDesc>
+          </category>
+          <category xml:id="macaronic">
+            <catDesc>Macaronic verse</catDesc>
+            <!-- Latin and English or other language mingled  -->
+          </category>
+          <category xml:id="masque">
+            <catDesc>Masque</catDesc>
+          </category>
+          <category xml:id="narrative_poem">
+            <catDesc>Narrative poem</catDesc>
+          </category>
+          <category xml:id="pastoral">
+            <catDesc>Pastoral</catDesc>
+          </category>
+          <category xml:id="satire">
+            <catDesc>Satire</catDesc>
+          </category>
+          <category xml:id="song">
+            <catDesc>Song</catDesc>
+          </category>
+          <category xml:id="verse_epistle">
+            <catDesc>Verse epistle</catDesc>
+          </category>
+        </taxonomy>
+
+        <taxonomy xml:id="form_features">
+          <desc>Formal or rhetorical features that are not stable genres.</desc>
+          <!-- the poem employ all kinds of manneristic devices - acrostics, chronograms, epanalepsis, versus rapportati etc. -->
+          <category xml:id="acrostic">
+            <catDesc>Acrostic</catDesc>
+            <!-- in acrostic verses, the first letter of each line forms a name or message; e.g. in Luctus posthumus (1612) on the death of Prince Henry, the initial letters of each line spell out PRINCEPS, while the last letters form Henricus -->
+          </category>
+          <category xml:id="anagram">
+            <catDesc>Anagram</catDesc>
+          </category>
+          <category xml:id="answer_poem">
+            <catDesc>Answer poem</catDesc>
+          </category>
+          <category xml:id="apostrophe">
+            <catDesc>Apostrophe</catDesc>
+          </category>
+          <category xml:id="double_reading">
+            <catDesc>Double reading</catDesc>
+            <!-- Carmen reciprocum, a poem with directly opposite meanings when read backwards and forwards -->
+          </category>
+          <category xml:id="echo_poem">
+            <catDesc>Echo poem</catDesc>
+          </category>
+          <category xml:id="figure_poem">
+            <catDesc>Figure poem</catDesc>
+            <!-- figure poems in the shape of an altar, an egg, a pair of wings; according to Binns (p. 51)  Richard Wills was only the second English poet ... to compose figure poems. Found in University memorial collections of verse e.g. one on death of Sir Philip Sydney. Not found much in ms? -->
+          </category>
+          <category xml:id="latticed">
+            <catDesc>Latticed verse</catDesc>
+            <!-- Latticed or Tesselated verses where the words of the poem can be read downwards, as well as across -->
+          </category>
+          <category xml:id="palinode">
+            <catDesc>Palinode / recantation</catDesc>
+            <!-- in which insults previously heaped up are retraced and replaced by praise -->
+          </category>
+          <category xml:id="posy">
+            <catDesc>Ring posy</catDesc>
+          </category>
+          <category xml:id="latin_tag">
+            <catDesc>Latin tag</catDesc>
+          </category>
+          <category xml:id="versus_rapportati">
+            <catDesc>Versus rapportati</catDesc>
+            <!-- similarly constructed clauses are broken up and dovetailed together in a new rod order; also called carmen correlativum -->
+          </category>
+        </taxonomy>
+
+        <taxonomy xml:id="function">
+          <desc>Rhetorical force, tone, or what the poem is doing.</desc>
+
+          <category xml:id="admonition">
+            <catDesc>Admonition</catDesc>
+          </category>
+          <category xml:id="attack">
+            <catDesc>Attack</catDesc>
+          </category>
+          <category xml:id="blame">
+            <catDesc>Blame</catDesc>
+          </category>
+          <category xml:id="carpe_diem">
+            <catDesc>Seize the day (carpe diem)</catDesc>
+            <!-- call to action; uses tropes of fading youth, beauty, shorness of time; persuasion to erotic love etc. -->
+          </category>
+          <category xml:id="celebration">
+            <catDesc>Celebration</catDesc>
+          </category>
+          <category xml:id="comic">
+            <catDesc>Comic</catDesc>
+          </category>
+          <category xml:id="complaint">
+            <catDesc>Complaint</catDesc>
+          </category>
+          <category xml:id="conceited">
+            <catDesc>Conceit</catDesc>
+            <!-- uses metaphor, similie to describe emotion, experience etc.; sometimes strained, metaphysical or elaborate; not run of the mill -->
+          </category>
+          <category xml:id="congratulation">
+            <catDesc>Congratulation</catDesc>
+          </category>
+          <category xml:id="consolation">
+            <catDesc>Consolation</catDesc>
+          </category>
+          <category xml:id="devotional">
+            <catDesc>Devotional</catDesc>
+          </category>
+          <category xml:id="didactic">
+            <catDesc>Didactic</catDesc>
+          </category>
+          <category xml:id="epideictic">
+            <catDesc>Epideictic</catDesc>
+            <!-- adapted for display or show-off; chiefly of set orations -->
+          </category>
+          <category xml:id="exhortation">
+            <catDesc>Exhortation</catDesc>
+          </category>
+          <category xml:id="facetious">
+            <catDesc>Facetious / jesting</catDesc>
+          </category>
+          <category xml:id="ironic">
+            <catDesc>Irony</catDesc>
+          </category>
+          <category xml:id="lament">
+            <catDesc>Lament</catDesc>
+          </category>
+          <category xml:id="moral_reflection">
+            <catDesc>Moral reflection</catDesc>
+          </category>
+          <category xml:id="parody">
+            <catDesc>Parody</catDesc>
+          </category>
+          <category xml:id="petition">
+            <catDesc>Petition</catDesc>
+          </category>
+          <category xml:id="polemic">
+            <catDesc>Polemical</catDesc>
+          </category>
+          <category xml:id="praise">
+            <catDesc>Praise</catDesc>
+          </category>
+          <category xml:id="prayer">
+            <catDesc>Prayer</catDesc>
+          </category>
+          <category xml:id="persuasion">
+            <catDesc>Persuasion</catDesc>
+          </category>
+          <category xml:id="rebuke">
+            <catDesc>Rebuke</catDesc>
+          </category>
+          <category xml:id="satirical_attack">
+            <catDesc>Satirical attack</catDesc>
+          </category>
+          <category xml:id="sententious">
+            <catDesc>Sententious / aphoristic</catDesc>
+          </category>
+          <category xml:id="thanks">
+            <catDesc>Thanks</catDesc>
+          </category>
+          <category xml:id="warning">
+            <catDesc>Warning</catDesc>
+          </category>
+          <category xml:id="welcome">
+            <catDesc>Welcome</catDesc>
+          </category>
+
+        </taxonomy>
+
+        <taxonomy xml:id="topic">
+          <desc>Subject matter or aboutness.</desc>
+
+          <category xml:id="academic_life">
+            <catDesc>Academic life</catDesc>
+          </category>
+
+          <category xml:id="anti_aulic">
+            <catDesc>Criticism of court</catDesc>
+            <!-- anti-aulic discourse, which dates back to antiquity, criticizes the court as a corrupt place where passions and vices are unleashed. -->
+          </category>
+
+          <category xml:id="anti_catholicism">
+            <catDesc>Anti-Catholicism</catDesc>
+          </category>
+
+          <category xml:id="anti_puritan">
+            <catDesc>Anti-Puritan</catDesc>
+          </category>
+          
+          <category xml:id="avarice">
+            <catDesc>Avarice</catDesc>
+          </category>
+
+          <category xml:id="birth">
+            <catDesc>Birth</catDesc>
+          </category>
+
+          <category xml:id="brevity_of_life">
+            <catDesc>Brevity of life</catDesc>
+          </category>
+
+          <category xml:id="city_country">
+            <catDesc>City and country</catDesc>
+            <!-- conventional opposition of city and country  -->
+          </category>
+
+          <category xml:id="civic_ecclesiastical_conflict">
+            <catDesc>Conflict betwen civic authorities and church authority</catDesc>
+          </category>
+
+          <category xml:id="class">
+            <catDesc>Class and social hierarchy</catDesc>
+          </category>
+
+          <category xml:id="controversy">
+            <catDesc>Religious controversy</catDesc>
+          </category>
+
+          <category xml:id="death">
+            <catDesc>Death</catDesc>
+          </category>
+
+          <category xml:id="disease">
+            <catDesc>Disease</catDesc>
+          </category>
+
+          <category xml:id="ethnicity">
+            <catDesc>Ethnicity and national identity</catDesc>
+          </category>
+
+          <category xml:id="female_desire">
+            <catDesc>Female desire</catDesc>
+          </category>
+
+          <category xml:id="female_subjectivity">
+            <catDesc>Female subjectivity</catDesc>
+          </category>
+
+          <category xml:id="female_wit">
+            <catDesc>Female wit</catDesc>
+          </category>
+
+          <category xml:id="finis_amandi">
+            <catDesc>Renunciation of love</catDesc>
+            <!-- farewell to love and to elegy; conventional idea that love poetry was reserved for youth
+    and must be abandoned at the point of maturity for more serious themes-->
+          </category>
+
+          <category xml:id="friendship">
+            <catDesc>Friendship</catDesc>
+          </category>
+
+          <category xml:id="learning">
+            <catDesc>Learning and scholarship</catDesc>
+          </category>
+
+          <category xml:id="libel_target">
+            <catDesc>Identifiable target of libel</catDesc>
+          </category>
+
+          <category xml:id="love">
+            <catDesc>Love</catDesc>
+          </category>
+
+          <category xml:id="marriage">
+            <catDesc>Marriage</catDesc>
+          </category>
+
+          <category xml:id="militia_amoris">
+            <catDesc>Topos of militia amoris </catDesc>
+          </category>
+
+          <category xml:id="monarchy">
+            <catDesc>Monarchy and kingship</catDesc>
+          </category>
+
+          <category xml:id="patronage">
+            <catDesc>Patronage</catDesc>
+          </category>
+
+          <category xml:id="politics">
+            <catDesc>Politics</catDesc>
+          </category>
+
+          <category xml:id="praise_of_woman">
+            <catDesc>Praise of a woman</catDesc>
+          </category>
+
+          <category xml:id="protestantism">
+            <catDesc>Protestantism</catDesc>
+          </category>
+
+          <category xml:id="public_private">
+            <catDesc>Public and private</catDesc>
+            <!-- conventional opposition of public and private  -->
+          </category>
+
+          <category xml:id="religion">
+            <catDesc>Religion</catDesc>
+          </category>
+
+          <category xml:id="rural_life">
+            <catDesc>Rural life</catDesc>
+          </category>
+
+          <category xml:id="servitium_amoris">
+            <catDesc>topos of servitium amoris </catDesc>
+          </category>
+
+          <category xml:id="sex">
+            <catDesc>Sex</catDesc>
+          </category>
+
+          <category xml:id="sexual_misconduct">
+            <catDesc>Sexual misconduct</catDesc>
+          </category>
+
+          <category xml:id="spanish_match">
+            <catDesc>Proposed marriage between Prince Charles (later Charles I) and the Spanish
+              Infanta Maria Anna (the “Spanish Match”), c.1614–1623</catDesc>
+            <!-- diplomatic and religious negotiations for a dynastic marriage between 
+      England and Spain, ultimately unsuccessful -->
+          </category>
+          <category xml:id="tobacco">
+            <catDesc>Tobacco</catDesc>
+          </category>
+
+          <category xml:id="town_and_gown">
+            <catDesc>Town and gown</catDesc>
+          </category>
+
+          <category xml:id="urban_life">
+            <catDesc>Urban life</catDesc>
+          </category>
+
+          <category xml:id="voluptas_dolendi">
+            <catDesc>Petrarchan motif of pleasurable suffering (voluptas dolendi)</catDesc>
+          </category>
+
+          <category xml:id="war">
+            <catDesc>War and conflict</catDesc>
+          </category>
+
+        </taxonomy>
+
+        <taxonomy xml:id="poetic_context">
+          <desc>Social, institutional, ceremonial, and spatial settings for a poem.</desc>
+
+          <category xml:id="accession_day">
+            <catDesc>Accession day</catDesc>
+          </category>
+          
+          <category xml:id="country_house">
+            <catDesc>County house</catDesc>
+          </category>
+
+          <category xml:id="court">
+            <catDesc>Court</catDesc>
+          </category>
+          
+          <category xml:id="family">
+            <catDesc>Family</catDesc>
+          </category>
+       
+       <category xml:id="inns_of_court">
+            <catDesc>Inns of Court</catDesc>
+          </category>
+
+          <category xml:id="joust">
+            <catDesc>Joust</catDesc>
+          </category>
+
+          <category xml:id="gift_giving">
+            <catDesc>Gift giving</catDesc>
+          </category>
+
+          <category xml:id="inscription">
+            <catDesc>Inscription on monument</catDesc>
+          </category>
+
+          <category xml:id="new_year">
+            <catDesc>New Year's gift verses</catDesc>
+            <!-- New Year Verses It was custom for renaissance writers to present a poem, in Latin or in English, to their freinds or patrons at Christmas, or, more frequently, on New Year's Day -->
+          </category>
+          
+          <category xml:id="playhouse">
+            <catDesc>Playhouse</catDesc>
+          </category>
+
+          <category xml:id="royal_entry">
+            <catDesc>Royal entry</catDesc>
+          </category>
+
+          <category xml:id="royal_visit">
+            <catDesc>Royal visit</catDesc>
+          </category>
+
+          <category xml:id="school">
+            <catDesc>School</catDesc>
+          </category>
+
+          <category xml:id="ship">
+            <catDesc>Ship</catDesc>
+          </category>
+
+          <category xml:id="tavern">
+            <catDesc>Tavern</catDesc>
+          </category>
+
+          <category xml:id="university">
+            <catDesc>University</catDesc>
+          </category>
+          
+          <category xml:id="funeral">
+            <catDesc>Funeral</catDesc>
+          </category>
+        </taxonomy>
+
+        <taxonomy xml:id="occupations_roles">
+          <desc>Taxonomy of occupations and roles.</desc>
+
+          <category xml:id="arts">
+            <catDesc>Creative arts and literature</catDesc>
+            <category xml:id="poet">
+              <catDesc>Poet</catDesc>
+            </category>
+
+            <category xml:id="playwright">
+              <catDesc>Playwright</catDesc>
+            </category>
+
+            <category xml:id="artist">
+              <catDesc>Artist</catDesc>
+            </category>
+          </category>
+
+          <category xml:id="ecclesiastical">
+            <catDesc>Ecclesiastical offices and church employment</catDesc>
+
+            <category xml:id="archbishop">
+              <catDesc>Archbishop</catDesc>
+            </category>
+            <category xml:id="archdeacon">
+              <catDesc>Archdeacon</catDesc>
+            </category>
+            <category xml:id="deacon">
+              <catDesc>Deacon</catDesc>
+            </category>
+
+            <category xml:id="priest">
+              <catDesc>Priest</catDesc>
+            </category>
+            <category xml:id="assistant_preacher">
+              <catDesc>Assistant preacher</catDesc>
+            </category>
+            <category xml:id="bishop">
+              <catDesc>Bishop</catDesc>
+            </category>
+
+            <category xml:id="chaplain">
+              <catDesc>Chaplain</catDesc>
+            </category>
+            <category xml:id="commissary">
+              <catDesc>Commissary</catDesc>
+            </category>
+            <category xml:id="curate">
+              <catDesc>Curate</catDesc>
+            </category>
+            <category xml:id="dean">
+              <catDesc>Dean</catDesc>
+            </category>
+            <category xml:id="minister">
+              <catDesc>Minister</catDesc>
+            </category>
+            <category xml:id="preacher">
+              <catDesc>Preacher</catDesc>
+            </category>
+            <category xml:id="reader">
+              <catDesc>Reader</catDesc>
+            </category>
+            <category xml:id="rector">
+              <catDesc>Rector</catDesc>
+            </category>
+            <category xml:id="registrar">
+              <catDesc>Registrar</catDesc>
+            </category>
+            <category xml:id="sexton">
+              <catDesc>Sexton</catDesc>
+            </category>
+            <category xml:id="vicar">
+              <catDesc>Vicar</catDesc>
+            </category>
+          </category>
+
+          <category xml:id="academic">
+            <catDesc>Education, scholarship, and university offices</catDesc>
+
+            <category xml:id="head_of_college">
+              <catDesc>Head of college</catDesc>
+            </category>
+            <category xml:id="librarian">
+              <catDesc>Librarian</catDesc>
+            </category>
+            <category xml:id="scholar">
+              <catDesc>Scholar</catDesc>
+            </category>
+            <category xml:id="fellow">
+              <catDesc>Fellow</catDesc>
+            </category>
+            <category xml:id="schoolmaster">
+              <catDesc>Schoolmaster</catDesc>
+            </category>
+            <category xml:id="student">
+              <catDesc>Student</catDesc>
+            </category>
+            <category xml:id="subwarden">
+              <catDesc>Subwarden</catDesc>
+            </category>
+            <category xml:id="university_proctor">
+              <catDesc>University proctor</catDesc>
+            </category>
+          </category>
+
+          <category xml:id="mercantile_financial">
+            <catDesc>Commerce, finance, and exchange</catDesc>
+
+            <category xml:id="agent">
+              <catDesc>Agent</catDesc>
+            </category>
+            <category xml:id="broker">
+              <catDesc>Broker</catDesc>
+            </category>
+            <category xml:id="bursar">
+              <catDesc>Bursar</catDesc>
+            </category>
+            <category xml:id="merchant">
+              <catDesc>Merchant</catDesc>
+            </category>
+            <category xml:id="tasker">
+              <catDesc>Tasker</catDesc>
+            </category>
+          </category>
+
+          <category xml:id="household_domestic">
+            <catDesc>Household service, domestic offices, and estate roles</catDesc>
+
+            <category xml:id="hunting_woodland">
+              <catDesc>Hunting, hawking, and woodland roles</catDesc>
+              <category xml:id="falconer">
+                <catDesc>Falconer</catDesc>
+              </category>
+              <category xml:id="huntsman">
+                <catDesc>Huntsman</catDesc>
+              </category>
+              <category xml:id="keeper">
+                <catDesc>Keeper</catDesc>
+              </category>
+              <category xml:id="keeper_of_the_hawks">
+                <catDesc>Keeper of the hawks</catDesc>
+              </category>
+              <category xml:id="under_keeper">
+                <catDesc>Under-keeper</catDesc>
+              </category>
+              <category xml:id="warrener">
+                <catDesc>Warrener</catDesc>
+              </category>
+              <category xml:id="woodman">
+                <catDesc>Woodman</catDesc>
+              </category>
+              <category xml:id="woodward">
+                <catDesc>Woodward</catDesc>
+              </category>
+            </category>
+
+            <category xml:id="elite_household">
+              <catDesc>Royal and noble household offices</catDesc>
+
+              <category xml:id="keeper_of_the_wardrobe">
+                <catDesc>Keeper of the wardrobe</catDesc>
+              </category>
+              <category xml:id="kings_messenger">
+                <catDesc>King’s messenger</catDesc>
+              </category>
+              <category xml:id="master_groomporter">
+                <catDesc>Master groomporter</catDesc>
+              </category>
+              <category xml:id="yeoman_of_the_horse">
+                <catDesc>Yeoman of the horse</catDesc>
+              </category>
+            </category>
+
+            <category xml:id="servant_statuses">
+              <catDesc>General servant roles and statuses</catDesc>
+
+              <category xml:id="boy_servant">
+                <catDesc>Boy (servant)</catDesc>
+              </category>
+              <category xml:id="maid">
+                <catDesc>Maid</catDesc>
+              </category>
+              <category xml:id="man_servant">
+                <catDesc>Man (servant)</catDesc>
+              </category>
+              <category xml:id="servant">
+                <catDesc>Servant</catDesc>
+              </category>
+              <category xml:id="woman_servant">
+                <catDesc>Woman (servant)</catDesc>
+              </category>
+            </category>
+
+            <category xml:id="domestic_offices">
+              <catDesc>Specific domestic and household offices</catDesc>
+
+              <category xml:id="attendant">
+                <catDesc>Attendant</catDesc>
+              </category>
+              <category xml:id="bed_maker">
+                <catDesc>Bed-maker</catDesc>
+              </category>
+              <category xml:id="butler">
+                <catDesc>Butler</catDesc>
+              </category>
+              <category xml:id="chamberlain">
+                <catDesc>Chamberlain</catDesc>
+              </category>
+              <category xml:id="chambermaid">
+                <catDesc>Chambermaid</catDesc>
+              </category>
+              <category xml:id="charwoman">
+                <catDesc>Charwoman</catDesc>
+              </category>
+              <category xml:id="clerk_of_the_kitchen">
+                <catDesc>Clerk of the kitchen</catDesc>
+              </category>
+              <category xml:id="coachman">
+                <catDesc>Coachman</catDesc>
+              </category>
+              <category xml:id="cook">
+                <catDesc>Cook</catDesc>
+              </category>
+              <category xml:id="cookmaid">
+                <catDesc>Cookmaid</catDesc>
+              </category>
+              <category xml:id="driver">
+                <catDesc>Driver</catDesc>
+              </category>
+              <category xml:id="dry_nurse">
+                <catDesc>Dry nurse</catDesc>
+              </category>
+              <category xml:id="footboy">
+                <catDesc>Footboy</catDesc>
+              </category>
+              <category xml:id="footman">
+                <catDesc>Footman</catDesc>
+              </category>
+              <category xml:id="gardener">
+                <catDesc>Gardener</catDesc>
+              </category>
+              <category xml:id="governess">
+                <catDesc>Governess</catDesc>
+              </category>
+              <category xml:id="groom">
+                <catDesc>Groom</catDesc>
+              </category>
+              <category xml:id="head_cook">
+                <catDesc>Head cook</catDesc>
+              </category>
+              <category xml:id="horseman">
+                <catDesc>Horseman</catDesc>
+              </category>
+              <category xml:id="housekeeper">
+                <catDesc>Housekeeper</catDesc>
+              </category>
+              <category xml:id="kitchen_boy">
+                <catDesc>Kitchen boy</catDesc>
+              </category>
+              <category xml:id="kitchen_maid">
+                <catDesc>Kitchen maid</catDesc>
+              </category>
+              <category xml:id="laundry_maid">
+                <catDesc>Laundry-maid</catDesc>
+              </category>
+              <category xml:id="nurse">
+                <catDesc>Nurse</catDesc>
+              </category>
+              <category xml:id="page">
+                <catDesc>Page</catDesc>
+              </category>
+              <category xml:id="pantler">
+                <catDesc>Pantler</catDesc>
+              </category>
+              <category xml:id="pensioner">
+                <catDesc>Pensioner</catDesc>
+              </category>
+              <category xml:id="porter">
+                <catDesc>Porter</catDesc>
+              </category>
+              <category xml:id="retainer">
+                <catDesc>Retainer</catDesc>
+              </category>
+              <category xml:id="secretary">
+                <catDesc>Secretary</catDesc>
+              </category>
+              <category xml:id="scullion">
+                <catDesc>Scullion</catDesc>
+              </category>
+              <category xml:id="steward">
+                <catDesc>Steward</catDesc>
+              </category>
+              <category xml:id="under_butler">
+                <catDesc>Under-butler</catDesc>
+              </category>
+              <category xml:id="under_cook">
+                <catDesc>Under cook</catDesc>
+              </category>
+              <category xml:id="usher">
+                <catDesc>Usher</catDesc>
+              </category>
+              <category xml:id="waiting_gentleman">
+                <catDesc>Waiting gentleman</catDesc>
+              </category>
+              <category xml:id="waiting_gentlewoman">
+                <catDesc>Waiting gentlewoman</catDesc>
+              </category>
+              <category xml:id="waiting_woman">
+                <catDesc>Waiting woman</catDesc>
+              </category>
+            </category>
+          </category>
+
+          <category xml:id="civic_legal">
+            <catDesc>Law, justice, civic, and administrative roles</catDesc>
+
+            <category xml:id="apparitor">
+              <catDesc>Apparitor</catDesc>
+            </category>
+            <category xml:id="attorney">
+              <catDesc>Attorney</catDesc>
+            </category>
+            <category xml:id="bailiff">
+              <catDesc>Bailiff</catDesc>
+            </category>
+            <category xml:id="barrister">
+              <catDesc>Barrister</catDesc>
+            </category>
+            <category xml:id="clerk">
+              <catDesc>Clerk</catDesc>
+            </category>
+            <category xml:id="clerk_of_assize">
+              <catDesc>Clerk of assize</catDesc>
+            </category>
+            <category xml:id="clerk_of_the_peace">
+              <catDesc>Clerk of the peace</catDesc>
+            </category>
+            <category xml:id="constable">
+              <catDesc>Constable</catDesc>
+            </category>
+            <category xml:id="consul">
+              <catDesc>Consul</catDesc>
+            </category>
+            <category xml:id="coroner">
+              <catDesc>Coroner</catDesc>
+            </category>
+            <category xml:id="counsellor">
+              <catDesc>Counsellor</catDesc>
+            </category>
+            <category xml:id="jail_keeper">
+              <catDesc>Jail keeper</catDesc>
+            </category>
+            <category xml:id="judge">
+              <catDesc>Judge</catDesc>
+            </category>
+            <category xml:id="justice">
+              <catDesc>Justice</catDesc>
+            </category>
+            <category xml:id="lawyer">
+              <catDesc>Lawyer</catDesc>
+            </category>
+            <category xml:id="lay_clerk">
+              <catDesc>Lay clerk</catDesc>
+            </category>
+            <category xml:id="magistrate">
+              <catDesc>Magistrate</catDesc>
+            </category>
+            <category xml:id="mayor">
+              <catDesc>Mayor</catDesc>
+            </category>
+            <category xml:id="member_of_parliament">
+              <catDesc>MP</catDesc>
+            </category>
+
+            <category xml:id="marshal">
+              <catDesc>Marshal</catDesc>
+            </category>
+            <category xml:id="proctor_of_law">
+              <catDesc>Proctor of law</catDesc>
+            </category>
+            <category xml:id="queens_attorney">
+              <catDesc>Queen’s attorney</catDesc>
+            </category>
+            <category xml:id="receiver_general">
+              <catDesc>Receiver general</catDesc>
+            </category>
+            <category xml:id="serjeant_at_law">
+              <catDesc>Serjeant-at-law</catDesc>
+            </category>
+            <category xml:id="sheriff">
+              <catDesc>Sheriff</catDesc>
+            </category>
+            <category xml:id="solicitor">
+              <catDesc>Solicitor</catDesc>
+            </category>
+            <category xml:id="summoner">
+              <catDesc>Summoner</catDesc>
+            </category>
+            <category xml:id="surveyor">
+              <catDesc>Surveyor</catDesc>
+            </category>
+            <category xml:id="tithing_man">
+              <catDesc>Tithing-man</catDesc>
+            </category>
+            <category xml:id="town_clerk">
+              <catDesc>Town clerk</catDesc>
+            </category>
+            <category xml:id="town_servant">
+              <catDesc>Town servant</catDesc>
+            </category>
+            <category xml:id="under_sheriff">
+              <catDesc>Under-sheriff</catDesc>
+            </category>
+          </category>
+
+          <category xml:id="maritime">
+            <catDesc>Maritime occupations and shipboard roles</catDesc>
+
+            <category xml:id="sailmaker">
+              <catDesc>Sailmaker</catDesc>
+            </category>
+            <category xml:id="shipmaster">
+              <catDesc>Shipmaster</catDesc>
+            </category>
+            <category xml:id="shipper">
+              <catDesc>Shipper</catDesc>
+            </category>
+            <category xml:id="shipwright">
+              <catDesc>Shipwright</catDesc>
+            </category>
+            <category xml:id="ships_captain">
+              <catDesc>Ship’s captain</catDesc>
+            </category>
+            <category xml:id="ships_purser">
+              <catDesc>Ship’s purser</catDesc>
+            </category>
+          </category>
+
+          <category xml:id="medical">
+            <catDesc>Medical practitioners and healing roles</catDesc>
+
+            <category xml:id="apothecary">
+              <catDesc>Apothecary</catDesc>
+            </category>
+            <category xml:id="barber">
+              <catDesc>Barber</catDesc>
+            </category>
+            <category xml:id="barber_surgeon">
+              <catDesc>Barber-surgeon</catDesc>
+            </category>
+            <category xml:id="medical_practitioner">
+              <catDesc>Medical practitioner</catDesc>
+            </category>
+            <category xml:id="midwife">
+              <catDesc>Midwife</catDesc>
+            </category>
+            <category xml:id="oculist">
+              <catDesc>Oculist</catDesc>
+            </category>
+            <category xml:id="physician">
+              <catDesc>Physician</catDesc>
+            </category>
+            <category xml:id="surgeon">
+              <catDesc>Surgeon</catDesc>
+            </category>
+          </category>
+
+          <category xml:id="military">
+            <catDesc>Military offices and service roles</catDesc>
+
+            <category xml:id="captain">
+              <catDesc>Captain</catDesc>
+            </category>
+            <category xml:id="sergeant_at_arms">
+              <catDesc>Sergeant-at-arms</catDesc>
+            </category>
+            <category xml:id="soldier">
+              <catDesc>Soldier</catDesc>
+            </category>
+          </category>
+
+          <category xml:id="crafts_trades">
+            <catDesc>Craft, trade, manufacture, service, and retail occupations</catDesc>
+
+            <category xml:id="book_trades">
+              <catDesc>Books and writing</catDesc>
+
+              <category xml:id="bookbinder">
+                <catDesc>Bookbinder</catDesc>
+              </category>
+              <category xml:id="bookseller">
+                <catDesc>Bookseller</catDesc>
+              </category>
+              <category xml:id="printer">
+                <catDesc>Printer</catDesc>
+              </category>
+              <category xml:id="scrivener">
+                <catDesc>Scrivener</catDesc>
+              </category>
+              <category xml:id="stationer">
+                <catDesc>Stationer</catDesc>
+              </category>
+            </category>
+
+            <category xml:id="building_trades">
+              <catDesc>Building</catDesc>
+
+              <category xml:id="bricklayer">
+                <catDesc>Bricklayer</catDesc>
+              </category>
+              <category xml:id="mason">
+                <catDesc>Mason</catDesc>
+              </category>
+
+              <category xml:id="stone_carver">
+                <catDesc>Stone carver</catDesc>
+              </category>
+              <category xml:id="thatcher">
+                <catDesc>Thatcher</catDesc>
+              </category>
+
+              <category xml:id="tombmaker">
+                <catDesc>Tombmaker</catDesc>
+              </category>
+            </category>
+
+            <category xml:id="clothing_textiles">
+              <catDesc>Clothes and furnishings</catDesc>
+
+              <category xml:id="clothier">
+                <catDesc>Clothier</catDesc>
+              </category>
+              <category xml:id="cobbler">
+                <catDesc>Cobbler</catDesc>
+              </category>
+
+              <category xml:id="draper">
+                <catDesc>Draper</catDesc>
+              </category>
+              <category xml:id="dyer">
+                <catDesc>Dyer</catDesc>
+              </category>
+
+              <category xml:id="glover">
+                <catDesc>Glover</catDesc>
+              </category>
+              <category xml:id="haberdasher">
+                <catDesc>Haberdasher</catDesc>
+              </category>
+
+              <category xml:id="mercer">
+                <catDesc>Mercer</catDesc>
+              </category>
+              <category xml:id="shoemaker">
+                <catDesc>Shoemaker</catDesc>
+              </category>
+              <category xml:id="tailor">
+                <catDesc>Tailor</catDesc>
+              </category>
+
+              <category xml:id="weaver">
+                <catDesc>Weaver</catDesc>
+              </category>
+
+            </category>
+
+            <category xml:id="decorative_trades">
+              <catDesc>Decoration</catDesc>
+
+              <category xml:id="liming_woman">
+                <catDesc>Liming woman</catDesc>
+              </category>
+              <category xml:id="painter">
+                <catDesc>Painter</catDesc>
+              </category>
+            </category>
+
+            <category xml:id="divinatory_roles">
+              <catDesc>Fortune and divination</catDesc>
+
+              <category xml:id="cunning_man">
+                <catDesc>Cunning man</catDesc>
+              </category>
+              <category xml:id="cunning_woman">
+                <catDesc>Cunning woman</catDesc>
+              </category>
+              <category xml:id="soothsayer">
+                <catDesc>Soothsayer</catDesc>
+              </category>
+              <category xml:id="wise_woman">
+                <catDesc>Wise woman</catDesc>
+              </category>
+            </category>
+
+
+
+
+            <category xml:id="music_performance">
+              <catDesc>Musicians</catDesc>
+
+              <category xml:id="bagpipe_player">
+                <catDesc>Bagpipe-player</catDesc>
+              </category>
+              <category xml:id="fiddler">
+                <catDesc>Fiddler</catDesc>
+              </category>
+              <category xml:id="musician">
+                <catDesc>Musician</catDesc>
+              </category>
+              <category xml:id="singer">
+                <catDesc>Singer</catDesc>
+              </category>
+              <category xml:id="taborer">
+                <catDesc>Taborer</catDesc>
+              </category>
+            </category>
+
+            <category xml:id="retail">
+              <catDesc>Retail</catDesc>
+
+              <category xml:id="chapman">
+                <catDesc>Chapman</catDesc>
+              </category>
+              <category xml:id="chapwoman">
+                <catDesc>Chapwoman</catDesc>
+              </category>
+              <category xml:id="pedlar">
+                <catDesc>Pedlar</catDesc>
+              </category>
+              <category xml:id="shopkeeper">
+                <catDesc>Shopkeeper</catDesc>
+              </category>
+            </category>
+
+
+
+            <category xml:id="transport">
+              <catDesc>Transport</catDesc>
+
+              <category xml:id="carrier">
+                <catDesc>Carrier</catDesc>
+              </category>
+              <category xml:id="carter">
+                <catDesc>Carter</catDesc>
+              </category>
+              <category xml:id="loader">
+                <catDesc>Loader</catDesc>
+              </category>
+              <category xml:id="postmaster">
+                <catDesc>Postmaster</catDesc>
+              </category>
+              <category xml:id="tranter">
+                <catDesc>Tranter</catDesc>
+              </category>
+              <category xml:id="waggoner">
+                <catDesc>Waggoner</catDesc>
+              </category>
+              <category xml:id="wainman">
+                <catDesc>Wainman</catDesc>
+              </category>
+            </category>
+
+            <category xml:id="woodworking">
+              <catDesc>Woodworking</catDesc>
+
+              <category xml:id="carpenter">
+                <catDesc>Carpenter</catDesc>
+              </category>
+              <category xml:id="cooper">
+                <catDesc>Cooper</catDesc>
+              </category>
+              <category xml:id="joiner">
+                <catDesc>Joiner</catDesc>
+              </category>
+              <category xml:id="turner">
+                <catDesc>Turner</catDesc>
+              </category>
+              <category xml:id="wheelwright">
+                <catDesc>Wheelwright</catDesc>
+              </category>
+            </category>
+          </category>
+
+          <category xml:id="victualling_provision_trades">
+            <catDesc>Food, drink, and victualling trades</catDesc>
+
+            <category xml:id="alehouse_keeper">
+              <catDesc>Alehouse-keeper</catDesc>
+            </category>
+
+            <category xml:id="alewife">
+              <catDesc>Alewife</catDesc>
+            </category>
+
+            <category xml:id="baker">
+              <catDesc>Baker</catDesc>
+            </category>
+
+            <category xml:id="brewer">
+              <catDesc>Brewer</catDesc>
+            </category>
+
+            <category xml:id="butcher">
+              <catDesc>Butcher</catDesc>
+            </category>
+
+            <category xml:id="inn_holder">
+              <catDesc>Inn-holder</catDesc>
+            </category>
+
+            <category xml:id="victualler">
+              <catDesc>Victualler</catDesc>
+            </category>
+
+            <category xml:id="vintner">
+              <catDesc>Vintner</catDesc>
+            </category>
+            <category xml:id="tavern_keeper">
+              <catDesc>Tavern keeper</catDesc>
+              <!-- same as Inn keeper? -->
+            </category>
+          </category>
+
+          <category xml:id="agricultural_pastoral">
+            <catDesc>Agricultural, pastoral, and animal husbandry roles</catDesc>
+            <category xml:id="farmer">
+              <catDesc>Farmer</catDesc>
+            </category>
+            <category xml:id="fisherman">
+              <catDesc>Fisherman</catDesc>
+            </category>
+            <category xml:id="husbandman">
+              <catDesc>Husbandman</catDesc>
+            </category>
+            <category xml:id="shepherd">
+              <catDesc>Shepherd</catDesc>
+            </category>
+            <category xml:id="yeoman">
+              <catDesc>Yeoman</catDesc>
+            </category>
+          </category>
+        </taxonomy>
+
+        <taxonomy xml:id="social_relation">
+          <desc>Social directionality or target relation, especially useful for satire and
+            libel.</desc>
+
+          <category xml:id="collective_target">
+            <catDesc>Collective target</catDesc>
+          </category>
+
+          <category xml:id="horizontal_satire">
+            <catDesc>Horizontal satire</catDesc>
+          </category>
+
+          <category xml:id="praise_via_contrast">
+            <catDesc>Praise via contrast with others</catDesc>
+          </category>
+
+          <category xml:id="punching_down">
+            <catDesc>Punching down: Target is a social inferior</catDesc>
+          </category>
+
+          <category xml:id="punching_up">
+            <catDesc>Punching up: Target is a social superior</catDesc>
+          </category>
+
+          <category xml:id="vertical_satire">
+            <catDesc>Vertical satire</catDesc>
+          </category>
+
+        </taxonomy>
+
+        <taxonomy xml:id="latin_source_genres">
+          <desc>Latin genre terms</desc>
+          <!-- Binns (p. 62)  definitions of the genres are found in Buchler's Phrasium poeticarum thesaurus
+  (London, 1624); he prescribes the commonplaces/elements that they should contain 
+  Also gives one-line definitions of genres Binns reproduces these and gives refs to 
+  examples of the genres written by British Latin poets of the period-->
+
+          <category xml:id="amoebaean_verse">
+            <catDesc>Responsive / amoebaean verse</catDesc>
+          </category>
+
+          <category xml:id="amores">
+            <catDesc>Love poems/elegies</catDesc>
+          </category>
+
+          <category xml:id="apeucticon">
+            <catDesc>Negative petition poem (apeucticon)</catDesc>
+            <!-- asking that something should not be done -->
+          </category>
+
+          <category xml:id="apobaterion">
+            <catDesc>Departure poem (apobaterion)</catDesc>
+            <!-- uttered by departing travellers -->
+          </category>
+
+          <category xml:id="apopempticon">
+            <catDesc>Pilgrimage poem (apopempticon)</catDesc>
+          </category>
+
+          <category xml:id="cinaedic_verse">
+            <catDesc>Obscene or licentious verse (cinaedic / fescennine)</catDesc>
+            <!-- poems, dealing with impure subjects -->
+          </category>
+
+          <category xml:id="dirae">
+            <catDesc>Curse poem (dirae)</catDesc>
+            <!-- in which curses are invoked on an ememy ; wishes for exile, disease, punishment, and death -->
+          </category>
+
+          <category xml:id="encomion">
+            <catDesc>Praise poem (encomion)</catDesc>
+            <!-- Encomiasticon, Encomion, Epaeneticon, genres which rehearse praise -->
+          </category>
+
+          <category xml:id="epibaterion">
+            <catDesc>Return poem (epibaterion)</catDesc>
+            <!-- a traveller's return to his native land after a long absense is celebrated -->
+          </category>
+
+          <category xml:id="epicedium">
+            <catDesc>Funeral poem (epicedium)</catDesc>
+          </category>
+
+          <category xml:id="epithalamium">
+            <catDesc>Marriage poem (epithalamium)</catDesc>
+            <!-- wedding songs in varous metres -->
+          </category>
+
+          <category xml:id="eroticon">
+            <catDesc>Love poem (eroticon)</catDesc>
+            <!-- a poem declaring one's love -->
+          </category>
+
+          <category xml:id="eucharisticon">
+            <catDesc>Thanksgiving poem (eucharisticon)</catDesc>
+            <!-- a poem which contains expressions of thanks (actiones gratiarum); closely akin gto the Latin 'Gratulatio' -->
+          </category>
+
+          <category xml:id="eucticon">
+            <catDesc>Poem expresing a prayer or wish (eucticon)</catDesc>
+          </category>
+
+          <category xml:id="fescennine">
+            <catDesc>Fescennine / obscene jocularity</catDesc>
+          </category>
+
+          <category xml:id="genethliakon">
+            <catDesc>Birth poem (genethliakon)</catDesc>
+          </category>
+
+          <category xml:id="hodoeporicon">
+            <catDesc>Journey poem (hodoeporicon)</catDesc>
+          </category>
+
+          <category xml:id="paedeuterion">
+            <catDesc>Thanks to teacher (paedeuterion)</catDesc>
+            <!-- in which thanks are expressed to the teacher for the instruction given -->
+          </category>
+
+          <category xml:id="palinode_latin">
+            <catDesc>Recantation poem (palinode)</catDesc>
+          </category>
+
+          <category xml:id="panegyric">
+            <catDesc>Panegyric</catDesc>
+            <!-- an encomiastic poem ususlly addressed to the assembled multitude -->
+          </category>
+
+          <category xml:id="proseucticon">
+            <catDesc>Petitionary prayer poem (proseucticon)</catDesc>
+            <!-- Proseucticon, containing a petition for something to be done; similar to the Eucticon, a poem expressing a prayer of wish -->
+          </category>
+
+          <category xml:id="prosopopoeia_latin">
+            <catDesc>Persona speech (prosopopoeia)</catDesc>
+            <!-- Binns (note 19)  The 'prosopopoeia' is not a 'genre of content'. 
+    It was classified in antiquity as one of the progymnasmata, i.e. the elementary exercises of the rhetorical schools. 
+    Hence the diversity of genres of content exemplified  within this form in the examples listed. 
+    It has been plausibly suggested that prosopopoeiae  played in antiquity a crucial role in the development 
+    and propagation of distinct epideictic genres]; an imaginary monologue, in which the poet places words in 
+    the mouth of a well-known personage -->
+          </category>
+
+          <category xml:id="prosphonetikon">
+            <catDesc>Welcome poem (prosphonetikon)</catDesc>
+            <!-- a poem of welcome to a traveller who has arrived at a place -->
+          </category>
+
+          <category xml:id="protreptic">
+            <catDesc>Exhortatory poem (protreptic)</catDesc>
+            <!-- protreptic, or exhortation to seek virtue and wisdom -->
+          </category>
+
+          <category xml:id="propempticon">
+            <catDesc>Farewell poem for a traveller (propempticon)</catDesc>
+            <!-- in which departing travellers are wished well, and in which the subject-matter is derived from the circumstances of time and place, the reason for departure, and the accompanying travellers. -->
+          </category>
+
+          <category xml:id="soteria">
+            <catDesc>Deliverance poem (soteria)</catDesc>
+            <!-- a poem celebrating the safe return of a leader or army, or restoration to health of a friend or relative e.g. the Oxford anthology on the recovery from illness of King Charles I  -->
+          </category>
+
+          <category xml:id="symbuleuticon">
+            <catDesc>Debate poem</catDesc>
+            <!--  a deliberative poem which debates issues (e.g. Should war be declared?) -->
+          </category>
+
+          <category xml:id="thriambeuticon">
+            <catDesc>Triumph-poem (thriambeuticon)</catDesc>
+            <!--poem celebrating a victory; also epinicion? -->
+          </category>
+
+        </taxonomy>
+
+        <taxonomy xml:id="compiler_identified_genre">
+          <desc>Compiler identified genre</desc>
+
+          <category xml:id="epitaphs_merry_and_satirical">
+            <catDesc>Epitaphs merry and satyricall</catDesc>
+          </category>
+          <category xml:id="laudatory_epitaphs">
+            <catDesc>Laudatory epitaphs</catDesc>
+          </category>
+          <category xml:id="ode">
+            <catDesc>Ode</catDesc>
+          </category>
+        </taxonomy>
+
+      </classDecl>
+    </encodingDesc>
+  </teiHeader>
+
+  <text>
+    <body>
+      <p>Working file for controlled tagging of early modern manuscript poems.</p>
+    </body>
+  </text>
+</TEI>
