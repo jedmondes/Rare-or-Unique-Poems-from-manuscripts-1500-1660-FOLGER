@@ -1,0 +1,337 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>List of people associated with RUP manuscripts.</title>
+                <respStmt xml:id="JEd">
+                    <name>Jessica Edmondes</name>
+                    <resp>Editor</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Rare or Unique Poems from manuscripts 1500–1660_FOLGER</publisher>
+
+                <date when="2026">2026</date>
+            </publicationStmt>
+
+            <sourceDesc>
+                <p> Born digital: biliographic data </p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+                <listPerson>
+                    <person xml:id="P0001" sex="male">
+                        <persName>
+                            <forename>Richard</forename>
+                            <surname>Cole</surname>
+                        </persName>
+                        <birth when="1599" precision="unknown">c. 1599</birth>
+                        <affiliation><orgName>King's College, Cambridge</orgName></affiliation>
+                        <note>Admitted as a sizar at Emmanuel, April 20, 1617. Born in London c.
+                            1599. Matriculated 1615; B.A. 1619-20; M.A. 1623. Fellow, 1619-25.
+                            Chaplain to Viscount Purbeck (<ref type="ACa"
+                                target="https://doi.org/10.1017/CBO9781139093897.005"> Cab -
+                                Cut.</ref></note>
+                    </person>
+
+
+                    <person xml:id="P0002" sex="female">
+                        <persName>
+                            <forename>Anne</forename>
+                            <addName>of Denmark</addName>
+                            <roleName type="royalty">Queen, consort of James I, King of
+                                England</roleName>
+                        </persName>
+                        <birth when="1574-12-12">12 December 1574</birth>
+                        <death when="1619-03-02">2 March 1619</death>
+                        <ref type="LOC" target="https://lccn.loc.gov/n85355622"/>
+                        <ref type="ODNB" target="https://doi.org/10.1093/ref:odnb/559"/>
+                    </person>
+
+                    <person xml:id="P0003" sex="male">
+                        <persName>
+                            <roleName>Sir</roleName>
+                            <forename>Richard</forename>
+                            <surname>Anderson</surname>
+                        </persName>
+                        <birth when="1585">1585</birth>
+                        <death when="1632">1632</death>
+                        <ref type="FAG"
+                            target="https://www.findagrave.com/memorial/243043792/richard-anderson"
+                        />
+                    </person>
+
+                    <person xml:id="P0004" sex="female">
+                        <persName>
+                            <roleName type="nobility">Lady</roleName>
+                            <forename>Elizabeth</forename>
+                            <surname type="birth">Spencer</surname>
+                            <surname type="married">Fane </surname>
+                        </persName>
+                        <persName type="variant">
+                            <roleName>Lady</roleName>
+                            <surname>Vayne</surname>
+                        </persName>
+                        <birth when="1590-08-24">24 August 1589</birth>
+                        <death when="1618">1618</death>
+                    </person>
+
+                    <person xml:id="P0005" sex="male">
+                        <persName>
+                            <forename>George</forename>
+                            <surname>Fane</surname>
+                        </persName>
+                        <persName type="variant">
+                            <forename>George</forename>
+                            <surname>Vane</surname>
+                        </persName>
+                        <birth when="1581">1581</birth>
+                        <death when="1640">1640</death>
+                        <ref type="HPO"
+                            target="https://www.historyofparliamentonline.org/volume/1604-1629/member/fane-sir-george-1581-1640"
+                        />
+                    </person>
+
+                    <person xml:id="P0006" sex="female">
+                        <persName>
+                            <forename>Mary</forename>
+                            <surname type="birth">Spencer</surname>
+                            <surname type="married">Anderson</surname>
+                        </persName>
+                        <birth when="1588-11-30">24 August 1589</birth>
+                        <death when="1658-11-30">30 November 1658</death>
+                    </person>
+
+                    <person xml:id="P0007" sex="male">
+                        <persName>
+                            <forename>William</forename>
+                            <surname>Blagrave</surname>
+                        </persName>
+                        <death when="1621-05-10">10 May 1621</death>
+                        <occupation ana="../taxonomy/rup-taxonomy.xml#fellow">Fellow</occupation>
+                        <occupation ana="../taxonomy/rup-taxonomy.xml#deacon">Deacon</occupation>
+                        <occupation ana="../taxonomy/rup-taxonomy.xml#priest">Priest</occupation>
+                        <affiliation><orgName>St. John's College, Oxford</orgName></affiliation>
+                        <ref type="AOx"
+                            target="https://www.british-history.ac.uk/alumni-oxon/1500-1714/pp106-141"
+                            >Bennell-Bloye</ref>
+                    </person>
+
+                    <person xml:id="P0008" sex="male">
+                        <persName>
+                            <roleName>Sir</roleName>
+                            <forename>Walter</forename>
+                            <surname>Waller</surname>
+                        </persName>
+                        <birth when="1544">1544</birth>
+                        <death when="1599">1599</death>
+                        <occupation ana="../taxonomy/rup-taxonomy.xml#member_of_parliament"
+                            >MP</occupation>
+                        <occupation ana="../taxonomy/rup-taxonomy.xml#captain">Captain</occupation>
+                        <ref type="HPO"
+                            target="https://www.historyofparliamentonline.org/volume/1558-1603/member/waller-sir-walter-1544-99"
+                        />
+                    </person>
+
+                    <person xml:id="P0009" sex="female">
+                        <persName>
+                            <forename>Anne</forename>
+                            <surname type="birth">Chute</surname>
+                            <surname type="married">Waller</surname>
+                        </persName>
+                        <birth when="1558">1558</birth>
+                        <death when="1625-09">September 1624</death>
+                        <ref type="FAG"
+                            target="https://www.findagrave.com/memorial/259980273/anna-waller"/>
+                    </person>
+
+                    <person xml:id="P0010" sex="male">
+                        <persName>
+                            <roleName>Mr</roleName>
+                            <surname>St Clive</surname>
+                        </persName>
+                        <floruit when="1625">c. 1625</floruit>
+                    </person>
+
+                    <person xml:id="P0011" sex="male">
+                        <persName>
+                            <roleName>Sir</roleName>
+                            <forename>Thomas</forename>
+                            <surname>Smythe</surname>
+                        </persName>
+                        <birth when="1548">1548</birth>
+                        <death when="1625-09-04">4 September 1625</death>
+                        <ref type="LOC" target="https://lccn.loc.gov/nr91009923"/>
+                        <ref type="HPO"
+                            target="https://www.historyofparliamentonline.org/volume/1604-1629/member/smythe-sir-thomas-1558-1625"/>
+                        <ref type="ODNB" target="https://doi.org/10.1093/ref:odnb/25908"/>
+                    </person>
+
+                    <person xml:id="P0012" sex="male">
+                        <persName>
+                            <forename>Rowland</forename>
+                            <surname>Searchfield</surname>
+                        </persName>
+                        <birth from="1564" to="1565">1564/5</birth>
+                        <death when="1622-10-11">11 October 1622</death>
+                        <affiliation><orgName>St. John's College, Oxford</orgName></affiliation>
+                        <occupation ana="../taxonomy/rup-taxonomy.xml#bishop">Bishop of
+                            Bristol</occupation>
+                        <ref type="LOC" target="https://lccn.loc.gov/no2017115604"/>
+                        <ref type="ODNB" target="https://doi.org/10.1093/ref:odnb/24987"/>
+                    </person>
+
+                    <person xml:id="P0013" sex="male">
+                        <persName>
+                            <forename>Edward</forename>
+                            <surname>Chetwynd</surname>
+                        </persName>
+                        <birth from="1576" to="1577">1576/7</birth>
+                        <death when="1639-05-13">13 May 1639</death>
+                        <affiliation><orgName>Exeter College, Oxford,</orgName></affiliation>
+                        <occupation ana="../taxonomy/rup-taxonomy.xml#dean">Dean of
+                            Bristol</occupation>
+                        <ref type="LOC" target="https://lccn.loc.gov/no90024327"/>
+                        <ref type="ODNB" target="https://doi.org/10.1093/ref:odnb/5248"/>
+                    </person>
+
+                    <person xml:id="P0014" sex="male">
+                        <persName>
+                            <forename>Richard</forename>
+                            <surname>Inglethorpe</surname>
+                        </persName>
+                        <birth from="1560" cert="unknown">1560</birth>
+                        <death when="1619">1619</death>
+                        <note>Probate date: 3 June 1619</note>
+                        <occupation ana="../taxonomy/rup-taxonomy.xml#bailiff">Bailiff</occupation>
+                        <occupation ana="../taxonomy/rup-taxonomy.xml#chamberlain"
+                            >Chamberlain</occupation>
+                        <ref type="TNA"
+                            target="https://discovery.nationalarchives.gov.uk/details/r/D908037"
+                            >PROB 11/133/624: Will of Richard Inglethorpe, Gentleman of Worcester,
+                            Worcestershire</ref>
+                    </person>
+
+                    <person xml:id="P0015" sex="male">
+                        <persName>
+                            <forename>John</forename>
+                            <surname>Davenant</surname>
+                        </persName>
+                        <birth when="1565">1565</birth>
+                        <death when="1622-04-19">19 April 1622</death>
+                        <occupation>Vintner</occupation>
+                        <occupation>Mayor</occupation>
+                    </person>
+
+                    <person xml:id="P0016" sex="female">
+                        <persName>
+                            <forename>Jane</forename>
+                            <addName type="nick">Jennet</addName>
+                            <note>Biographical information about Jane Davenant is found in the ODNB
+                                record of her son Sir William Davenant (<ref
+                                    target="https://doi.org/10.1093/ref:odnb/7197"/>)</note>
+                            <surname type="birth">Sheppard</surname>
+                            <surname type="married">Davenant</surname>
+                        </persName>
+                        <birth when="1568">1568</birth>
+                        <death when="1622">1622</death>
+                        <occupation>Tavern keeper</occupation>
+                    </person>
+
+                    <person xml:id="P0017" sex="male">
+                        <persName>
+                            <roleName>Sir</roleName>
+                            <forename>William</forename>
+                            <surname>Davenant</surname>
+                        </persName>
+                        <birth when="1606">1606</birth>
+                        <death when="1668">1668</death>
+                        <occupation>Poet</occupation>
+                        <occupation>Playwright</occupation>
+                        <ref type="LOC" target="https://lccn.loc.gov/n79103858"/>
+                        <ref type="ODNB" target="https://doi.org/10.1093/ref:odnb/7197"/>
+                    </person>
+
+                    <person xml:id="P0018" sex="male">
+                        <persName>
+                            <forename>Thomas</forename>
+                            <surname>Johnson</surname>
+                        </persName>
+                        <birth from="1578">1578</birth>
+                        <death when="1621">buried on 16 November 1621</death>
+                        <affiliation>
+                            <orgName>Parish of St Mary Magdalen</orgName>
+                            <settlement>Oxford</settlement>
+                        </affiliation>
+                        <occupation>Physician</occupation>
+                        <ref type="TNA"
+                            target="https://discovery.nationalarchives.gov.uk/details/r/D882904"
+                            >PROB 11/139/332: Will of Doctor Thomas Johnson, Doctor of Physic and
+                            Medicine</ref>
+                        <ref type="EMP" target="https://practitioners.exeter.ac.uk/">County Studies
+                            : Oxfordshire Medics: Person ID: 7655</ref>
+                    </person>
+
+                    <person xml:id="P0019" sex="male">
+                        <persName>
+                            <roleName>Mr</roleName>
+                            <addName type="initials">W. J.</addName>
+                        </persName>
+                        <floruit when="1621">c. 1621</floruit>
+                        <note>Identified only by initials in the source; no further information
+                            known.</note>
+                    </person>
+
+
+                    <person xml:id="P0020" sex="male">
+                        <persName>
+                            <forename>John</forename>
+                            <surname>Nichols</surname>
+                        </persName>
+                        <death when="1622-12-21">21 December 1622</death>
+                        <occupation from="1618-07-28" to="1623-10-28">
+                            <roleName>Vicar</roleName>
+                            <placeName>Long Ashton</placeName>
+                        </occupation>
+                        <note>Ordained priest on 20 September 1607</note>
+                        <ref type="CCEd"
+                            target="https://blog.theclergydatabase.org.uk/jsp/persons/CreatePersonFrames.jsp?PersonID=58990"
+                        />
+                    </person>
+
+                    <person xml:id="P0021" sex="male">
+                        <persName>
+                            <roleName>Sir</roleName>
+                            <forename>John</forename>
+                            <surname>Spencer</surname>
+                        </persName>
+                        <death when="1610-03-03">3 March 1610</death>
+                        <occupation>
+                            <roleName>Mayor</roleName>
+                            <placeName>London</placeName>
+                        </occupation>
+                        <occupation>Merchant</occupation>
+                        <ref type="ODNB"
+                            target="https://doi-org.ezproxy-prd.bodleian.ox.ac.uk/10.1093/ref:odnb/26130"
+                        />
+                    </person>
+
+                    <person xml:id="P0022" sex="male">
+                        <persName>
+                            <addName type="initials">M. W. S.</addName>
+                        </persName>
+                        <floruit when="1622">c. 1622</floruit>
+                        <note>Identified only by initials in the source; no further information
+                            known.</note>
+                    </person>
+
+                </listPerson>
+
+
+            </div>
+        </body>
+    </text>
+</TEI>
