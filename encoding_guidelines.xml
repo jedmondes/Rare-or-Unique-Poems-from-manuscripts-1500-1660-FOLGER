@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>RUP Encoding Guidelines</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Internal documentation.</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Guidelines for RUP encoding.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+
+   <text>
+      <body>
+         <div>
+            <head>Attribution and authorship</head>
+            <p>AUTHOR VS. RESPSTMT; author is know to be definitely? attributed better in manuscript
+               context?</p>
+            <!-- E.G. <respStmt>
+               <resp>attributed author</resp>
+               <name>NAME HERE</name>
+            </respStmt> -->
+         </div>
+         <div>
+            <head>Alt Ids</head>
+            <p>At the moment I'm using this attribute to point from the msdesc to the Folger Library
+               catalog record for that volume, see comment below for example of usage</p>
+            <!-- e.g.
+      <altIdentifier type="resource"> <idno type="URI">https://catalog.folger.edu/record/224059</idno>
+                **but if I add another one for CELM it points to a range of mss not the individual ms 
+       <altIdentifier type="resource"> <idno type="URI">https://celm.folger.edu/repositories/folger-v-a-100.html</idno>
+              ****Query when at Folger if unique URI for indiviudal mss can be created***-->
+
+         </div>
+         <div>
+            <head>Poem encoding</head>
+
+            <p>Use consistent encoding for structure, names, spelling, and textual features.</p>
+
+            <list>
+               <item>Use <gi>div</gi> with a stable <att>xml:id</att>.</item>
+               <item>Encode headings in <gi>head</gi>.</item>
+               <item>Use <gi>persName</gi> and <gi>placeName</gi> for entities.</item>
+               <item>Use <gi>choice</gi> for original and regularised spelling.</item>
+               <item>Mark supplied text with <gi>ex</gi> and deletions with <gi>del</gi>.</item>
+               <item>Use <gi>unclear</gi> for damaged or uncertain readings.</item>
+               <item>For overwritten text: use <gi>del</gi>
+                  <gi>add</gi> inside <gi>subst</gi> Include place inside <gi>add</gi>as in example
+                  below</item>
+            </list>
+            <p>See comments in this file for full examples.</p>
+         </div>
+         <!-- POEM ENCODING GUIDE
+
+      div:
+      xml:id should be unique and predictable.
+      Example:
+      <div type="poem" xml:id="rup_000001">
+
+      head:
+      Keep the title in <head>. Use <lb/> for line after Head
+      Example:  <lb/>
+
+      person name:
+      Use ref to point to person in  persons.xml file
+      Example: 
+      <persName ref="../persons/persons.xml#P0001">R. Cole</persName>
+
+      place:
+      <placeName>Oxford</placeName>
+
+      regularized spelling:
+      <choice><orig>sceince</orig><reg>since</reg></choice>
+
+      supplied from contractions, abbreviations:
+      w<ex>i</ex>th
+
+      deletions:
+      <del rend="strikethrough">your</del>
+      
+      substitutions:
+     <l n="6"><subst><del>Which</del><add place="above">Who</add></subst> each night          died,
+  
+      unclear:
+      <unclear cert="medium" reason="damage">shoow</unclear>
+
+     Rend values:
+     Examples:
+      <hi rend="italic">Pallace</hi>
+      <l n="11" rend="indent">Goe strainger now if good thou art,</l>
+         
+         -->
+
+
+         <div>
+            <head>Date encoding</head>
+
+            <p>Encode dates using <gi>date</gi> inside <gi>creation</gi>.</p>
+
+            <list>
+               <item>Use attributes for machine-readable dates (YYYY-MM-DD).</item>
+               <item>Use element content for human-readable description.</item>
+            </list>
+
+            <p>See comments in this file for full examples.</p>
+         </div>
+         <!-- DATE ENCODING GUIDE
+
+         Use attributes for machine-readable dates (ISO format: YYYY-MM-DD)
+         Use element content for human-readable description
+         
+         EXAMPLES:
+         
+         Exact date:
+         <date when="1622-04-19">19 April 1622</date>
+         
+         After a date:
+         <date notBefore="1622-04-19">after 19 April 1622</date>
+         
+         Before a date:
+         <date notAfter="1622-04-19">before 19 April 1622</date>
+         
+         Date range:
+         <date notBefore="1622-01-01" notAfter="1622-12-31">1622</date>
+         
+         Approximate date:
+         <date notBefore="1620" notAfter="1625">circa 1622</date>
+
+-->
+         <div>
+            <head>pb to mark change of page or folio</head>
+            <p>See comment in this section for instructions</p>
+
+            <!-- Insert <pb/> at top of the page <pb n="..."/> AND at the point of transition (e.g. <pb n="9v"/>). 
+           Images can be added later: Example, <pb n="9r" facs="../images/folger_va103_1/folger_va103_1_f09r.jpg"/>-->
+         </div>
+
+         <div>
+
+
+            <head>Reference system for persons file</head>
+            <p>Encode references using <gi>type</gi> inside <gi>ref</gi>.</p>
+
+            <list>
+               <item> for <gi>type</gi> use LOC plus URI for Library of Congress authority record
+                     (<ref target="https://authorities.loc.gov/"/>)</item>
+               <item>for <gi>type</gi> use ODNB plus URI for entry in the Dictionary of National
+                  Biography (<ref target="https://www.oxforddnb.com/"/>)</item>
+               <item>for <gi>type</gi> use AOx plus URI for entry in Alumni Oxonienses <bibl>Alumni
+                     Oxonienses 1500-1714, ed. Joseph Foster (Oxford, 1891), British History Online,
+                     </bibl>(<ref target="https://www.british-history.ac.uk/alumni-oxon/1500-1714"
+                  />)</item>
+               <item>for <gi>type</gi> use ACa plus URI for entry in Alumni Cantabrigienses
+                     <bibl>Alumni Cantabrigienses: A Biographical List of All Known Students,
+                     Graduates and Holders of Office at the University of Cambridge, from the
+                     Earliest Times to 1900, ed. Venn, John, and John Archibald Venn (Cambridge:
+                     Cambridge University Press, 2011) Print. Cambridge Library Collection (<ref
+                        target="https://www.cambridge.org/core/publications/collections/cambridge-library-collection"
+                     />) </bibl>
+               </item>
+               <item>for <gi>type</gi> use HPO plus URI for entry in the History of Parliament
+                  Online (<ref target="https://www.historyofparliamentonline.org/"/>)</item>
+               <item>for <gi>type</gi> use FAG plus URI for entry in the Find a Grave website (<ref
+                     target="https://www.findagrave.com/ "/>)</item>
+               <item>for <gi>type</gi> use TNA plus URI for entry for link to National Archives
+                  record or will (<ref target="https://discovery.nationalarchives.gov.uk/"/>)</item>
+               <!-- For example,  <ref target="https://discovery.nationalarchives.gov.uk/details/r/D882904"
+                            >TNA, PROB 11/139/332: Will of Doctor Thomas Johnson, Doctor of Physic
+                            and Medicine</ref>-->
+               <item> for <gi>type</gi> use EMP followed by name of pdf file plus URI for website of
+                  the Early Modern Practitioners Online
+               <bibl>Early Modern Practitioners: The Medical World of Early Modern England, Wales
+                  and Ireland, c.1500–1715, ed. by Jonathan Barry and Peter Elmer (University of
+                  Exeter). Database (<ref
+                     target="https://practitioners.exeter.ac.uk"/>).</bibl>
+               </item>
+              <item> for <gi>type</gi> use CCEd plus URI for Clergy of the
+                  Church of England Database (<ref
+                     target="https://theclergydatabase.org.uk/jsp/search/index.jsp"/>)</item>
+            </list>
+
+            <p>See comments in this file for full examples.</p>
+            <!-- <ref type="LOC">https://lccn.loc.gov/n79103858</ref>
+               <ref type="HPO">https://www.historyofparliamentonline.org/volume/1604-1629/member/fane-sir-george-1581-1640</ref>
+               <ref type="DNB">https://doi.org/10.1093/ref:odnb/7197</ref> -->
+         </div>
+         <div>
+            <head>Miscellaneious</head>
+            <p>For insertaions above the line, etc. use <gi>place</gi> inside <gi>add</gi>
+            </p>
+            <p>Caret sign is ignored</p>
+            <!-- Example: 
+         <l n="11">There are such skilfull Doctors <add place="above">in’t</add> they say,</l> -->
+
+         </div>
+
+
+
+
+      </body>
+   </text>
+</TEI>
