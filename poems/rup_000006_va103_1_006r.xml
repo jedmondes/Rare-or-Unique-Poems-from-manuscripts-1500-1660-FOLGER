@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="first_line">All worthy eyes read this that hither come</title>
+
+            <respStmt>
+               <resp>TEI encoding</resp>
+               <name>Jessica Edmondes</name>
+            </respStmt>
+
+            <respStmt xml:id="aiSummary">
+               <resp>Summary generated with AI assistance</resp>
+               <name>ChatGPT (OpenAI, GPT-5.3)</name>
+            </respStmt>
+         </titleStmt>
+
+
+         <publicationStmt>
+            <publisher>Rare or Unique Poems from manuscripts, 1500–1660 (RUP) </publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">This allows you to
+                  use our transcriptions without additional permission provided that you cite the
+                  RUP Project as the source and that you license anything you create using the
+                  transcriptions under the same or equivalent license.</licence>
+            </availability>
+            <date when="2026">2026</date>
+         </publicationStmt>
+
+         <sourceDesc>
+            <msDesc xml:id="folger_va103_1">
+               <msIdentifier>
+                  <repository>Folger Shakespeare Library</repository>
+                  <idno type="shelfmark">V.a.103.1</idno>
+                  <altIdentifier type="resource">
+
+                     <idno type="URI">https://catalog.folger.edu/record/224059</idno>
+                  </altIdentifier>
+
+               </msIdentifier>
+               <msContents>
+                  <msItem>
+
+                     <locus from="6r" to="6r">6r</locus>
+
+                     <incipit>All worthy eyes read this that hither come <ref
+                           target="https://firstlines.folger.edu/detail.php?id=46366">Folger First
+                           Line Index</ref></incipit>
+                  </msItem>
+               </msContents>
+            </msDesc>
+            <listWit>
+               <witness xml:id="wit_bod_eng_poet_e_14">Bodleian Libraries, Eng. poet. e. 14 <locus
+                     from="96r" to="96r">96 rev</locus>
+               </witness>
+            </listWit>
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="eng">English</language>
+         </langUsage>
+         <textClass>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#genre" target="#epitaph"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#function" target="#praise"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#topic" target="#death"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#form_features" target="#anagram"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#compiler_identified_genre"
+               target="#laudatory_epitaphs"/>
+         </textClass>
+
+         <abstract resp="#aiSummary">
+            <p>This epitaph commemorates Lady Waller by addressing the reader directly and asserting
+               the enduring nature of her virtue. It presents her as perpetually worthy of mourning
+               and describes her life as marked by devotion to God. She is explicitly likened to a
+               saint, and the poem concludes with wordplay on her name, associating it with a laurel
+               tree to suggest honour and lasting renown.</p>
+         </abstract>
+
+         <creation>
+            <date notBefore="1624-09">after September 1624</date>
+         </creation>
+      </profileDesc>
+
+      <encodingDesc>
+         <projectDesc>
+            <p>This e-text is part of the Works section of the Rare or Unique Poems from
+               manuscripts, 1500–1660 (RUP) Database</p>
+            <p>Encoding conventions: TEI P5; semi-diplomatic transcription etc.</p>
+            <p><address>
+                  <addrLine>
+                     <ref target="https://rup.hypotheses.org/">RUP website</ref>
+                  </addrLine>
+               </address></p>
+         </projectDesc>
+
+         <editorialDecl>
+            <p>Transcriptions are semi-diplomatic, based on on a single manuscript witness. Original
+               punctuation is retained. Letterforms are modernized for u/v and i/j, and majuscule
+               "F" is used in place of "ff". Abbreviations and brevigraphs are expanded, with
+               supplied letters italicized, except for the ampersand. Regularization is applied
+               where it clarifies meaning, using &lt;choice&gt;, &lt;orig&gt;, and &lt;reg&gt;.
+               However, we do not attempt to exactly mirror the layout of the page, nor are we able
+               to reproduce every brevigraph (symbols, strokes, or modified letter forms), mark of
+               punctuation, or symbol accurately.</p>
+
+            <p>Poem summary generated with the assistance of ChatGPT and reviewed by the
+               encoder.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+
+   <text>
+      <body>
+
+         <pb n="6r"/>
+
+         <div type="poem" xml:id="rup_000006">
+            <head>
+               <lb/><app>
+                  <lem>On the <persName ref="../persons/persons.xml#P0009">Lady
+                     Waller</persName></lem>
+                  <rdg wit="#wit_bod_eng_poet_e_14">On <persName ref="../persons/persons.xml#P0008"
+                        >his</persName> <persName ref="../persons/persons.xml#P0009">Lady</persName></rdg>
+               </app>
+               <lb/>
+            </head>
+            <lg type="couplets">
+               <l n="1">All worthy eies reade this that hither come;</l>
+               <l n="2">Never decaying vertue fills this Toombe:</l>
+               <l n="3">Never enough to bee lamented heere,</l>
+               <l n="4">As long as women kind are worth a teare.</l>
+               <l n="5">Within these weeping stones lies Lady Waller,</l>
+               <l n="6"><app>
+                     <lem>Hee</lem>
+                     <rdg wit="#wit_bod_eng_poet_e_14">Her</rdg>
+                  </app> that will know her name a Sainct must call her;</l>
+               <l n="7">Her life was so good <app>
+                     <lem>whylst</lem>
+                     <rdg wit="#wit_bod_eng_poet_e_14">while</rdg>
+                  </app> shee liv’d here,</l>
+               <l n="8">Leaveled so straight to God in love and feare:</l>
+               <l n="9" rend="indent">Even so good that turne her name, and see</l>
+               <l n="10" rend="indent">Ready to Crowne that life a Lawrell=Tree.</l>
+            </lg>
+
+         </div>
+      </body>
+
+      <back>
+         <div type="historical" xml:lang="en">
+            <head>Historical context and dating</head>
+            <p>Anne (Anna) Choute Waller (d. September 1624) was the wife of Sir Walter Waller (d.
+               1599). She was buried in the chancel of St Mary the Virgin, Speldhurst, Kent, where
+               an elaborate alabaster monument was erected to commemorate her. The text of this poem
+               is also found on the monument (see <ref target="#anne_waller_monument"/>).</p>
+         </div>
+
+         <div type="notes" xml:lang="en">
+            <head> Notes </head>
+
+
+            <p>In both copies, the poem is transmitted alongside a companion poem on <persName
+                  ref="../persons/persons.xml#P0008">Sir Walter Waller</persName>, together forming
+               a paired set of elegies on husband and wife (<ref target="#rup_000005"/>).</p>
+         </div>
+
+         <div type="bibliography">
+            <head>Works cited</head>
+            <listBibl>
+               <bibl xml:id="anne_waller_monument">
+                  <title>Memorial to Anne (Anna) Waller</title>, <title level="m">Find a
+                     Grave</title>, <ref target="https://www.findagrave.com"
+                     >https://www.findagrave.com</ref>. </bibl>
+            </listBibl>
+         </div>
+
+
+      </back>
+   </text>
+</TEI>

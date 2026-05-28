@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="first_line">Well since th’art dead if thou canst mortals hear</title>
+            <respStmt>
+               <resp>TEI encoding</resp>
+               <name>Jessica Edmondes</name>
+            </respStmt>
+
+            <respStmt xml:id="aiSummary">
+               <resp>Summary generated with AI assistance</resp>
+               <name>ChatGPT (OpenAI, GPT-5.3)</name>
+            </respStmt>
+         </titleStmt>
+
+         <publicationStmt>
+            <publisher>Rare or Unique Poems from manuscripts, 1500–1660 (RUP) </publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">This allows you to
+                  use our transcriptions without additional permission provided that you cite the
+                  RUP Project as the source and that you license anything you create using the
+                  transcriptions under the same or equivalent license.</licence>
+            </availability>
+            <date when="2026">2026</date>
+         </publicationStmt>
+
+         <sourceDesc>
+            <msDesc xml:id="folger_va103_1">
+               <msIdentifier>
+                  <repository>Folger Shakespeare Library</repository>
+                  <idno type="shelfmark">V.a.103.1</idno>
+                  <altIdentifier type="resource">
+                     <idno type="URI">https://catalog.folger.edu/record/224059</idno>
+                  </altIdentifier>
+
+               </msIdentifier>
+               <msContents>
+                  <msItem>
+                     <locus from="9r" to="9r">9r</locus>
+                     <incipit>Well since th’art dead if thou canst mortals hear</incipit>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="eng">English</language>
+         </langUsage>
+         <textClass>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#genre" target="#elegy"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#function" target="#lament"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#function" target="#praise"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#topic" target="#death"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#topic" target="#marriage"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#latin_source_genres" target="#epicedium"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#compiler_identified_genre"
+               target="#laudatory_epitaphs"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#occupations_roles" target="#vintner"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#occupations_roles" target="#mayor"/>
+         </textClass>
+
+         <abstract resp="#aiSummary">
+            <p>The poem mourns Mr. Davenant, an Oxford mayor who died two weeks after his wife. It
+               notes that death is common, but the poet is especially saddened when good people die.
+               The poet says that Davenant lived a virtuous life that needed no exaggerated praise.
+               He had natural talents, education, honours, wealth, and children, and was fortunate
+               in many ways. After his wife died, he lived long enough to perform her funeral rites,
+               then died himself fourteen days later. The poem ends by addressing the couple
+               together, wishing them a peaceful rest in their shared grave.</p>
+         </abstract>
+
+         <creation>
+            <date notBefore="1622-04-19">after 19 April 1622</date>
+         </creation>
+
+      </profileDesc>
+
+      <encodingDesc>
+         <projectDesc>
+            <p>This e-text is part of the Works section of the Rare or Unique Poems from
+               manuscripts, 1500–1660 (RUP) Database</p>
+            <p>Encoding conventions: TEI P5; semi-diplomatic transcription etc.</p>
+            <p><address>
+                  <addrLine>
+                     <ref target="https://rup.hypotheses.org/">RUP website</ref>
+                  </addrLine>
+               </address></p>
+         </projectDesc>
+
+         <editorialDecl>
+            <p>Transcriptions are semi-diplomatic, based on the manuscript text cited as the copy
+               text. Original punctuation is retained. Letterforms are modernized for u/v and i/j,
+               and majuscule "F" is used in place of "ff". Abbreviations and brevigraphs are
+               expanded, with supplied letters italicized, except for the ampersand. Regularization
+               is applied where it clarifies meaning, using &lt;choice&gt;, &lt;orig&gt;, and
+               &lt;reg&gt;. However, we do not attempt to exactly mirror the layout of the page, nor
+               are we able to reproduce every brevigraph (symbols, strokes, or modified letter
+               forms), mark of punctuation, or symbol accurately.</p>
+
+            <p>Poem summary generated with the assistance of ChatGPT and reviewed by the
+               encoder.</p>
+         </editorialDecl>
+      </encodingDesc>
+
+   </teiHeader>
+
+   <text>
+      <body>
+         <pb n="9r"/>
+         <div type="poem" xml:id="rup_000011">
+            <head>On <persName ref="../persons/persons.xml#P0015">Mr Davena<ex>n</ex>tt</persName>
+               who died att <placeName>Oxford</placeName> in his Maioralty<lb/> A fortnight after
+                  <persName ref="../persons/persons.xml#P0016">his Wife</persName>.</head>
+            <lg type="couplets">
+               <l n="1">Well <choice>
+                     <orig>sceince</orig>
+                     <reg>since</reg>
+                  </choice> th’art deade, if thou canst mortalls heare,</l>
+               <l n="2">Take this just Tribute of a Funerall teare,</l>
+
+               <l n="3">Each day I see a Corse, and now no Knell</l>
+               <l n="4">Is more Familiare then a Passing-Bell;</l>
+
+               <l>All die no fix'ed inheritance men have,</l>
+               <l>Save that they are freeholders to the grave.</l>
+
+               <l>Only I greive, when vertues brood</l>
+               <l>Becomes Wormes meate, and is the Cankers foode.</l>
+
+               <l>Alas that vnrelenting death should bee</l>
+               <l>At odds w<ex>i</ex>th Goodnesse! Fairest budds wee see</l>
+
+               <l>Are soonest cropp’t; Wee know the fewest crimes,</l>
+               <l>Tis theire pererogative to die bee-times</l>
+
+               <l>Enlargd from this Worlds misery: And thus hee</l>
+               <l>Whom wee now waile made hast to bee made free.</l>
+
+               <l>There needes no loud Hyperbole sett him foorth,</l>
+               <l>Nor sawcy Elegy to bely his worth;</l>
+
+               <l>His life was an <hi rend="italic">Encomium</hi> large enough:</l>
+               <l>True Gold doth neede no foyles to sett itt off</l>
+
+               <l>Hee had choyce giftes of nature and of arte;</l>
+               <l>Neither was Fortune wanting on her parte</l>
+
+               <l>To him in Honours, Wealth, or Progeny:</l>
+               <l>Hee was on all sides blest! Why should hee dye?</l>
+
+               <l>And yett why should he live his mate being gone,</l>
+               <l>And Turtle like sigh out and endlesse moone?</l>
+
+               <l>No, no; hee loved her better, and would not <del rend="strikethrough">so
+                     easily</del></l>
+               <l>So easily lost what hee so hardly gott.</l>
+
+               <l>Hee liv’d to pay the last Rites to his Bride,</l>
+               <l>That done hee pin’d out fourteene dayes and died.</l>
+
+               <l>Thrice happy paire! Oh could my simple Verse</l>
+               <l>Reare you a lasting Trophee on your your Hearse,</l>
+
+               <l>You should vie yeares with time; Had you your due,</l>
+               <l>Eternety were as short liv’d as you.</l>
+
+               <l>Farewell and in one Grave now you are deade</l>
+               <l>Sleepe undisturbd, as in your marriage beed.</l>
+            </lg>
+         </div>
+
+      </body>
+      <back>
+         <div type="historical" xml:lang="en">
+            <head>Historical context and dating</head>
+            <p>John Davenant (1565–1622), vintner and proprietor of the Crown Inn, Cornmarket
+               Street, Oxford was elected mayor on 17 September 1621. His wife Jane (née Sheppard)
+               died on 5 April 1622 and was buried at St Martin’s Church, Oxford. Davenant died
+               fourteen days later on 19 April 1622. His will requested burial as near to his wife
+               “as the place will give leave where she lyeth.” The Davenants were well-known, they
+               kept an important inn frequented by Shakespeare, and their son <persName
+                  ref="../persons/persons.xml#P0017">William</persName> became a prominent
+               dramatist.</p>
+         </div>
+
+         <div type="notes" xml:lang="en">
+            <head> Notes </head>
+            <p> See also <ref
+                  target="rup_000012 rup_000018"
+                  >other elegies on John Davenant</ref> in the same manuscript.</p>
+         </div>
+
+      </back>
+   </text>
+</TEI>

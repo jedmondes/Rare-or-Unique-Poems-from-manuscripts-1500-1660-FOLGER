@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="first_line">Tis no addition to his glorious hearse</title>
+
+            <respStmt>
+               <resp>TEI encoding</resp>
+               <name>Jessica Edmondes</name>
+            </respStmt>
+
+            <respStmt xml:id="aiSummary">
+               <resp>Summary generated with AI assistance</resp>
+               <name>ChatGPT (OpenAI, GPT-5.3)</name>
+            </respStmt>
+         </titleStmt>
+
+
+         <publicationStmt>
+            <publisher>Rare or Unique Poems from manuscripts, 1500–1660 (RUP)</publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">This allows you to
+                  use our transcriptions without additional permission provided that you cite the
+                  RUP Project as the source and that you license anything you create using the
+                  transcriptions under the same or equivalent license.</licence>
+            </availability>
+            <date when="2026">2026</date>
+         </publicationStmt>
+
+         <sourceDesc>
+            <msDesc xml:id="folger_va103_1">
+
+               <msIdentifier>
+                  <repository>Folger Shakespeare Library</repository>
+                  <idno type="shelfmark">V.a.103.1</idno>
+                  <altIdentifier type="resource">
+
+                     <idno type="URI">https://catalog.folger.edu/record/224059</idno>
+                  </altIdentifier>
+
+               </msIdentifier>
+               <msContents>
+                  <msItem>
+
+                     <locus from="10r" to="10r">10r</locus>
+
+                     <incipit>Tis no addition to his glorious hearse</incipit>
+                  </msItem>
+               </msContents>
+            </msDesc>
+
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="eng">English</language>
+         </langUsage>
+         <textClass>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#genre" target="#elegy"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#topic" target="#death"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#latin_source_genres" target="#epicedium"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#compiler_identified_genre"
+               target="#laudatory_epitaphs"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#occupations_roles" target="#vicar"/>
+         </textClass>
+
+         <abstract resp="#aiSummary">
+            <p>This poem is an elegy on the death of John Nycholls, Vicar of Long Ashton. It states
+               that praise in verse can add nothing to him, since his soul is now with the saints,
+               but asks leave to lament the loss. The speaker’s remaining comfort is to say how well
+               he lived and died. His life is described as sermon-like, teaching wholesome doctrine
+               by conduct as well as speech, and as marked by pain yet rich in comfort, so that he
+               became a physician to others, teaching them how to live and die. After his “fiery
+               trial,” the long-wished-for hour of death came, and, dying on a Saturday, he went to
+               keep his Sabbath with the saints in heaven.</p>
+         </abstract>
+
+         <creation>
+            <date notBefore="1622-12-21">after 21 December 1622</date>
+         </creation>
+      </profileDesc>
+
+      <encodingDesc>
+         <projectDesc>
+            <p>This e-text is part of the Works section of the Rare or Unique Poems from
+               manuscripts, 1500–1660 (RUP) Database</p>
+            <p>Encoding conventions: TEI P5; semi-diplomatic transcription etc.</p>
+            <p><address>
+                  <addrLine>
+                     <ref target="https://rup.hypotheses.org/">RUP website</ref>
+                  </addrLine>
+               </address></p>
+         </projectDesc>
+
+         <editorialDecl>
+            <p>Transcriptions are semi-diplomatic, based on on a single manuscript witness. Original
+               punctuation is retained. Letterforms are modernized for u/v and i/j, and majuscule
+               "F" is used in place of "ff". Abbreviations and brevigraphs are expanded, with
+               supplied letters italicized, except for the ampersand. Regularization is applied
+               where it clarifies meaning, using &lt;choice&gt;, &lt;orig&gt;, and &lt;reg&gt;.
+               However, we do not attempt to exactly mirror the layout of the page, nor are we able
+               to reproduce every brevigraph (symbols, strokes, or modified letter forms), mark of
+               punctuation, or symbol accurately.</p>
+
+            <p>Poem summary generated with the assistance of ChatGPT and reviewed by the
+               encoder.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+
+   <text>
+      <body>
+
+         <pb n="10r"/>
+
+         <div type="poem" xml:id="rup_000020">
+            <head>
+               <lb/>On <persName ref="../persons/persons.xml#P0020">Mr John Nycholls</persName>
+               Vicar of Longashtonn<lb/>Who died upon a Saterday night Dec: 21.<lb/>1622</head>
+
+
+            <lg type="couplets">
+               <l n="1">‘Tis no addition to his Glorious herse</l>
+               <l n="2">To sing His praise, or Ballad out a verse;</l>
+               <l n="3">No his pure soule (now w<ex>i</ex>th the Saintes at praiers)</l>
+               <l n="4">Lifts him above the Region of such aiers:</l>
+               <l n="5">Yet give us leave our great losse to lament,</l>
+               <l n="6">Sorrow would burst us if itt had no vente.</l>
+               <l n="7">Wee know he’s deade; <unclear reason="illegible">herin</unclear> bein blest
+                  though,</l>
+               <l n="8">Since tis some happinesse to <subst>
+                     <del><unclear reason="illegible"/></del>
+                     <add place="above">know</add>
+                  </subst>the worst:</l>
+               <l n="9">For Hopes and feares only make fortunes thrive,</l>
+               <l n="10">And w<ex>i</ex>th strange art do murther men alive.</l>
+               <l n="11">All the content now left us is to tell,</l>
+               <l n="12">How glad wee are hee liv’d and died so well.</l>
+               <l n="13">To write his life even in the plainest hew</l>
+               <l n="14">Would seeme Hyperboles, although most trew;</l>
+               <l n="15">His verie life Was Sermons, and did preach</l>
+               <l n="16">As wholsome doctrines as his toungue could teach.</l>
+               <l n="17">And for His life itt ‘twas (my duller braine</l>
+               <l n="18">Want’s a due attribute) as full of paine <del rend="strikethrough">as rich
+                     in comfort</del></l>
+               <l n="19">As rich in Comforte; Comfort did abound,</l>
+               <l n="20">The helplesse sicke gave cordialls to the sound.</l>
+               <l n="21">The Patient was Physitian: Who stood by,</l>
+               <l n="22">By him who taught to live, Were learn’d to dy.</l>
+               <l n="23">Happy in life and death in end and beirth!</l>
+               <l n="24">Hee was in Heaven, and yett in Hell on Earth;</l>
+               <l n="25">For too the hearers comfort hee foorth straines</l>
+               <l n="26">Most Heavenly raptures in most Hellish paines.</l>
+               <l n="27">Hee had his fiery triall w<ex>hi</ex>ch being past,</l>
+               <l n="28">The oft wisht hower of death did come att last:</l>
+               <l n="29" rend="indent">For having worne out the weeke he went ith Eaven</l>
+               <l n="30" rend="indent">To keepe his Sabboth w<ex>i</ex>th the Saints in Heaven.</l>
+            </lg>
+
+         </div>
+
+      </body>
+
+      <back>
+         <div type="historical" xml:lang="en">
+            <head>Historical context and dating</head>
+
+
+            <p>The poem suggests that the speaker knew details of Nichols’s final illness and death,
+               referring to the “fiery triall” of his last sickness and stating that he died on a
+               Saturday night, implying a close association between writer and subject. Nichols as
+               ordained priest on 20 September 1607 and as Vicar of Long Ashton from July 1618 until
+               October 1623, the latter date likely marking the refilling of the benefice rather
+               than the exact date of his death (<ref target="#cced">Clergy of the Church of England
+                  Database</ref>). The manuscript context supports a local connection: as noted in
+               the Folger catalog <ref target="https://catalog.folger.edu/record/224059">Folger
+                  catalog</ref>, the volume belonged to the Smith (Smithe/Smyth) family of Long
+               Ashton, Somerset, whose names—John, Hugh, and Charles—appear in the book between 1674
+               and 1690, suggesting a personal or familial link between the manuscript’s owners and
+               the subject of the poem.</p>
+         </div>
+
+         <listBibl>
+            <bibl xml:id="cced">
+               <title>The Clergy of the Church of England Database 1540-1835 (CCEd)</title>. <ref
+                  type="url">https://theclergydatabase.org.uk/</ref> </bibl>
+         </listBibl>
+
+      </back>
+   </text>
+</TEI>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="first_line">Twas not my fate to see thee (noble lord)</title>
+
+
+            <respStmt>
+               <resp>TEI encoding</resp>
+               <name>Jessica Edmondes</name>
+            </respStmt>
+
+            <respStmt xml:id="aiSummary">
+               <resp>Summary generated with AI assistance</resp>
+               <name>ChatGPT (OpenAI, GPT-5.3)</name>
+            </respStmt>
+         </titleStmt>
+
+
+         <publicationStmt>
+            <publisher>Rare or Unique Poems from manuscripts, 1500–1660 (RUP) </publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">This allows you to
+                  use our transcriptions without additional permission provided that you cite the
+                  RUP Project as the source and that you license anything you create using the
+                  transcriptions under the same or equivalent license.</licence>
+            </availability>
+            <date when="2026">2026</date>
+         </publicationStmt>
+
+         <sourceDesc>
+            <msDesc xml:id="folger_va103_1">
+
+               <msIdentifier>
+                  <repository>Folger Shakespeare Library</repository>
+                  <idno type="shelfmark">V.a.103.1</idno>
+                  <altIdentifier type="resource">
+
+                     <idno type="URI">https://catalog.folger.edu/record/224059</idno>
+                  </altIdentifier>
+
+               </msIdentifier>
+               <msContents>
+                  <msItem>
+                     <locus from="7r" to="8r">7r-8r</locus>
+
+                     <incipit>Twas not my fate to see thee (noble lord)</incipit>
+                  </msItem>
+               </msContents>
+            </msDesc>
+
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="eng">English</language>
+         </langUsage>
+         <textClass>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#genre" target="#epitaph"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#function" target="#praise"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#function" target="#rebuke"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#social_relation"
+               target="#collective_target"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#topic" target="#death"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#topic" target="#religion"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#topic" target="#controversy"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#topic" target="#anti-puritan"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#topic"
+               target="#civic_ecclesiastical_conflict"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#occupations_roles" target="#bishop"/>
+
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#compiler_identified_genre"
+               target="#laudatory_epitaphs"/>
+         </textClass>
+
+         <abstract resp="#aiSummary">
+            <p>This elegiac poem laments the death of Dr. Searchfield, Bishop of Bristol, from the
+               perspective of a speaker who arrived too late to see him alive or attend his funeral,
+               offering instead a belated poetic tribute. It presents his death as untimely—like a
+               sun setting at noon—while also affirming that his soul now shines more brightly in
+               heaven. The poem then turns into a sharp critique of Bristol, initially condemning
+               its citizens as a whole but more pointedly targeting the city’s religious and civic
+               structures: the local clergy—especially those of a puritanical, anti-episcopal
+               bent—are satirized as ignorant, factious, and hostile to church authority, while the
+               civic authorities are implicated in enabling and sustaining this environment through
+               their control over appointments and patronage. In such a climate of “senseless
+               broils,” the bishop is effectively worn down and driven to an early death. In
+               contrast, Searchfield is praised as a model prelate—grave yet gracious, devoted to
+               his duties, and committed to reforming the Church—whose virtue was recognized only by
+               the discerning few, making his loss both a personal tragedy and a wider indictment of
+               the society that failed him.</p>
+         </abstract>
+
+         <creation>
+            <date notBefore="1622-10-21">after 21 October 1622</date>
+         </creation>
+      </profileDesc>
+
+      <encodingDesc>
+         <projectDesc>
+            <p>This e-text is part of the Works section of the Rare or Unique Poems from
+               manuscripts, 1500–1660 (RUP) Database</p>
+            <p>Encoding conventions: TEI P5; semi-diplomatic transcription etc.</p>
+            <p><address>
+                  <addrLine>
+                     <ref target="https://rup.hypotheses.org/">RUP website</ref>
+                  </addrLine>
+               </address></p>
+         </projectDesc>
+
+         <editorialDecl>
+            <p>Transcriptions are semi-diplomatic, based on on a single manuscript witness. Original
+               punctuation is retained. Letterforms are modernized for u/v and i/j, and majuscule
+               "F" is used in place of "ff". Abbreviations and brevigraphs are expanded, with
+               supplied letters italicized, except for the ampersand. Regularization is applied
+               where it clarifies meaning, using &lt;choice&gt;, &lt;orig&gt;, and &lt;reg&gt;.
+               However, we do not attempt to exactly mirror the layout of the page, nor are we able
+               to reproduce every brevigraph (symbols, strokes, or modified letter forms), mark of
+               punctuation, or symbol accurately.</p>
+
+            <p>Poem summary generated with the assistance of ChatGPT and reviewed by the
+               encoder.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+
+   <text>
+      <body>
+
+         <pb n="7r"/>
+
+         <div type="poem" xml:id="rup_000009">
+            <head>
+               <lb/>On <persName ref="../persons/persons.xml#P0012">Dr Searchfeild</persName>
+                  B<ex>isho</ex>pp of <placeName>Bristoll</placeName> Oct 21 1622</head>
+
+            <lg type="couplets">
+               <l n="1">‘Twas not my fate to see thee (Noble Lorde)</l>
+               <l n="2">Nor did I to thy funeralls afforde <del type="strikethrough">a personall
+                     observance</del></l>
+               <l n="3">A personall observance; No; I spedd</l>
+               <l n="4">For all my hast but thus to finde thee deade</l>
+               <l n="5">Take then this <hi rend="italic">Posthumus</hi> dutye, though thy herse</l>
+               <l n="6">Can reape no honour from my simple Verse;</l>
+               <l n="7">Nor did from the drie Sermon: <note place="margin"><persName
+                        ref="../persons/persons.xml#P0013">Dr Chettwine</persName>, Deane of
+                     Bristell</note> yet I crave</l>
+               <l n="8">This leave to sobb a sadd Dirge ‘ore thy grave.</l>
+               <l n="9" rend="indent">Did I for this so long too see thy Towers</l>
+               <l n="10">Farr famed <placeName>Bristoll</placeName>? Did I chidd the howers,</l>
+               <l n="11">That barrd mee from thy wished sight, for this</l>
+               <l n="12">This mournfull welcome? Hence forth shalt thou misse</l>
+               <l n="13">Thy visitants, if the first night thou use</l>
+               <l n="14">To entertaine thy guest w<ex>i</ex>th such badd news.</l>
+               <l n="15">And yett I blame thee not; thy sadd array</l>
+               <l n="16">Became thy state, for night had seiz’d the day:</l>
+               <l n="17">Thy glorious Sunne wente downe in his high noone.</l>
+               <l n="18">Why did hee mount so high to sett so soone.</l>
+               <l n="19">So soone, as though hee only strove to gett</l>
+               <l n="20"> Unto those Westerne parts that hee might sett.</l>
+               <l n="21">And yett though sett he shines, and shines <del type="strikethrough">and
+                     shinn</del> most bright</l>
+               <l n="22">(W<ex>hi</ex>ch is most strange), now Hee’s deprived of light;</l>
+               <l n="23">His soule having scap’t her prison, now displaies</l>
+               <l n="24">Her brightest lustre; and resplendant raies:</l>
+               <l n="25">Leaving us heere to see itts worth and moone,</l>
+               <l n="26">Being (like great Goods) now Hee’s lost best knowne</l>
+               <l n="27" rend="indent">But I must sett my notes to a new Song,</l>
+               <l n="28">And wonder how hee could live heere so long</l>
+               <l n="29">Mongst such scumme of people, a base crue,</l>
+               <l n="30">Unworthy of his worth give them theire due,</l>
+               <l n="31">Most naturall Citizens, who could bee content</l>
+               <l n="32">To have the meanes, where ere the Bi<ex>sho</ex>pp went:</l>
+               <l n="33">And this Bristoll pure in all save sinne</l>
+               <l n="34">A priviledg place to kill a Bishopp in.</l>
+               <l n="35">I only wish (pleas’d itt the King and State)</l>
+               <l n="36">They bought theire Prelatts att a higher rate; </l>
+               <l n="37">For they intend to kill upp more I feare,</l>
+               <l n="38">Then that will buy three hundred pounds <note place="margin">The valew of
+                     that Bishopprick 3 or 4 hundred poundes</note>so deare.</l>
+               <pb n="7v"/>
+               <l n="39">Tis meanes enough to starve an honest man;</l>
+               <l n="40">Yett they have surer waies wherby the<supplied>y</supplied> can</l>
+               <l n="41">Kill safer then Phisitions; A new art</l>
+               <l n="42">By scensles broyles to breake a Bishopps heart.</l>
+               <l n="43">They have a goodly cleargy to, <del type="strikethrough">wh</del> weare all
+                  knowne,</l>
+               <l n="44">Except some few whom they dare scarsly owne,</l>
+               <l n="45">Who still when new teachers to them are putt</l>
+               <l n="46">Trimme <choice>
+                     <orig>‘em</orig>
+                     <reg>them</reg>
+                  </choice> att Cytty charge <choice>
+                     <orig>‘oth</orig>
+                     <reg>of the</reg>
+                  </choice> Puritann cutt;</l>
+               <l n="47">And who ere meanes his freind heere to preferre;</l>
+               <l n="48">Hee must bee a thus qualified minister.</l>
+               <l n="49" rend="indent">Can hee att a bordes end screw upp his face</l>
+               <l n="50">And cole the brooth w<ex>i</ex>th a long winded grace.</l>
+               <l n="51">Is hee an obstinate asse? and will hee snapp</l>
+               <l n="52">A Bishopps <choice>
+                     <orig>Rochett</orig>
+                     <reg>rochet</reg>
+                  </choice>, or his corner’d capp?</l>
+               <l n="53">Will not his conscience wi<ex/>th Church-Rites dispence?</l>
+               <l n="54">And doth hee zelously snuffell upp non-scence?</l>
+               <l n="55"> Can hee w<ex>i</ex>th skill knocke sound wordes out joynt?</l>
+               <l n="56">Draw fifteene uses from the fourteenth poynt?</l>
+               <l n="57">Eats hee large meales can he new doctrines hatch,</l>
+               <l n="58">And teach the King to weild the Spanish match?</l>
+               <l n="59">Hates hee all Gentlemen? And the Latine Toungue</l>
+               <l n="60">Cause tis the Romane Language? will hee wronge</l>
+               <l n="61">Any for his owne endes? And lastly dare</l>
+               <l n="62">Traduce all Governours but Mr Mayor?</l>
+               <l n="63">Bee wise send him to Bristoll when hee’s heere;</l>
+               <l n="64">Hee’s in Election for tenn poundes a yeare,</l>
+               <l n="65">And tis faier too: Make much on’t when tis suer,</l>
+               <l n="66">Heele scarse deserve a twenty Nobles cure.</l>
+               <l n="67" rend="indent">Oh who would live so subject to the hate</l>
+               <l n="68">Of such base vermine; where itt not the fate</l>
+               <l n="69">Of greatnesse, to bee still by envy knowne</l>
+               <l n="70">And when tis trodden most to rise best growne.</l>
+               <l n="71">So was the Noble Prelatt still w<ex>i</ex>thstood</l>
+               <l n="72">Yett sacrefised him selfe to’th Churches good:</l>
+               <l n="73">Only the wise, and Gentry found his worth,</l>
+               <l n="74">And finding lov’d itt thus sent him foorth</l>
+               <l n="75">In his trew coulours, that hee was belov’d</l>
+               <l n="76">Of such whose wisdome knew why they approv’d:</l>
+               <l n="77">For theire discerning eies w<ex>i</ex>thout the booke,</l>
+               <l n="78">Might reade a Noblenesse in his verie looke,</l>
+               <l n="79">Hee was of grave aspecte of a severe</l>
+               <l n="80">Yett Gentle carriadge, gesture debonaire,</l>
+               <l n="81">A winning conversation to the end,</l>
+               <l n="82">Hated all ill and truly lov’d his freind</l>
+               <pb n="8r"/>
+               <l n="83">How carefull of his charge, his living heere</l>
+               <l n="84">(Though w<ex>i</ex>th his losse) can witnesse! Three full yeare</l>
+               <l n="85">Hee spente him selfe to mende the Churches state,</l>
+               <l n="86">And for his pains his best reward was hate.</l>
+               <l n="87">So that impatient of not doing well good</l>
+               <l n="88">As being ill Consterd or not understood</l>
+               <l n="89" rend="indent">Hee flew from to Heaven as voyde of guilt or feare</l>
+               <l n="90" rend="indent">To make the auditt of his actions theere.</l>
+            </lg>
+
+         </div>
+      </body>
+
+      <back>
+         <div type="historical" xml:lang="en">
+            <head>Historical context and dating</head>
+            <p>During Bishop Searchfield’s tenure at Bristol (1619–1622), the
+               city’s civic authorities exercised significant control over ecclesiastical matters
+               and were resistant to episcopal initiatives. In 1620, when Searchfield supported a
+               proposal to increase the incomes of Bristol’s ministers, the city corporation refused
+               to cooperate and opposed the measure, even when it was backed by the Privy Council.
+               This episode illustrates the limited scope of episcopal authority within the city and
+               the strength of civic control over church affairs, tensions which are reflected in
+               the poem’s portrayal of Bristol as a hostile environment for its bishop. (<ref
+                  target="#harlow_bristol_ministry">Harlow 2017</ref>)</p>
+         </div>
+
+         <div type="bibliography">
+            <listBibl>
+               <head>Works cited</head>
+               <bibl xml:id="harlow_bristol_ministry">
+                  <author>Harlow, Jonathan</author>. <title>Religious Ministry in Bristol 1603–1689:
+                     Uniformity to Dissent</title>. <publisher>Bristol Record Society</publisher>,
+                     <date when="2017">2017</date>. </bibl>
+            </listBibl>
+         </div>
+
+
+
+
+      </back>
+   </text>
+</TEI>

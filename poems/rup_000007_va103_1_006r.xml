@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="first_line">She's dead nor were it fit she should live still</title>
+
+            <respStmt>
+               <resp>TEI encoding</resp>
+               <name>Jessica Edmondes</name>
+            </respStmt>
+
+            <respStmt xml:id="aiSummary">
+               <resp>Summary generated with AI assistance</resp>
+               <name>ChatGPT (OpenAI, GPT-5.3)</name>
+            </respStmt>
+         </titleStmt>
+
+
+         <publicationStmt>
+            <publisher>Rare or Unique Poems from manuscripts, 1500–1660 (RUP)</publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">This allows you to
+                  use our transcriptions without additional permission provided that you cite the
+                  RUP Project as the source and that you license anything you create using the
+                  transcriptions under the same or equivalent license.</licence>
+            </availability>
+            <date when="2026">2026</date>
+         </publicationStmt>
+
+         <sourceDesc>
+            <msDesc xml:id="folger_va103_1">
+
+               <msIdentifier>
+                  <repository>Folger Shakespeare Library</repository>
+                  <idno type="shelfmark">V.a.103.1</idno>
+                  <altIdentifier type="resource">
+
+                     <idno type="URI">https://catalog.folger.edu/record/224059</idno>
+                  </altIdentifier>
+
+               </msIdentifier>
+               <msContents>
+                  <msItem>
+
+                     <locus from="6r" to="6r">6r</locus>
+
+                     <incipit>She's dead nor were it fit she should live still</incipit>
+                  </msItem>
+               </msContents>
+            </msDesc>
+
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="eng">English</language>
+         </langUsage>
+         <textClass>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#genre" target="#epitaph"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#function" target="#praise"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#topic" target="#death"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#topic" target="#marriage"/>
+
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#compiler_identified_genre"
+               target="#laudatory_epitaphs"/>
+         </textClass>
+
+         <abstract resp="#aiSummary">
+            <p>The poem is a brief elegy on an unnamed woman whose death is presented as fitting.
+               She is said to have lived honourably and to have died only four years short of the
+               “full age of man,” most likely the biblical lifespan of seventy years from Psalm
+               90:10, which would make her about sixty-six. Life beyond that point is described as a
+               condition of trouble, disease, sorrow, and “restlese ease.” After her husband’s
+               death, she lives only long enough to mourn him and dies within the year; the poem
+               presents widowhood, especially the “widdow bedd,” as a form of torture from which
+               death releases her. </p>
+         </abstract>
+
+
+      </profileDesc>
+
+      <encodingDesc>
+         <projectDesc>
+            <p>This e-text is part of the Works section of the Rare or Unique Poems from
+               manuscripts, 1500–1660 (RUP) Database</p>
+            <p>Encoding conventions: TEI P5; semi-diplomatic transcription etc.</p>
+            <p><address>
+                  <addrLine>
+                     <ref target="https://rup.hypotheses.org/">RUP website</ref>
+                  </addrLine>
+               </address></p>
+         </projectDesc>
+
+         <editorialDecl>
+            <p>Transcriptions are semi-diplomatic, based on on a single manuscript witness. Original
+               punctuation is retained. Letterforms are modernized for u/v and i/j, and majuscule
+               "F" is used in place of "ff". Abbreviations and brevigraphs are expanded, with
+               supplied letters italicized, except for the ampersand. Regularization is applied
+               where it clarifies meaning, using &lt;choice&gt;, &lt;orig&gt;, and &lt;reg&gt;.
+               However, we do not attempt to exactly mirror the layout of the page, nor are we able
+               to reproduce every brevigraph (symbols, strokes, or modified letter forms), mark of
+               punctuation, or symbol accurately.</p>
+
+            <p>Poem summary generated with the assistance of ChatGPT and reviewed by the
+               encoder.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+
+   <text>
+      <body>
+
+         <pb n="6r"/>
+
+         <div type="poem" xml:id="rup_000007">
+            <head>
+               <lb/>On Mrs</head>
+
+            <lg type="couplets">
+               <l n="1">Shees deade; nor were itt fitt shee should <subst>
+                     <del>be</del>
+                     <add>live</add>
+                  </subst> still,</l>
+               <l n="2">To feele the malice of old ages ill;</l>
+               <l n="3">Shee had wit<ex>h</ex> honoure measured her lifes spann,</l>
+               <l n="4">And lackt but fouer yeeres o’th’full age of man</l>
+               <l n="5">Whate’s beyond that is trouble and disease,</l>
+               <l n="6">A dying life, sorrow and restlese ease.</l>
+               <l n="7">Nor would she longer <subst>
+                     <del>live</del>
+                     <add>life</add>
+                  </subst>her husband deade,</l>
+               <l n="8">To seek the tortures of a widdow bedd,</l>
+               <l n="9" rend="indent">Shee only grac’d him with a funerall teare</l>
+               <l n="10" rend="indent">Liv’d but to mourne and died within the yeare.</l>
+            </lg>
+
+         </div>
+      </body>
+
+
+   </text>
+</TEI>

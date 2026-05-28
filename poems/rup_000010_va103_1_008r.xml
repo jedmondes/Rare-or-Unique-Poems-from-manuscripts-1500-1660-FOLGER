@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="first_line">Here lies his frailty his fair soul above</title>
+
+            <respStmt>
+               <resp>TEI encoding</resp>
+               <name>Jessica Edmondes</name>
+            </respStmt>
+
+            <respStmt xml:id="aiSummary">
+               <resp>Summary generated with AI assistance</resp>
+               <name>ChatGPT (OpenAI, GPT-5.3)</name>
+            </respStmt>
+         </titleStmt>
+
+
+
+         <publicationStmt>
+            <publisher>Rare or Unique Poems from manuscripts, 1500–1660 (RUP) </publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">This allows you to
+                  use our transcriptions without additional permission provided that you cite the
+                  RUP Project as the source and that you license anything you create using the
+                  transcriptions under the same or equivalent license.</licence>
+            </availability>
+            <date when="2026">2026</date>
+         </publicationStmt>
+
+         <sourceDesc>
+            <msDesc xml:id="folger_va103_1">
+
+               <msIdentifier>
+                  <repository>Folger Shakespeare Library</repository>
+                  <idno type="shelfmark">V.a.103.1</idno>
+                  <altIdentifier type="resource">
+
+                     <idno type="URI">https://catalog.folger.edu/record/224059</idno>
+                  </altIdentifier>
+
+               </msIdentifier>
+               <msContents>
+                  <msItem>
+
+                     <locus from="8r" to="8r">8r</locus>
+
+                     <incipit>Here lies his frailty his fair soul above <ref
+                           target="https://firstlines.folger.edu/detail.php?id=46371">Folger First
+                           Line Index</ref></incipit>
+                  </msItem>
+               </msContents>
+            </msDesc>
+            <listWit>
+               <witness xml:id="wit_bod_top_gen_e_1">Bodleian Libraries, Top. gen. e. 1<locus
+                     from="99" to="99">page 99</locus>
+               </witness>
+            </listWit>
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="eng">English</language>
+         </langUsage>
+         <textClass>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#genre" target="#epitaph"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#function" target="#praise"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#topic" target="#death"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#occupations_roles" target="#bailiff"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#occupations_roles" target="#chamberlain"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#compiler_identified_genre"
+               target="#laudatory_epitaphs"/>
+         </textClass>
+
+         <abstract resp="#aiSummary">
+            <p>The poem is an epitaph that commemorates Mr Inglethorpp by contrasting the frailty of
+               his body with the enduring worth of his soul. It presents his life as purposefully
+               directed toward virtuous ends, emphasizing his civic reputation, generosity, and
+               hospitality, and portraying him as both “the city’s glory” and a perpetual friend to
+               the poor. While invoking classical comparison through Jove, the speaker ultimately
+               rejects the adequacy of praise, suggesting that his virtue exceeds the capacity of
+               language to represent it. The closing couplet resolves this by reducing commemoration
+               to the simple act of inscription, where naming the deceased is itself sufficient
+               testimony to his merit. </p>
+         </abstract>
+
+         <creation>
+            <date><date notBefore="1619-06">probate 3 June 1619</date></date>
+         </creation>
+      </profileDesc>
+
+      <encodingDesc>
+         <projectDesc>
+            <p>This e-text is part of the Works section of the Rare or Unique Poems from
+               manuscripts, 1500–1660 (RUP) Database</p>
+            <p>Encoding conventions: TEI P5; semi-diplomatic transcription etc.</p>
+            <p><address>
+                  <addrLine>
+                     <ref target="https://rup.hypotheses.org/">RUP website</ref>
+                  </addrLine>
+               </address></p>
+         </projectDesc>
+
+         <editorialDecl>
+            <p>Transcriptions are semi-diplomatic, based on on a single manuscript witness. Original
+               punctuation is retained. Letterforms are modernized for u/v and i/j, and majuscule
+               "F" is used in place of "ff". Abbreviations and brevigraphs are expanded, with
+               supplied letters italicized, except for the ampersand. Regularization is applied
+               where it clarifies meaning, using &lt;choice&gt;, &lt;orig&gt;, and &lt;reg&gt;.
+               However, we do not attempt to exactly mirror the layout of the page, nor are we able
+               to reproduce every brevigraph (symbols, strokes, or modified letter forms), mark of
+               punctuation, or symbol accurately.</p>
+
+            <p>Poem summary generated with the assistance of ChatGPT and reviewed by the
+               encoder.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+
+   <text>
+      <body>
+
+         <pb n="8r"/>
+
+         <div type="poem" xml:id="rup_000010">
+            <head>
+               <lb/>On <persName ref="../persons/persons.xml#P0014">Mr Inglethorpp</persName> of
+                  <placeName>Worcester</placeName>
+               <lb/>
+            </head>
+
+            <lg type="couplets">
+               <l n="1">Heere lies his frailty his faier soule above,</l>
+               <l n="2">Who sorted all His actions to that end:</l>
+               <l n="3">This Cytties Glory everie good<del type="strikethrough">s</del> mans
+                  Love,</l>
+               <l n="4">In life in death the poores perpetuall Freind:</l>
+               <l n="5">As Hospitable as they speake of Jove.</l>
+               <l n="6">And o his zeale! But how dare wee Com<ex>m</ex>end?</l>
+               <l n="7" rend="indent">Beyonde all penns his praise will best appeare,</l>
+               <l n="8" rend="indent">Only <add place="above">to</add> write tis Inglethorpp lies
+                  heere.</l>
+            </lg>
+         </div>
+
+      </body>
+      <back>
+         <div type="historical" xml:lang="en">
+            <head>Historical context and dating</head>
+            <p>Richard Inglethorpe (1560–1619) was a Worcester clothier, merchant, and civic
+               official, serving as City Chamberlain in 1602 and High Bailiff in 1610. Having
+               amassed considerable wealth through trade and extensive property holdings, he died
+               without children and, by his will of 4 July 1618 (NA PROB_11_133_624), directed that
+               his estate be used for charitable purposes. His endowment funded almshouses,
+               established c. 1620, for six aged or infirm poor men of the city and a woman to
+               attend them, supported by income from his properties. The poem edited here is the
+               same as the text of his memorial inscription in Worcester Cathedral.</p>
+         </div>
+
+
+
+      </back>
+   </text>
+</TEI>

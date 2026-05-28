@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="first_line">Death's only terrible in the very name</title>
+
+            <respStmt>
+               <resp>TEI encoding</resp>
+               <name>Jessica Edmondes</name>
+            </respStmt>
+
+            <respStmt xml:id="aiSummary">
+               <resp>Summary generated with AI assistance</resp>
+               <name>ChatGPT (OpenAI, GPT-5.3)</name>
+            </respStmt>
+         </titleStmt>
+
+
+         <publicationStmt>
+            <publisher>Rare or Unique Poems from manuscripts, 1500–1660 (RUP) </publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">This allows you to
+                  use our transcriptions without additional permission provided that you cite the
+                  RUP Project as the source and that you license anything you create using the
+                  transcriptions under the same or equivalent license.</licence>
+            </availability>
+            <date when="2026">2026</date>
+         </publicationStmt>
+
+         <sourceDesc>
+            <msDesc xml:id="folger_va103_1">
+               <msIdentifier>
+                  <repository>Folger Shakespeare Library</repository>
+                  <idno type="shelfmark">V.a.103.1</idno>
+                  <altIdentifier type="resource">
+
+                     <idno type="URI">https://catalog.folger.edu/record/224059</idno>
+                  </altIdentifier>
+
+               </msIdentifier>
+               <msContents>
+                  <msItem>
+
+                     <locus from="9v" to="9v">9v</locus>
+
+                     <incipit>Death's only terrible in the very name</incipit>
+                  </msItem>
+               </msContents>
+            </msDesc>
+
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="eng">English</language>
+         </langUsage>
+         <textClass>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#genre" target="#elegy"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#function" target="#lament"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#function" target="#satirical_attack"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#topic" target="#death"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#topic" target="#disease"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#latin_source_genres" target="#epicedium"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#compiler_identified_genre"
+               target="#laudatory_epitaphs"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#occupations_roles" target="#physician"/>
+         </textClass>
+
+         <abstract resp="#aiSummary">
+            <p>The poem is an elegy for Dr Johnson that reflects on death while praising his
+               exceptional virtue as a physician. It begins by minimizing the terror of death,
+               likening it to sleep, before turning to a paradox: Death has destroyed its own “grand
+               agent,” the physician, whose art ordinarily combats illness. The speaker contrasts
+               the harm often attributed to medical practice with Johnson’s superior skill,
+               presenting him as one who saved more lives than others destroyed. His death is
+               explained as Death’s deliberate act to remove a force that opposed it. The poem
+               concludes by lamenting the loss of a doctor who healed both body and mind, and whose
+               integrity left him materially unrewarded, casting his honesty and selflessness as the
+               defining features of his life.</p>
+         </abstract>
+
+         <creation>
+            <date notBefore="1621-10">after November 1621</date>
+         </creation>
+      </profileDesc>
+
+      <encodingDesc>
+         <projectDesc>
+            <p>This e-text is part of the Works section of the Rare or Unique Poems from
+               manuscripts, 1500–1660 (RUP) Database</p>
+            <p>Encoding conventions: TEI P5; semi-diplomatic transcription etc.</p>
+            <p><address>
+                  <addrLine>
+                     <ref target="https://rup.hypotheses.org/">RUP website</ref>
+                  </addrLine>
+               </address></p>
+         </projectDesc>
+
+         <editorialDecl>
+            <p>Transcriptions are semi-diplomatic, based on on a single manuscript witness. Original
+               punctuation is retained. Letterforms are modernized for u/v and i/j, and majuscule
+               "F" is used in place of "ff". Abbreviations and brevigraphs are expanded, with
+               supplied letters italicized, except for the ampersand. Regularization is applied
+               where it clarifies meaning, using &lt;choice&gt;, &lt;orig&gt;, and &lt;reg&gt;.
+               However, we do not attempt to exactly mirror the layout of the page, nor are we able
+               to reproduce every brevigraph (symbols, strokes, or modified letter forms), mark of
+               punctuation, or symbol accurately.</p>
+
+            <p>Poem summary generated with the assistance of ChatGPT and reviewed by the
+               encoder.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+
+   <text>
+      <body>
+         <pb n="9v"/>
+         <div type="poem" xml:id="rup_000006">
+            <head>
+               <lb/>On <persName ref="../persons/persons.xml#P0018">Dr Johnson</persName> a
+               Physitian. November 1621</head>
+            <lg type="couplets">
+               <l n="1">Deaths only terrible in the very name</l>
+               <l n="2">And some few circumstances, else ‘twere the same</l>
+               <l n="3">To go to bed and dy, for do Death right</l>
+               <l n="4">’Tis a sound sleepe, a little longer night:</l>
+               <l n="5">Yea of some living deade men I have reade</l>
+               <l n="6"><subst>
+                     <del>Which</del>
+                     <add place="above">Who</add>
+                  </subst> each night died, and made theire Grave theire bedd.</l>
+               <l n="7">Yet I must question Death, how hee now can</l>
+               <l n="8">Kill his Grand Agent, A Physitian;</l>
+               <l n="9">For Physicks a disease spoiles more by farr,</l>
+               <l n="10">Then either Cooke, a Pestilence or Warre:</l>
+               <l n="11">There are such skilfull Doctors <add place="above">in’t</add> they say,</l>
+               <l n="12">That they can kill <subst>
+                     <del>theire</del>
+                     <add place="above">thrice</add>
+                  </subst> score a weeke, and Play.</l>
+               <l n="13">But Johnsons art was nobler and sav’d more</l>
+               <l n="14">Then twenty of deaths Instruments slew before;</l>
+               <l n="15">Wherfore enrag’d to see men crosse his lawes,</l>
+               <l n="16">To stopp th’effect hee takes away the cause,</l>
+               <l n="17">And slayes Him first: and in him many one,</l>
+               <l n="18">Who pine to see theire health before them gone.</l>
+               <l n="19">Now hee is gone where shall a Patient finde</l>
+               <l n="20">On that will cure his body and his Minde;</l>
+               <l n="21">One both Whose arte and Toungue w<ex>i</ex>th a sweete jarr</l>
+               <l n="22">Strove in each cure to out slipp the other farr:</l>
+               <l n="23" rend="indent">Whose good to others hurt himselfe, and Which</l>
+               <l n="24" rend="indent">Did live too honest to dy over rich.</l>
+            </lg>
+         </div>
+      </body>
+
+      <back>
+         <div type="historical" xml:lang="en">
+            <head>Historical context and dating</head>
+            <p>Thomas Johnson (c.1578–1621) was a physician based in Oxford. The son of a
+               Bedfordshire gentleman, he matriculated at St Alban Hall in 1594 aged sixteen,
+               proceeding BA from Oriel College in 1596 and MA in 1601 (incorporated at Cambridge in
+               1604). He supplicated for a licence to practise medicine on 13 June 1608 and was
+               awarded the degrees of Bachelor and Doctor of Medicine on 26 June 1609. He resided in
+               the parish of St Mary Magdalen and was buried at St Mary the Virgin, Oxford, on 16
+               November 1621(<ref target="#emp_oxfordshire_medics">Oxfordshire Medics</ref>)</p>
+         </div>
+
+         <div type="notes" xml:lang="en">
+            <head> Notes </head>
+            <p> See also <ref target="rup_0000014"> another elegy on Thomas Johnson</ref></p>
+         </div>
+
+         <listBibl>
+            <head>Works cited</head>
+            <bibl xml:id="emp_oxfordshire_medics">
+               <title level="a">Oxfordshire Medics</title>
+               <title level="m">Early Modern Practitioners: The Medical World of Early Modern
+                  England, Wales and Ireland, c.1500–1715</title>
+               <editor>
+                  <persName>
+                     <forename>Jonathan</forename>
+                     <surname>Barry</surname>
+                  </persName>
+               </editor>
+               <editor>
+                  <persName>
+                     <forename>Peter</forename>
+                     <surname>Elmer</surname>
+                  </persName>
+               </editor>
+               <publisher>University of Exeter</publisher>
+               <ref type="database" target="https://practitioners.exeter.ac.uk/"/>
+            </bibl>
+         </listBibl>
+
+      </back>
+   </text>
+</TEI>

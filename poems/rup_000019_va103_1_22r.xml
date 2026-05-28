@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="first_line">Kind town friends, had I wit enough to swear</title>
+            <respStmt>
+               <resp>attributed author</resp>
+               <name>M. W. S.</name>
+            </respStmt>
+
+            <respStmt>
+               <resp>TEI encoding</resp>
+               <name>Jessica Edmondes</name>
+            </respStmt>
+
+            <respStmt xml:id="aiSummary">
+               <resp>Summary generated with AI assistance</resp>
+               <name>ChatGPT (OpenAI, GPT-5.3)</name>
+            </respStmt>
+         </titleStmt>
+
+
+         <publicationStmt>
+            <publisher>Rare or Unique Poems from manuscripts, 1500–1660 (RUP)</publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">This allows you to
+                  use our transcriptions without additional permission provided that you cite the
+                  RUP Project as the source and that you license anything you create using the
+                  transcriptions under the same or equivalent license.</licence>
+            </availability>
+            <date when="2026">2026</date>
+         </publicationStmt>
+
+         <sourceDesc>
+            <msDesc xml:id="folger_va103_1">
+
+               <msIdentifier>
+                  <repository>Folger Shakespeare Library</repository>
+                  <idno type="shelfmark">V.a.103.1</idno>
+                  <altIdentifier type="resource">
+
+                     <idno type="URI">https://catalog.folger.edu/record/224059</idno>
+                  </altIdentifier>
+
+               </msIdentifier>
+               <msContents>
+                  <msItem>
+                     <locus from="22r" to="22r">22r</locus>
+                     <incipit>Kind town friends, had I wit enough to swear <ref
+                           target="https://firstlines.folger.edu/detail.php?id=40893">Folger First
+                           Line Index</ref>
+                     </incipit>
+                  </msItem>
+               </msContents>
+            </msDesc>
+
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="eng">English</language>
+         </langUsage>
+         <textClass>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#genre" target="#elegy"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#function" target="#praise"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#function" target="#admonition"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#function" target="#rebuke"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#topic" target="#death"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#topic" target="#town_and_gown"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#social_relation"
+               target="#collective_target"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#compiler_identified_genre"
+               target="#Merry_and_satyricall"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#occupation" target="#mayor"/>
+         </textClass>
+
+         <abstract resp="#aiSummary">
+            <p>The speaker addresses the townsmen of Oxford, accusing them of being too foolish and
+               insensitive to properly grieve their dead mayor. He says they lack judgment, don’t
+               understand true sorrow, and probably wouldn’t mourn anyone worthy. Davenant is
+               presented as a competent and moderating figure who kept order in the town, protected
+               it from ridicule, and maintained a balance between the town and the university. Now
+               that he’s dead, the townspeople are exposed again to mockery (especially from
+               scholars) and their incompetence will become obvious. </p>
+         </abstract>
+
+         <creation>
+            <date notBefore="1622-04-19">after 19 April 1622</date>
+         </creation>
+
+      </profileDesc>
+
+      <encodingDesc>
+         <projectDesc>
+            <p>This e-text is part of the Works section of the Rare or Unique Poems from
+               manuscripts, 1500–1660 (RUP) Database</p>
+            <p>Encoding conventions: TEI P5; semi-diplomatic transcription etc.</p>
+            <p><address>
+                  <addrLine>
+                     <ref target="https://rup.hypotheses.org/">RUP website</ref>
+                  </addrLine>
+               </address></p>
+         </projectDesc>
+
+         <editorialDecl>
+            <p>Transcriptions are semi-diplomatic, based on the manuscript text cited as the copy
+               text. Original punctuation is retained. Letterforms are modernized for u/v and i/j,
+               and majuscule "F" is used in place of "ff". Abbreviations and brevigraphs are
+               expanded, with supplied letters italicized, except for the ampersand. Regularization
+               is applied where it clarifies meaning, using &lt;choice&gt;, &lt;orig&gt;, and
+               &lt;reg&gt;. However, we do not attempt to exactly mirror the layout of the page, nor
+               are we able to reproduce every brevigraph (symbols, strokes, or modified letter
+               forms), mark of punctuation, or symbol accurately.</p>
+
+            <p>Poem summary generated with the assistance of ChatGPT and reviewed by the
+               encoder.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+
+   <text>
+      <body>
+
+         <pb n="22r"/>
+
+         <div type="poem" xml:id="rup_000019">
+
+
+            <head>On <persName ref="../persons/persons.xml#P0015">Mr John Davnant</persName> Who
+               died on Thursday<lb/>Aprill the 18. 1622 being thee Maior of
+                  <placeName>Oxford</placeName>.<lb/>Dedicated to the Worthlesse and Wittlesse
+               Townsmen <lb/></head>
+            <fw place="margin" type="attribution"><persName ref="../persons/persons.xml#P0022"
+                  >M.W.S.</persName></fw>
+            <lg type="couplets">
+               <l n="1">Kinde Towne Freindes had I witt enough to sweare</l>
+               <l n="2">Yo<ex>u</ex>r little judgments knew what goodnesse were,</l>
+               <l n="3">And so trew sorrow to you as unknowne,</l>
+               <l n="4">As you have few dy that deservs our <choice>
+                     <orig>moone</orig>
+                     <reg>moan</reg>
+                  </choice>;</l>
+               <l n="5">I would not stirr yo<ex>u</ex>r Lazy greife nor preach</l>
+               <l n="6">Old Welladaies and woes beyond yo<ex>u</ex>r reach:</l>
+               <l n="7">Nor w<ex>i</ex>th fagg ends of doctrine you exhorte</l>
+               <l n="8">To worke out teares amixt yo<ex>u</ex>r Hollidaies sport.</l>
+               <l n="9">But since yo<ex>u</ex>r much suspected ignorance</l>
+               <l n="10">I judgd unwitting, what a blow this chance</l>
+               <l n="11">Hath given yo<ex>u</ex>r corporation; and <hi rend="large">Davnant</hi>
+                  deade,</l>
+               <l n="12">Leaft you unactive members w<ex>i</ex>thout Head:</l>
+               <l n="13">List well what cause of sorrow my Muse beares,</l>
+               <l n="14">The Civill Heads gone, but hath left you the Eares.</l>
+               <l n="15">You have lost a Maior who whylst you might him call</l>
+               <l n="16">yours by his owne discretion eas’d you all</l>
+               <l n="17">Of yo<ex>u</ex>r deserved absurdeties; none stirrd</l>
+               <l n="18">A Toungue against Towne-Government: no word</l>
+               <l n="19">Against officers unlanguag’d that scarse know</l>
+               <l n="10">A wise worde to speake, but speake good M<ex>aste</ex>r Snow.</l>
+               <l n="21">Schollers could not bee witty, but when th’assay</l>
+               <l n="22">To jest att you, <hi rend="large">Davnant</hi> stood in theire way,</l>
+               <l n="23">And made them downe theire pens; For Whylst Hee bore</l>
+               <l n="24">Th’office no councells held yee as before</l>
+               <l n="25">To bearde the Accademy as earst yee durst,</l>
+               <l n="26">Nor sought wether <hi rend="large">Ned the Fourth or third raigned
+                     first</hi>.</l>
+               <l n="27">To find the oldest priviledge; neither bore</l>
+               <l n="28">yo<ex>u</ex>r Maiors such Envy to make Magdalens poore.</l>
+               <l n="29">Oh ‘twere unthankefull rashly to putt downe</l>
+               <l n="30">And begger Colledges that enrich the towne!</l>
+               <l n="31">Now yo<ex>u</ex>r deliverer that sett you free</l>
+               <l n="32">From Bobbs and Pasquills (o hard desteny</l>
+               <l n="33">To you not him!) by death is freed from paine,</l>
+               <l n="34">And you lie ‘ope to Scholler witts againe.</l>
+               <l n="35">Now I would wish you howle, else wee shall deeme</l>
+               <l n="36">Yo<ex>u</ex>r grossnese held not <hi rend="large">Davnant</hi> in
+                  esteeme</l>
+               <l n="37">Worth Him, and there begines a quarrell just</l>
+               <l n="38">To Raile, and therefore howle; indeed you must,</l>
+               <l n="39">yo<ex>u</ex>r judgments will be question’d else, and you thought</l>
+               <l n="40">To feede no more then what goes downe your throate.</l>
+               <l n="41">I’de say more to you but that my greife would show</l>
+               <l n="42">Antike mock’te greife, and ill apparelld woe</l>
+               <l n="43">If you suppose <hi rend="large">Davnants</hi> a com<ex>m</ex>on <choice>
+                     <orig>beare</orig>
+                     <reg>bier</reg>
+                  </choice></l>
+               <l n="44">Or greive in fashion, and no bloudye teare</l>
+               <l n="45">Reserv’d only for Him bee shed, for Him</l>
+               <l n="46">Only, whose compleate worth did others dimme;</l>
+               <l n="47">If yee can not plucke upp one grone or sigh:</l>
+               <l n="48">That growes neare to the heart, and to a height</l>
+               <pb n="22v"/>
+               <l n="49">Screw upp yo<ex>u</ex>r sorrow dy yee and
+                  for yo<ex>u</ex>r sakes</l>
+               <l n="50">Yo<ex>u</ex>r dull succession shall spend wine and Cakes,</l>
+               <l n="51">And mourne as you for him: Whylst worthy hee</l>
+               <l n="52">To be bemon’d of better spirits, shall bee</l>
+               <l n="53">Scholarlike greiv’d for and theire watry eies</l>
+               <l n="54">Shall wash theire stubborne sinne. Do not dispise</l>
+               <l n="55">This seasonable motion worthy yee</l>
+               <l n="56">That <choice>
+                     <orig>weere</orig>
+                     <reg>wear</reg>
+                  </choice> Minerva’s livery; only Hee</l>
+               <l n="57">Only hee was capable to bee bemon’d by you,</l>
+               <l n="58">And thus distinguisht from the com<ex>m</ex>on crew</l>
+               <l n="59">Of dying Townsmen: For His worthy parts</l>
+               <l n="60">Spake Him part scholler, and neare to the Artes.</l>
+               <l n="61">Nor shall this act breed custome no<del rend="strikethrough">o</del>ne beside</l>
+               <l n="62">Shall flow yo<ex>u</ex>r teares unto so high a tide.</l>
+            </lg>
+         </div>
+      </body>
+
+      <back>
+         <div type="historical" xml:lang="en">
+            <head>Historical context and dating</head>
+            <p>John Davenant (1565–1622), vintner and proprietor of the Crown Inn, Cornmarket
+               Street, Oxford was elected mayor on 17 September 1621. The Davenants were well-known,
+               they kept an important inn frequented by Shakespeare, and their son William became a
+               prominent dramatist.</p>
+         </div>
+
+         <div type="notes" xml:lang="en">
+            <head> Notes </head>
+            <p> See also <ref
+                  target="folger_va103_1_f9r_if_to_be_work folger_va103_1_f9r_well_since_work">other
+                  elegies on John Davenant</ref> in the same manuscript. </p>
+
+         </div>
+
+      </back>
+   </text>
+</TEI>

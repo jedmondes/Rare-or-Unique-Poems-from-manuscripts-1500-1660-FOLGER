@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="first_line">As prisoners quit to gain new liberty</title>
+
+            <respStmt>
+               <resp ref="../persons/persons.xml#P0010">attributed author</resp>
+               <name>Mr St Clive</name>
+
+            </respStmt>
+
+            <respStmt>
+               <resp>TEI encoding</resp>
+               <name>Jessica Edmondes</name>
+            </respStmt>
+
+            <respStmt xml:id="aiSummary">
+               <resp>Summary generated with AI assistance</resp>
+               <name>ChatGPT (OpenAI, GPT-5.3)</name>
+            </respStmt>
+         </titleStmt>
+
+
+         <publicationStmt>
+            <publisher>Rare or Unique Poems from manuscripts, 1500–1660 (RUP) </publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">This allows you to
+                  use our transcriptions without additional permission provided that you cite the
+                  RUP Project as the source and that you license anything you create using the
+                  transcriptions under the same or equivalent license.</licence>
+            </availability>
+            <date when="2026">2026</date>
+         </publicationStmt>
+
+         <sourceDesc>
+            <msDesc xml:id="folger_va103_1_msid">
+
+               <msIdentifier>
+                  <repository>Folger Shakespeare Library</repository>
+                  <idno type="shelfmark">V.a.103.1</idno>
+                  <altIdentifier type="resource">
+                     <idno type="URI">https://catalog.folger.edu/record/224059</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem>
+                     <locus from="6v" to="6v">6v</locus>
+                     <incipit>As prisoners quit to gain new liberty <ref
+                           target="https://firstlines.folger.edu/detail.php?id=41551">Folger First
+                           Line Index</ref></incipit>
+                  </msItem>
+               </msContents>
+            </msDesc>
+
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="eng">English</language>
+         </langUsage>
+         <textClass>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#genre" target="#epitaph"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#function" target="#praise"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#topic" target="#death"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#compiler_identified_genre"
+               target="#laudatory_epitaphs"/>
+         </textClass>
+
+         <abstract resp="#aiSummary">
+            <p>The poem frames Sir Thomas Smith’s death through an extended prison metaphor. It
+               imagines the grave as a place of temporary confinement, where the body remains
+               imprisoned in its “stony Vault” until it has paid the final “fees” owed to “deaths
+               greedy gaylours,” the worms of bodily corruption. Against this physical captivity,
+               however, the poem sets the spiritual liberation of the soul: though the deceased had
+               stood guilty of sin, he has been redeemed and cleansed by Christ’s blood, and his
+               soul is therefore expected to attain a fuller freedom beyond the tomb.</p>
+         </abstract>
+
+         <creation>
+            <date notBefore="1625-09-04">after 4 September 1625</date>
+         </creation>
+      </profileDesc>
+
+      <encodingDesc>
+         <projectDesc>
+            <p>This e-text is part of the Works section of the Rare or Unique Poems from
+               manuscripts, 1500–1660 (RUP) Database</p>
+            <p>Encoding conventions: TEI P5; semi-diplomatic transcription etc.</p>
+            <p><address>
+                  <addrLine>
+                     <ref target="https://rup.hypotheses.org/">RUP website</ref>
+                  </addrLine>
+               </address></p>
+         </projectDesc>
+
+         <editorialDecl>
+            <p>Transcriptions are semi-diplomatic, based on on a single manuscript witness. Original
+               punctuation is retained. Letterforms are modernized for u/v and i/j, and majuscule
+               "F" is used in place of "ff". Abbreviations and brevigraphs are expanded, with
+               supplied letters italicized, except for the ampersand. Regularization is applied
+               where it clarifies meaning, using &lt;choice&gt;, &lt;orig&gt;, and &lt;reg&gt;.
+               However, we do not attempt to exactly mirror the layout of the page, nor are we able
+               to reproduce every brevigraph (symbols, strokes, or modified letter forms), mark of
+               punctuation, or symbol accurately.</p>
+
+            <p>Poem summary generated with the assistance of ChatGPT and reviewed by the
+               encoder.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+
+   <text>
+      <body>
+
+         <pb n="6v"/>
+
+         <div type="poem" xml:id="rup_000008">
+            <head>
+               <lb/><persName ref="../persons/persons.xml#P0010">Mr St: Clive</persName>: On
+                  <persName ref="../persons/persons.xml#P0011">Sir Thomas Smith</persName>
+               <lb/>
+            </head>
+
+            <lg type="couplets">
+               <l n="1">As prisoners <choice>
+                     <orig>quite</orig>
+                     <reg>quit</reg>
+                  </choice> to gaine new libertie</l>
+               <l n="2">Must fee their keepers or still captive lie</l>
+               <l n="3">So this brave Knight (by his redeemers bloud</l>
+               <l n="4">Cleansed from the Sinne where of he guilty stoode</l>
+               <l n="5">Must in this stony Vault imprisoned stay</l>
+               <l n="6">Till hee the Wormes (deaths greedy gaylours) pay</l>
+               <l n="7">Theire uttmost fees: w<ex>hi</ex>ch by his Corpes discharg’d,</l>
+               <l n="8">Ist like his freer soule shall bee ynlarg’d</l>
+            </lg>
+
+         </div>
+
+      </body>
+
+      <back>
+
+
+         <div type="historical" xml:lang="en">
+            <head>Historical context and dating</head>
+            <p>This short funerary poem most likely commemorates Sir Thomas Smythe [Smith] (c.
+               1558–1625), the merchant and colonial administrator. He died on 4 September 1625 and
+               was buried at Sutton-at-Hone, Kent, where he was commemorated by a substantial tomb,
+               circumstances that fit the poem’s sepulchral setting and its image of confinement in
+               a ‘stony Vault’. The poem should therefore date from shortly after his death,
+               plausibly in late 1625 or the following years. Its identification is further
+               supported by the existence of other contemporary elegiac verses on Sir Thomas
+               Smith/Smythe, including William Strachey’s elegy on Sir Thomas Smith, knight (<ref
+                  target="https://firstlines.folger.edu/detail.php?id=275359"/>), and Joshua
+               Sylvester’s poem ‘To the right vertuous ... Sir Thomas Smith (of London), knight’
+                  (<ref target="https://firstlines.folger.edu/detail.php?id=286562"/>).</p>
+         </div>
+
+
+
+      </back>
+   </text>
+</TEI>

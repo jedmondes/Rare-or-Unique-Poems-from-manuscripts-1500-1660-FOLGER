@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="first_line">If to be great, or good deserve the bays</title>
+            <respStmt>
+               <resp>TEI encoding</resp>
+               <name>Jessica Edmondes</name>
+            </respStmt>
+
+            <respStmt xml:id="aiSummary">
+               <resp>Summary generated with AI assistance</resp>
+               <name>ChatGPT (OpenAI, GPT-5.3)</name>
+            </respStmt>
+         </titleStmt>
+
+         <publicationStmt>
+            <publisher>Rare or Unique Poems from manuscripts, 1500–1660 (RUP)</publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">This allows you to
+                  use our transcriptions without additional permission provided that you cite the
+                  RUP Project as the source and that you license anything you create using the
+                  transcriptions under the same or equivalent license.</licence>
+            </availability>
+            <date when="2026">2026</date>
+         </publicationStmt>
+
+         <sourceDesc>
+            <msDesc xml:id="folger_va103_1">
+               <msIdentifier>
+                  <repository>Folger Shakespeare Library</repository>
+                  <idno type="shelfmark">V.a.103.1</idno>
+                  <altIdentifier type="resource">
+                     <idno type="URI">https://catalog.folger.edu/record/224059</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem xml:id="folger_va103_1_f9r_if_to_be_item">
+                     <locus from="9r" to="9r">9r</locus>
+                     <incipit>If to be great, or good deserve the bays</incipit>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="eng">English</language>
+         </langUsage>
+         <textClass>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#genre" target="#elegy"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#function" target="#lament"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#function" target="#praise"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#topic" target="#death"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#latin_source_genres" target="#epicedium"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#compiler_identified_genre"
+               target="#laudatory_epitaphs"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#occupation" target="#vintner"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#occupation" target="#mayor"/>
+         </textClass>
+
+         <abstract resp="#aiSummary">
+            <p>The poem praises John Davenant by stating that both greatness and goodness were
+               recognised in him. It notes that he had several key blessings: children by a virtuous
+               wife, good friends, and an honourable and peaceful burial. It presents his life as
+               complete and lacking nothing. The final lines turn to the reader, urging them to
+               reflect on their own past sins and to learn from Davenant’s example how to live and
+               die properly.</p>
+         </abstract>
+
+         <creation>
+            <date notBefore="1622-04-19">after 19 April 1622</date>
+         </creation>
+
+      </profileDesc>
+
+      <encodingDesc>
+         <projectDesc>
+            <p>This e-text is part of the Works section of the Rare or Unique Poems from
+               manuscripts, 1500–1660 (RUP) Database</p>
+            <p>Encoding conventions: TEI P5; semi-diplomatic transcription etc.</p>
+            <p><address>
+                  <addrLine>
+                     <ref target="https://rup.hypotheses.org/">RUP website</ref>
+                  </addrLine>
+               </address></p>
+         </projectDesc>
+
+         <editorialDecl>
+            <p>Transcriptions are semi-diplomatic, based on the manuscript text cited as the copy
+               text. Original punctuation is retained. Letterforms are modernized for u/v and i/j,
+               and majuscule "F" is used in place of "ff". Abbreviations and brevigraphs are
+               expanded, with supplied letters italicized, except for the ampersand. Regularization
+               is applied where it clarifies meaning, using &lt;choice&gt;, &lt;orig&gt;, and
+               &lt;reg&gt;. However, we do not attempt to exactly mirror the layout of the page, nor
+               are we able to reproduce every brevigraph (symbols, strokes, or modified letter
+               forms), mark of punctuation, or symbol accurately.</p>
+
+            <p>Poem summary generated with the assistance of ChatGPT and reviewed by the
+               encoder.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+
+   <text>
+      <body>
+         <pb n="9r"/>
+         <div type="poem" xml:id="rup_000012">
+            <lg type="couplets">
+               <head>On the same</head>
+               <l>If to bee Greate, or Good deserve the Baies</l>
+               <l>What merits hee whom Great and Good doth praise?</l>
+               <l>What meritts Hee? Why, a contented life,</l>
+               <l>A happy <unclear cert="high">yssue</unclear> of a vertuous wife,</l>
+               <l>The choyce of Freinds, a quiet honour’d Grave;</l>
+               <l>All these hee had: what more could <persName ref="../persons/persons.xml#P0015"
+                     >Davnant</persName>have</l>
+               <l>Reader go home, and w<ex>i</ex>th a weeping eie</l>
+               <l>For thy Sinns past, learne thus to live, and die.</l>
+            </lg>
+         </div>
+      </body>
+
+      <back>
+         <div type="historical" xml:lang="en">
+            <head>Historical context and dating</head>
+            <p>John Davenant (1565–1622), vintner and proprietor of the Crown Inn, Cornmarket
+               Street, Oxford was elected mayor on 17 September 1621. The Davenants were well-known,
+               they kept an important inn frequented by Shakespeare, and their son William became a
+               prominent dramatist.</p>
+         </div>
+
+         <div type="notes" xml:lang="en">
+            <head> Notes </head>
+            <p> See also <ref
+                  target="rup_000011 rup_000018"
+                  >other elegies on John Davenant</ref> in the same manuscript.</p>
+         </div>
+      </back>
+   </text>
+</TEI>
