@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="first_line">Pay tribute eyes, she's gone, on her attend</title>
+
+            <respStmt>
+               <resp>attributed author</resp>
+               <name ref="../persons/persons.xml#P0023">Sir Sampson: Darell</name>
+
+            </respStmt>
+
+            <respStmt>
+               <resp>TEI encoding</resp>
+               <name>Jessica Edmondes</name>
+            </respStmt>
+
+            <respStmt xml:id="aiSummary">
+               <resp>Summary generated with AI assistance</resp>
+               <name>ChatGPT (OpenAI, GPT-5.3)</name>
+            </respStmt>
+         </titleStmt>
+
+
+         <publicationStmt>
+            <publisher>Rare or Unique Poems from manuscripts, 1500–1660 (RUP) </publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">This allows you to
+                  use our transcriptions without additional permission provided that you cite the
+                  RUP Project as the source and that you license anything you create using the
+                  transcriptions under the same or equivalent license.</licence>
+            </availability>
+            <date when="2026">2026</date>
+         </publicationStmt>
+
+         <sourceDesc>
+            <msDesc xml:id="bl_add11811">
+
+               <msIdentifier>
+                  <repository>British Library</repository>
+                  <idno type="shelfmark">Add. 11811</idno>
+                  <altIdentifier type="resource">
+
+                     <idno type="URI">https://searcharchives.bl.uk/catalog/032-002041507</idno>
+                  </altIdentifier>
+
+               </msIdentifier>
+               <msContents>
+                  <msItem>
+
+                     <locus from="3v" to="3v">3v</locus>
+
+                     <incipit>Pay tribute eyes, she's gone, on her attend</incipit>
+                  </msItem>
+               </msContents>
+            </msDesc>
+            <listWit>
+               <witness xml:id="wit_bod_rawl_poet_210">Bodleian Libraries, Rawl. poet. 210 <locus
+                     from="56v" to="56v">56v</locus><ref
+                     target="https://firstlines.folger.edu/detail.php?id=83796">Folger First Line
+                     Index</ref>
+               </witness>
+            </listWit>
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="eng">English</language>
+         </langUsage>
+         <textClass>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#genre" target="#elegy"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#function" target="#lament"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#function" target="#praise"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#topic" target="#death"/>
+            <catRef scheme="../taxonomy/rup-taxonomy.xml#topic" target="#monarchy"/>
+
+         </textClass>
+
+         <abstract resp="#aiSummary">
+            <p>This elegy mourns Queen Anne as a uniquely virtuous figure whose death has deprived
+               the kingdom of both its joy and its moral exemplar. The speaker commemorates her as
+               the ‘bright protectresse of disgrac't desart’. Death is personified as a tyrant,
+               compared to Nero and hailed as the ‘conquerour of Albion’ for having taken both Anne
+               and her ‘matchlesse sonne’. The poem repeatedly elevates Anne above ordinary human
+               virtue, describing her as ‘Vertue impersonated’ and arguing that her departure must
+               therefore provoke universal grief. While her death is acknowledged as a heavenly
+               ‘advancement’, the speaker interprets the loss suffered by the living as ‘our sinnes
+               just crosse’. The closing lines unite the figures of Astraea and Virtue, suggesting
+               that Anne’s death marks the departure from earth of both justice and virtue
+               themselves.</p>
+         </abstract>
+
+         <creation>
+            <date notBefore="1619-03-02">after 2 March 1619</date>
+         </creation>
+      </profileDesc>
+
+      <encodingDesc>
+         <projectDesc>
+            <p>This e-text is part of the Works section of the Rare or Unique Poems from
+               manuscripts, 1500–1660 (RUP) Database</p>
+            <p>Encoding conventions: TEI P5; semi-diplomatic transcription etc.</p>
+            <p><address>
+                  <addrLine>
+                     <ref target="https://rup.hypotheses.org/">RUP website</ref>
+                  </addrLine>
+               </address></p>
+         </projectDesc>
+
+         <editorialDecl>
+            <p>Transcriptions are semi-diplomatic, based on on a single manuscript witness. Original
+               punctuation is retained. Letterforms are modernized for u/v and i/j, and majuscule
+               "F" is used in place of "ff". Abbreviations and brevigraphs are expanded, with
+               supplied letters italicized, except for the ampersand. Regularization is applied
+               where it clarifies meaning, using &lt;choice&gt;, &lt;orig&gt;, and &lt;reg&gt;.
+               However, we do not attempt to exactly mirror the layout of the page, nor are we able
+               to reproduce every brevigraph (symbols, strokes, or modified letter forms), mark of
+               punctuation, or symbol accurately.</p>
+
+            <p>Poem summary generated with the assistance of ChatGPT and reviewed by the
+               encoder.</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+
+   <text>
+      <body>
+         <!-- Need to check the transcription form image or original; collate the other copy in
+         Bodleian-->
+
+         <pb n="3v"/>
+
+         <div type="poem" xml:id="rup_000021">
+            <head>An Elegie on the death of Queene Anne</head>
+
+
+            <lg type="couplets">
+               <l n="1">Pay tribute eyes, she's gone, one her attend</l>
+               <l n="2">Virtues best meritt, and our joyes, whose end</l>
+               <l n="3">Began with her disease, you that are good</l>
+               <l n="4">And wisely feele her losse, knowing she stood</l>
+               <l n="5">The bright protectresse of disgrac't desart:</l>
+               <l n="6">Mourne and grow stupid, weepe not eyes but heart,</l>
+               <l n="7">Such greifes as these are truelier felt then uttred,</l>
+               <l n="8">So swan-lik farewell's, are not spoke but muttred.</l>
+
+               <l n="9">Death thou to Nero-like dost <del rend="strikethrough">sek</del> Deale thy
+                  darts,</l>
+               <l n="10">For with this stroake th'hast peirc't a thousand hearts:</l>
+
+               <l n="11">Her losse, wanne tyrant, with her matchlesse sonne</l>
+               <l n="12">Have stil'd thee conquerour of Albion</l>
+               <l n="13">None now resist thy power, nor gainst thee strive,</l>
+               <l n="14">For who (they dying) would not scorne to live?</l>
+               <l n="15">This is greifes essence, he had never worth,</l>
+               <l n="16">That now can stop his sighs from renting forth</l>
+               <l n="17">See how the cloud's weepe still, and shall not I</l>
+               <l n="18">Who onely live <del rend="strikethrough">to</del> t'adore her memory?</l>
+
+               <l n="19">Vertue impersonated need's must raise,</l>
+               <l n="20">Say ould Phylosopher's the love and praise,</l>
+
+               <l n="21">Of each admiring veiwer, must not then</l>
+               <l n="22">Her separation worke most greife in men?</l>
+               <l n="23">O and in Angell's to, save that they gaine</l>
+               <l n="24">By her accessse, perfectiion to their traine.</l>
+               <l n="25">Pardon (sweet Angell) that wee thy losse,</l>
+               <l n="26">Though thy advancement, twas our sinnes just crosse,</l>
+
+               <l n="27">But since Astraeas fled, and Vertue's gone,</l>
+               <l n="28">Why should she best and greatest stay alone.</l>
+            </lg>
+            <trailer><persName ref="../persons/persons.xml#P0023">S<ex>i</ex>r Sampson:
+                  Darell</persName></trailer>
+         </div>
+      </body>
+
+      <back>
+         <div type="historical" xml:lang="en">
+            <head>Historical context and dating</head>
+            <p>Anne of Denmark, queen consort of James I, died unexpectedly on 2 March 1619 at
+               Hampton Court after a period of ill health. Her death prompted a wave of elegiac
+               writing that, while less intense than that following the death of her son, Prince
+               Henry, nonetheless reflects broader national anxieties and the developing conventions
+               of mourning royal figures in the early Stuart period.(<ref
+                  target="#doelman_royal_deaths">Doelman 2016</ref>)</p>
+            <p>Doelman (<ref target="#doelman_royal_deaths">2016, 101</ref>) cites Sir Sampson
+               Darell's elegy among others which pay tribute to Anne's assistance to outsiders or
+               those who had lost favour at court. ‘Helpe the helpless side’ as one poem puts
+               it.</p>
+         </div>
+
+
+         <listBibl>
+            <head>Works cited</head>
+            <bibl xml:id="doelman_royal_deaths">
+               <author>Doelman, James</author>. <title>The Daring Muse of the Early Stuart Funeral
+                  Elegy</title>. <publisher>Manchester University Press</publisher>, <date
+                  when="2016">2016</date>. </bibl>
+         </listBibl>
+
+      </back>
+   </text>
+</TEI>
